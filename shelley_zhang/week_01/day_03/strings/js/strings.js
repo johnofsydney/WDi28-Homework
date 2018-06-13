@@ -41,7 +41,7 @@ fixStart("bobby");
 const verbing = function(string) {
   if (string.length < 3) {
     console.log(string);
-  } else if (string.endsWith("ing")) { //why doesn't this work?
+  } else if (string.endsWith("ing")) {
     const ly = string + "ly";
     console.log(ly);
   } else {

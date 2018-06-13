@@ -39,20 +39,19 @@ fixStart("bobby");
 //verbing
 
 const verbing = function(string) {
-
-  if (string.length >= 3) {
-    console.log(string + "ing");
-  } else if (string.length >= 3 && string.endsWith("ing")) { //why doesn't this work?
-    console.log(string + "ly");
-  } else {
+  if (string.length < 3) {
     console.log(string);
+  } else if (string.endsWith("ing")) { //why doesn't this work?
+    const ly = string + "ly";
+    console.log(ly);
+  } else {
+    const ing = string + "ing";
+    console.log(ing);
   }
 };
 
-verbing("si");
+verbing("swimming");
+verbing("swimm");
+verbing("go");
 
 //Not Bad
-
-const notBad = function(string) {
-  
-}

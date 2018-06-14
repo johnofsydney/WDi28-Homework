@@ -2,8 +2,7 @@
 // Part 1
 // Write a function called squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."
 
-const squareNumber = function( num )
-{
+const squareNumber = function( num ) {
   const numSqrd = num * num;
   console.log(`The result of squaring the number ${ num } is ${ numSqrd }.`);
   return num;
@@ -12,8 +11,7 @@ const squareNumber = function( num )
 
 // Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".
 
-const halfNumber = function( num )
-{
+const halfNumber = function( num ) {
   const output = num / 2;
   console.log(`Half of ${ num } is ${ output }`);
   return output;
@@ -22,8 +20,7 @@ const halfNumber = function( num )
 
 // Write a function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
 
-const percentOf = function ( num, total )
-{
+const percentOf = function ( num, total ) {
   const percent = num / total * 100;
   console.log( `${ num } is ${ percent }% of ${ total }.`);
   return percent;
@@ -31,8 +28,7 @@ const percentOf = function ( num, total )
 
 // Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
 
-const areaOfCircle = function( radius )
-{
+const areaOfCircle = function( radius ) {
   const area = Number.parseFloat(Math.PI * squareNumber( radius )).toFixed(2);
   console.log (`The area for a circle with radius ${ radius } is ${ area }.`);
   return area;
@@ -47,8 +43,7 @@ const areaOfCircle = function( radius )
 // Calculate the area of a circle with the result of #2 as the radius.
 // Calculate what percentage that area is of the squared result (#3).
 
-const calculator = function ( num )
-{
+const calculator = function ( num ) {
   const halfNum = halfNumber( num );
   const sqrHalfNum = squareNumber( halfNum );
   const circleArea = areaOfCircle( sqrHalfNum );

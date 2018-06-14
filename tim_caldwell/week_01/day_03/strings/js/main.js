@@ -7,8 +7,7 @@
 //   DrEvil(10): 10 dollars
 //   DrEvil(1000000): 1000000 dollars (pinky)
 
-const drEvil = function(amount)
-{
+const drEvil = function(amount) {
   let msg = amount + ' dollars'
   if (amount === 1000000)
     msg += ' (pinky)';
@@ -23,8 +22,7 @@ const drEvil = function(amount)
 //   mixUp('dog', 'dinner'): 'dig donner'
 // Look up the JavaScript string reference to find methods which may be useful!
 
-const mixUp = function( string1, string2 )
-{
+const mixUp = function( string1, string2 ) {
   const msg = string2.substr(0,2) + string1.substr(2) + ' ' +string1.substr(0,2) + string2.substr(2);
 
   return msg;
@@ -36,12 +34,10 @@ const mixUp = function( string1, string2 )
 //
 // fixStart('babble'): 'ba**le'
 
-const fixStart = function (stringFix)
-{
-  let output = stringFix[0]
+const fixStart = function (stringFix) {
+  let output = stringFix[0];
 
-  for(var i = 1; i < stringFix.length; i++)
-  {
+  for(var i = 1; i < stringFix.length; i++) {
     if (stringFix[i] === stringFix[0])
       output += '*';
     else
@@ -51,6 +47,14 @@ const fixStart = function (stringFix)
   return output;
 };
 
+// output = b
+// output = ba;
+// output = ba*;
+// output = ba**;
+
+sting.replace('b','*')
+
+
 
 // Verbing
 // Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
@@ -59,8 +63,7 @@ const fixStart = function (stringFix)
 //   verbing('swimming'): 'swimmingly'
 //   verbing('go'): 'go'
 
-const verbing = function( verb )
-{
+const verbing = function( verb ) {
   if (verb.length >= 3)
     return (verb + 'ing');
   else
@@ -80,8 +83,7 @@ const verbing = function( verb )
 //   notBad('This movie is not so bad!'): 'This movie is good!'
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
 
-const notBad = function ( text )
-{
+const notBad = function ( text ) {
   const indexOfBad = text.indexOf("bad");
   const indexOfNot = text.indexOf("not");
 

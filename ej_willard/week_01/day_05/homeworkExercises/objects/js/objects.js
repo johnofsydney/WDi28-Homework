@@ -244,14 +244,23 @@ console.log(bank);
 
 ///////////making deposits///////////////
 
-const depositWithdrawal = function(bank, money) {
+const deposit = function(bank, money) {
      bank.currentBalance += money;
     return bank.currentBalance;
 };
 console.log('........making deposit......');
 console.log(bank[2].currentBalance);
 console.log('adding $50 to account')
-console.log(depositWithdrawal(bank[2],50));
+console.log(deposit(bank[2],50));
+
+////////withdrawal////////
+
+const withdraw = function(bank, money) {
+     bank.currentBalance -= money;
+    return bank.currentBalance;
+};
+console.log('.......withdrawing money..........');
+console.log(withdraw(bank[2],50));
 
 ///put in function to sum up account balances
 let summingBank = function(bank) {

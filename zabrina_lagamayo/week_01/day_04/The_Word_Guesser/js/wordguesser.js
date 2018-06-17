@@ -20,12 +20,16 @@ const guessLetter = function(letter) {
      const indexOfLetter = word.indexOf(letter);
      guess.splice(indexOfLetter,1,letter);
        console.log(`${guess.join('')}. Congratulations you found a letter!`);
+
      }else {
        console.log(`${guess.join('')}. No new letter found. Try Again.`)
      }
+
+
+       }
+       const newGuess = guess.join('');
+       const newWord = word.join('');
+           if(newGuess === newWord) {
+           console.log("Congratulations.You've finished the game!");
      }
 }
-
-
-//be able to add the correct letter in guess
-//delete the blank in guess and replace it with the guessed letter === the word.indexOf(letter)

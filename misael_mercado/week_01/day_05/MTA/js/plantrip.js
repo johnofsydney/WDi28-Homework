@@ -35,7 +35,7 @@ const trainLines = {
   "6": ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 };
 
-"6", "Grand Central", "N", "8th"
+// "6", "Grand Central", "N", "8th"
 //Check if the line number is valid and inside the object
 
 const isValidLine = function(lineNum) {

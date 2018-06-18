@@ -11,14 +11,46 @@ It should also figure out if there are any more letters that need to be guessed,
 Pretend you don't know the word, and call guessLetter multiple times with various letters to check that your program works.*/
 
 
-const word = ['F', 'O', 'X'];
-let guesses = ['_','_','_']; ///using splice to take away one _ and replace with the correct letter either f o or x
-
-const guessLetter = function(letter) {
-  for (let word = 0; word < letter.length; word++) { //want it to iterate through whatever argument is in 'guess' and check against word array.
-    return guessLetter[word]; //want the result of the above search to return
+// let word = ['F', 'O', 'X'];
+// let guesses = ['_','_','_']; ///using splice to take away one _ and replace with the correct letter either f o or x
+//
+// const guessLetter = function(letter) {
+//   let response = ('');
+//   for (let i = 0; i < letter.length; i++) {
+//     if (letter[i] === 'F' || 'f') {
+//       response = guesses.push(letter[i]);
+//     }
+//   }
+//     console.log(response);
+// };
+    //|| 'X' || 'f' || 'o' || 'x'
+    //want it to iterate through whatever argument is in 'guess' and check against word array.
+  //want the result of the above search to return
     //if guessLetter matches word array want to push the match to guesses array
     //else want to display message 'z' not contained in word.
+
+//guessLetter('F');
+
+//johns
+
+let word = "FOX".split("")
+let guessedWord = []
+
+for (var i = 0; i < word.length; i++) {
+  guessedWord[i] = "-"
+}
+
+const guessLetter = function (letter) {
+  let index = word.indexOf(letter) //using tthis to say where letter was in the array and what the  letter is.
+  if (index >= 0) {
+    guessedWord[index] = letters
+    console.log('Good guess')
+
+  } else {
+    console.log('bad guess');
   }
-};
-guessLetter('A');
+
+  if (word.join('') === guessedWord.join('')) {
+    console.log('Congrats you win!');
+  }
+}

@@ -44,6 +44,12 @@ const bank = {
     let moneyIn = bank.accounts[accountID].balance - amount;
     bank.accounts[accountID].balance = moneyIn;
     console.log(`You have ${moneyIn} dollars left.`);
+  },
+  //deposit - added by John
+  deposit: function(amount, accountID) {
+    let moneyIn = bank.accounts[accountID].balance + amount;
+    bank.accounts[accountID].balance = moneyIn;
+    console.log(`You have ${moneyIn} dollars left.`);
   }
 
 }

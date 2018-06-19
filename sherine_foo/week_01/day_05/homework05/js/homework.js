@@ -111,6 +111,20 @@ const cartForParty = {
  console.log(`You have spend ${sumArray()}`);
 
 
+
+//////Johh's way
+
+const cashRegistry = function (obj) {
+  let arr = Objects.values (obj);
+  let total = 0
+  for (let i = 0; i < arr.length; i++) {
+    sum += +(arr[i]); // or use Number(arr[i])
+  }
+  console.log(sum);
+}
+
+////
+
 // let result = 0;
 // for (let i of a) {
 //   result += Number(a[i]);
@@ -162,9 +176,12 @@ const validateCC = function (cardNumb) {
   let sum = 0;
   for (var i = 0; i < cardNumb.length; i++) {
     sum += +cardNumb[i];
+    console.log("1" + sum);
 
   }
-  return sum; //return sum; // why i need to use return? else the result is unidentify but sum show as result instead
+
+  console.log("2" + sum);
+//  return sum; //return sum; // why i need to use return? else the result is unidentify but sum show as result instead
 // Error, result stop here when it fufil all and above status.
   if (sum < 17) {
     return false;

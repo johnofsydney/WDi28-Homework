@@ -86,4 +86,8 @@ const triangleU = Math.sqrt(triangleS * (triangleS - triangleA.sideA)*(triangleS
 console.log(`Area ${ triangleU}`);
 /////////////
 
-const isObtuse = ( (Math.pow(triangleA.sideC)/2) < )
+// const isObtuse = ( (Math.pow(triangleA.sideC)/2));
+// const number4 = (Math.pow(triangleA.sideA) + Math.pow(triangleA.sideB));
+// const
+
+////////////////

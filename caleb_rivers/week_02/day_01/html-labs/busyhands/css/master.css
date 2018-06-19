@@ -1,0 +1,105 @@
+* {
+  border: 1px red solid;
+}
+
+ul li {
+  display: inline;
+}
+
+body {
+  margin: 0 auto;
+  width: 900px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding-right: 8px;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.logo {
+  display: inline-block;
+  padding: 14px;
+}
+
+#main1 {
+  width: 900px;
+}
+
+#button {
+  width: 50%;
+  height: 50%;
+}
+
+/* Social media  */
+
+#socialMedia {
+	float: right;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+/* Three collum layout */
+
+.container {
+  display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.homeBox1 {
+  order: 1;
+}
+
+.homeBox2 {
+  order: 2;
+}
+.homeBox3 {
+  order: 3;
+}

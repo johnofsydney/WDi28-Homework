@@ -52,11 +52,11 @@ findVowel("a");
 const sumArray = function (inputArray) {
   let result = 0;
     for (var i = 0; i < inputArray.length; i++) {
-      result = inputArray[i] + result;
+      result += inputArray[i];
     }
     console.log(result);
 };
 
-sumArray([2,3,4,5]);
+sumArray([0.92,3,4,5]);
 
 //const multipleArray = function ()

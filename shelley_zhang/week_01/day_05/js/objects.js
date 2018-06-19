@@ -195,7 +195,6 @@ for (var i = 0; i < testCases.length; i++) {
 // There is no need to write a user interface. Make sure functions return values -- you may also have your functions console.log() values to help you see your code working.
 //
 // You should write a basic story through a series of JavaScript commands that shows that the methods do indeed work as expected: add some accounts, show the total balance, make some deposits and withdrawals, show the new total balance.
-//
 
 //create a bank that holds an array of accounts that all share a set of common functionality
 let bank = [
@@ -217,15 +216,30 @@ let bank = [
 
 //create a function that goes loops the array and adds all currentBalance together which will equal to total sum of money in the accounts
 
-const totalSum = function(bank) {
+const totalSum = function(arr) {
   let total = 0; //create variable to store the result from the loop
-    for (i = 0; i < bank.length; i++) {
-      total = total + bank[i];
+    for (i = 0; i < arr.length; i++) { // i whole object bank
+      total = total + arr[i].currentBalance; //reference property in object i using dot notation
     } return total
 };
 
-const addAccount = function() {}
+let newAccount = {
+  currentBalance: 5000,
+  ownersName: "Sonia"
+}
 
-const withdrawAccount = function() {}
+let addAccount = function(newAccount) {
+  bank.push(newAccount);
+  return bank;
+}
 
-const depositeAccount = function() {}
+//
+
+const withdrawAccount = function(name, money) {
+   let newBalance = bank.currentBalance + money;
+   return
+}
+
+
+
+const depositAccount = function() {name, money}

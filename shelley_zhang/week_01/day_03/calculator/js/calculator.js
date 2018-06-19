@@ -36,6 +36,6 @@ const p2 = function(number) {
   const square = squareNumber(half);
   const area = areaOfCircle(square);
   const percent = percentOf(square, area);
-};
+}; //
 
-p2(4);
+p2(4); //purpose - calling a function within a function

@@ -19,7 +19,7 @@ addAccount: function (name) {
     name: newName,
     balance: 0
   }
-  bank.aacounts.push(newAccount);
+  bank.accounts.push(newAccount);
 },
 
 deposit: function (name, value) {

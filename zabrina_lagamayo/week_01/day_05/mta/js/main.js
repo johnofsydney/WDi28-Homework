@@ -41,7 +41,7 @@ const planTrip = function (lineA , getOn, lineB, getOff) {
 
   let stops;
   let travel;
-  let nextTravel
+  let nextTravel;
   const location = line.indexOf(getOn);
   const destination = endLine.indexOf(getOff);
   if(line === endLine) {

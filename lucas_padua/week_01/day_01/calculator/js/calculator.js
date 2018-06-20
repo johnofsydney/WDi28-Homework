@@ -108,8 +108,7 @@ Create a function called DrEvil. It should take a single argument, an amount, an
 function drEvil(value) {
   if (value == 1000000) {
     console.log(value + ' dollars (pinky)');
-  }
-  else {
+  } else {
     console.log(value + ' dollars');
   }
 }

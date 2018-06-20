@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 2;
+}
+
+.banner {
+  padding: 150px;
+  background-image: url('../images/headerimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #363C78;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+nav a {
+  color: #F03868;
+  padding: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #BC396B;
+    color: black;
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 50px;
+  text-align: center;
+  padding: 40px;
+}
+
+main img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border:5px solid #983D70;
+  box-shadow: 10px 10px 8px #888888;
+  position: relative;
+  border-radius: 15px 50px;
+
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+h2, h3{
+  font-family: 'Bungee', cursive;
+  font-size: 25px;
+  padding: 25px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+    text-align: left;
+}
+
+.funfacts {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+
+}
+
+.googlemaps {
+  position: relative;
+  display:inline-block;
+  width: 53%;
+  height: 100%;
+}
+
+iframe {
+  margin: 50px;
+}

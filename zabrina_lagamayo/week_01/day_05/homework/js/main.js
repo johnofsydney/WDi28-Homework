@@ -126,6 +126,7 @@ for(let i=0 ; i<bank.length ; i++) {
 }
 return counter;
 }
+
 //
 // There is no need to write a user interface. Make sure functions return values -- you may also have your
 // functions console.log() values to help you see your code working.

@@ -12,8 +12,8 @@ const rectangleA = {
   width: 5,
 };
 
-const isSquare = function() {
-  if (rectangleA.length === rectangleA.width) {
+const isSquare = function (obj) {
+  if (obj.length === obj.width) {
     return true;
   } else {
     return false;

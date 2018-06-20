@@ -38,50 +38,48 @@ console.log("test");
 // 4) show the new total balance
 
 
-// const accounts = [
-//     { name: "James Haward",
-//       balance: 200 },
-//     { name: "Juliet Mosman",
-//       balance: 500 },
-//     { name: "Ryan Raynold",
-//       balance: 450 }
-// ];
-
-
 let bank = {
   // create bank with empty array
-  // @@@questions : why us : instead of = ?
-  accounts: [],
-};
+  // @@@questions : why us : instead of = ? anws : because it's an object
+  accounts: [ // accounts does not need to specify for let or const because it stays within bank.
+    { name: "James Haward",
+      balance: 200 },
+    { name: "Juliet Mosman",
+      balance: 500 },
+    { name: "Ryan Raynold",
+      balance: 450 }
+        ],
+
 // add property name and value function to push it into bank array
-const addAccount = function (name, balance) {
+  const addAccount = function(newName) {
 
   let newAccount = {
-     ame: name,
-     balance: balance,
+     name: newName,
+     balance: 0,
       }
 
   bank.accounts.push(newAccount);
   return bank;
 
-};
+  // bank.addAccount  ("Robert")
 
-// const accountBalance = function (accountName) {
-//   return Object.values(bank.accounts[accountName].accountBalance);
-// }
-//
-// console.log(accountBalance("Anthony"));
+    }
+  //
+  // const accountBalance = function (accountName) {
+  //
+  // return Object.values(bank.accounts[accountName].accountBalance);
+  };
+};
 
 //show total sum in the Accounts
 
-const totalSum = function (bank) {
-  let sum = 0;
-  for (var i = 0; i < bank.accounts.length; i++) {
-    sum += bank.balance[i];
-  }
-  return sum;
-}
+// const totalSum = function (bank) {
+//   let sum = 0;
+//   for (var i = 0; i < bank.accounts.length; i++) {
+//     sum += bank.account[i].balance;
+//   }
+//   return sum;
+// }
 
 
 addAccount("Anthony", 60000);
-totalSum(bank);

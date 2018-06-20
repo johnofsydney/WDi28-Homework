@@ -42,7 +42,32 @@ h1 {
   font-family: 'Bungee', cursive;
   font-size: 50px;
   text-align: center;
-  padding: 40px;
+  padding: 40px 0 40px 0;
+  color: #363C78;
+}
+
+.typewriter {
+  max-width: 600px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #363C78; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #363C78; }
 }
 
 main img {
@@ -66,30 +91,41 @@ img:hover {
 h2, h3{
   font-family: 'Bungee', cursive;
   font-size: 25px;
-  padding: 25px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #363C78
 }
 
 ul {
     list-style-position: inside;
     list-style: none;
     text-align: left;
+    margin-top: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 .funfacts {
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
+  width: 100%;
 
 }
 
 .googlemaps {
-  position: relative;
-  display:inline-block;
-  width: 53%;
-  height: 100%;
+  width: 100%;
+
 }
 
 iframe {
   margin: 50px;
+}
+
+footer {
+  background-color: #363C78;
+  padding: 25px;
+  text-align: center;
+  border-radius:20px 20px 0 0;
+  color: white;
 }

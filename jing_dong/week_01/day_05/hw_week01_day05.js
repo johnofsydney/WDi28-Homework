@@ -1,4 +1,4 @@
-/*Given the following a rectangle object like the one below,
+;po/*Given the following a rectangle object like the one below,
 write the following functions:
 
 isSquare - Returns whether the rectangle is a square or not

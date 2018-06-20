@@ -461,7 +461,8 @@ const planTrip = function (lineA , getOn, lineB, getOff) {
     }
     const nextLine = endLine.indexOf('Union Square');
        if (nextLine < destination) {
-      nextTravel = endLine.slice(nextLine+1, destination+1);+    }
+      nextTravel = endLine.slice(nextLine+1, destination+1);    
+    }
       else {
       nextTravel = endLine.slice(destination, nextLine);
     }

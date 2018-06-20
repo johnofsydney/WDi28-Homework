@@ -24,7 +24,7 @@ Don't overthink this. Shorter code is probably the answer.
 */
 
 const lucasBank = [
-  {Account:"Lucas",Balance:"1007"},{Account:"Gina",Balance:"10555"}
+  {Account:"Lucas",Balance:"1000007"},{Account:"Gina",Balance:"10555"}
 ];
 
 function bankBalance(lucasBank, num) {

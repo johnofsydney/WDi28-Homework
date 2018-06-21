@@ -1,0 +1,220 @@
+/* * {
+  border: 1px solid lime;
+} */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|VT323');
+
+body {
+
+}
+body {
+  display: grid;
+  grid-template: 100% / 1fr 960px 1fr;
+  background-color: #00b3fa; /* dark grey #222222 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  /* letter-spacing: .125em; */
+  /* align-content: stretch; */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #FFF;
+  padding: 1em;
+  grid-column: 2;
+  height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'VT323', monospace;
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav a {
+  color: black;
+  display: inline-block;
+  background-color: lime;
+  padding: 1rem;
+  margin-top: -.5rem;
+  margin-left: -1rem;
+  margin-right: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+  transition: all .15s ease-in-out
+}
+
+nav a.active {
+  background-color: hotpink;
+  font-weight: bold;
+  margin-top: -1rem;
+}
+
+nav a:hover:not(.active) {
+  background: lime; /* older browsers */
+  background: -moz-linear-gradient(top,  lime 0%, #019901 100%);
+  background: -webkit-linear-gradient(top,  lime 0%, #019901 100%);
+  background: linear-gradient(to bottom,  lime 0%, #019901 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hotpink', endColorstr='#e93cec',GradientType=0 );
+  margin-top: -1rem;
+}
+
+header h1 {
+  text-align: center;
+  background-color: hotpink;
+  color: #222;
+  padding: .5em;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 0;
+  text-shadow: .15em .15em .15em rgba(0,0,0,0.25);
+  font-size: 3rem;
+  background: rgb(251,131,250); /* older browsers */
+  background: -moz-linear-gradient(top,  hotpink 0%, rgba(233,60,236,1) 100%);
+  background: -webkit-linear-gradient(top,  hotpink 0%,rgba(233,60,236,1) 100%);
+  background: linear-gradient(to bottom,  hotpink 0%,rgba(233,60,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hotpink', endColorstr='#e93cec',GradientType=0 );
+}
+
+main {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 75%;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+main p {
+  padding: 0 2rem 2rem 2rem;
+}
+
+aside {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24%; /* 75% + 24% is about 100% */
+  background-color: #CFC;
+  vertical-align: top;
+  padding: 1em;
+  border-radius: .25em;
+  box-shadow: .25em .25em 1em rgba(0,0,0,0.25);
+}
+
+aside h3 {
+  font-size: 1.5rem;
+}
+
+aside ul {
+  /* list-style: none; */
+  padding-left: 1em;
+}
+
+main .asciiart {
+  display: block;
+  margin: 0 auto; /* variadic */
+  border: 2px solid hotpink;
+  border-radius: 0.5em;
+  font-family: 'VT323', monospace;
+  width: 512px;
+  padding: 1em;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main.frontpage {
+  width: 100%;
+}
+
+main div img {
+  max-width: 33%;
+  max-height: 240px;
+  float: right;
+}
+
+main div h3 {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+main div:nth-of-type(even) img {
+  float: left;
+}
+
+main div {
+  padding: 30px;
+  border: 1px solid lightgrey;
+  margin: 3px 0;
+}
+
+main div:nth-of-type(even) {
+  background-color: #FCFCFC;
+}
+
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+main div.flex {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+}
+
+main div img.bio {
+  max-width: inherit;
+  float: none;
+  padding: .5rem;
+  border: 2px solid hotpink;
+}
+
+.twitter-tweet {
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: lime;
+  margin: 0 auto;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+}
+
+.button:hover {
+  background-color: hotpink;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  color: white;
+}
+
+p.centered {
+  text-align: center;
+}

@@ -41,4 +41,4 @@
    return input.reduce(function(accumulator, currentValue){
      return accumulator * currentValue;
    },1);
- }
+ 

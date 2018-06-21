@@ -49,6 +49,13 @@ const walk = function () {
     default:
       pacman()
   }
+
+  let pawPrintImg = document.querySelectorAll( '.pawprintleft, .pawprintright' )
+    for (let i = 0; i < pawPrintImg.length; i++ ) {
+      if (pawPrintImg[i].style.opacity > 0) {
+        pawPrintImg[i].style.opacity -= 0.008;
+      }
+    }
 }
 
 // cat walking left to right - Bonus #1
@@ -166,7 +173,7 @@ const walkToMouse = function () {
     if (img.getAttribute('src') !== DANCINGCAT) {img.src = DANCINGCAT; ms=msLimit+1;}
     return;
   } else {
-    img.className = 'moveRight';
+    img.className = 'moveright';
     if (img.getAttribute('src') !== DEFAULTIMAGE) {img.src = DEFAULTIMAGE; ms=0;}
   }
   newPos = lerp( currentPos, targetPos, moveRate )
@@ -181,19 +188,17 @@ const pawPrints = function() {
   walkToMouse();
 
   const left = parseInt( img.style.left );
-  if( left >= window.innerWidth ) {
+  if( img.className === 'moveleft' ) {
     step1.className = 'pawprintleft'
     step2.className = 'pawprintleft'
     step3.className = 'pawprintleft'
     step4.className = 'pawprintleft'
-    stepMultiplier = img.width;
 
-  } else if ( left <= -img.width ) {
+  } else if ( img.className === 'moveright' ) {
     step1.className = 'pawprintright'
     step2.className = 'pawprintright'
     step3.className = 'pawprintright'
     step4.className = 'pawprintright'
-    stepMultiplier = 0;
   }
 
   ms += 10;

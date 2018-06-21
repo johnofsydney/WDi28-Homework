@@ -1,5 +1,10 @@
+body {
+  background: url('https://img00.deviantart.net/378b/i/2013/015/b/2/canterlot_curio_shop_alley_by_cloudshadezer0-d5rmr9c.png')  no-repeat center center fixed;
+  background-size: cover;
+}
+
 .moveright {
-  top: 15vh;
+  bottom: 15vh;
   /* image-orientation: flip */
 }
 
@@ -8,7 +13,7 @@
 }
 
 .moveleft {
-  top: 15vh;
+  bottom: 15vh;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);

@@ -54,12 +54,12 @@ h1 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
-@keyframes typing {
+@keyframes typing { /*@keyframes rule specifies animation code*/
   from { width: 0 }
   to { width: 100% }
 }
@@ -70,7 +70,7 @@ h1 {
   50% { border-color: #363C78; }
 }
 
-main img {
+img {
   display: inline-block;
   width: 300px;
   height: 300px;

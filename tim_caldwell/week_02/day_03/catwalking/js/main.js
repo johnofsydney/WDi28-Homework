@@ -176,6 +176,7 @@ const walkToMouse = function () {
     img.className = 'moveright';
     if (img.getAttribute('src') !== DEFAULTIMAGE) {img.src = DEFAULTIMAGE; ms=0;}
   }
+
   newPos = lerp( currentPos, targetPos, moveRate )
 
   img.style.top = newPos.y + 'px'

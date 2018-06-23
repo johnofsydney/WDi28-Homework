@@ -15,37 +15,33 @@ console.log("cat walking");
 const img = document.getElementsByTagName('img')[0];
 
 img.style.left = '0px';
-let change = +1;
+let change = + 1;
 
-const catWalk = function() {
+const catWalk = function()
+{
   const oldLoc = parseInt(img.style.left);
   const newLoc = oldLoc + change;
-
   img.style.left = newLoc + 'px';
 
+  if (newLoc >= window.innerWidth)
+    {
+      // BONUS#1 img.style.left = "0px"; move this back to initial loc
+      change = -1;
+      img.style.webkitTransform= "scaleX(-1)";
 
-  // center location is not working
-  if (newLoc === (window.innerWidth/2)) {
-     document.getElementsByTagName('img').src="http://russellmarkolson.blogspot.com/2014/04/supehero-dance-party-wolverine.htmlhttp://2.bp.blogspot.com/-7j4emU-2SJ0/U1a46mQY8CI/AAAAAAAADlc/ejFjLbTDH2E/s1600/wolverine.gif";
-
-
-  } if (newLoc >= window.innerWidth) {
-    // BONUS#1 img.style.left = "0px"; move this back to initial loc
-    change = -1;
-    img.style.webkitTransform= "scaleX(-1)";
-
-  } if (newLoc === 0) {
-    change = +1;
+    } if (newLoc === 0)
+    {
+    change = + 1;
     img.style.webkitTransform= "scaleX(+1)";
 
-  } else if (newLoc === (window.innerWidth/2)) {
-     document.getElementsByTagName('img').src="http://russellmarkolson.blogspot.com/2014/04/supehero-dance-party-wolverine.html";
-
-    // http://russellmarkolson.blogspot.com/2014/04/supehero-dance-party-wolverine.html
-
-  };
+    }
+  //   else if (newLoc === (window.innerWidth/2))
+  //   {
+  //    document.getElementsByTagName('img').src="http://russellmarkolson.blogspot.com/2014/04/supehero-dance-party-wolverine.html";
+  //
+  //   // http://russellmarkolson.blogspot.com/2014/04/supehero-dance-party-wolverine.html
+  //   };
 }
-
 setInterval(catWalk,1);
 
 

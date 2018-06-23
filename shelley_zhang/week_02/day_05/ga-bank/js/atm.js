@@ -12,8 +12,8 @@
 
 
 const balance = { //creating object to store value
-  savings: 0,
-  checking: 0
+  savings: 500,
+  checking: 500
 }
 
 const updateScreen = function() { //function to update screen with amount
@@ -50,17 +50,28 @@ const deposit = function(amount, account) {
   updateScreen();
 };
 
+// What happens when the user wants to withdraw more money from the checking account than is in the account? These accounts have overdraft protection, so if a withdrawal can be covered by the balances in both accounts, take the checking balance down to $0 and take the rest of the withdrawal from the savings account. If the withdrawal amount is more than the combined account balance, ignore it.
+
 const withdraw = function(amount, account) {
 
 if (amount <= balance[account]) {
     balance[account] -= parseInt(amount); //x = x - y
   } else if (amount < balance.checking + balance.savings) {
-    console.log("hello");
-    let overdraft = balance.checking - parseInt(amount)
-    let newBalance = balance.savings - overdraft;
+    let overdraftAmt = (balance.checking + balance.savings) - parseInt(amount);
+    balance[account] = overdraftAmt;
+  } else {
+    return "insufficient funds";
   }
     updateScreen();
 };
+
+
+// else if ( withdraw <  balance + otherbalance )
+//    overdraftamnt = withdraw - balance; // amount to withdraw from other account
+//    withdraw balance from account;
+//    withdraw overdraftamnt from other account;
+// else
+//    not enough money
 
 $(document).ready(function() {
 

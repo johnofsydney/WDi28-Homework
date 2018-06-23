@@ -12,8 +12,8 @@
 
 
 const balance = { //creating object to store value
-  savings: 500,
-  checking: 500
+  savings: 0,
+  checking: 0
 }
 
 const updateScreen = function() { //function to update screen with amount
@@ -57,14 +57,18 @@ const withdraw = function(amount, account) {
 if (amount <= balance[account]) {
     balance[account] -= parseInt(amount); //x = x - y
   } else if (amount < balance.checking + balance.savings) {
-    let overdraftAmt = (balance.checking + balance.savings) - parseInt(amount);
-    balance[account] = overdraftAmt;
+    let overdraftAmt = balance[account] - parseInt(amount);
+    balance[account] = 0
+    if (balance.checking === 0) {
+      balance.savings += overdraftAmt;
+    } else if (balance.savings === 0){
+      balance.checking += overdraftAmt;
+    }
   } else {
-    return "insufficient funds";
+    alert("insufficient funds");
   }
     updateScreen();
 };
-
 
 // else if ( withdraw <  balance + otherbalance )
 //    overdraftamnt = withdraw - balance; // amount to withdraw from other account
@@ -98,16 +102,3 @@ $('#savings-withdraw').on('click', function() {
 });
 
 });  // closing document ready
-
-
-//  if ( withdraw < balance )
-//    withdraw();
-// else if ( withdraw <  balance + otherbalance )
-//    overdraftamnt = withdraw - balance; // amount to withdraw from other account
-//    withdraw balance from account;
-//    withdraw overdraftamnt from other account;
-// else
-//    not enough money
-
- // } else if (balance[account] < 0) {
- // balance[account] - balance[account + parseInt(amount);

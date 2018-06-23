@@ -32,8 +32,14 @@
 }
 
 
-.account-changed {
+.balancezero {
   background-color: #e8153b;
+  border: 1px solid #295A33;
+  padding: 10px;
+}
+
+.balancewithmoney{
+  background-color: #9d9496;
   border: 1px solid #295A33;
   padding: 10px;
 }

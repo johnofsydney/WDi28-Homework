@@ -10,7 +10,6 @@
 // * Make sure there is overdraft protection going both ways.
 // * Are there ways to refactor your code to make it DRYer?
 
-//use an object, functions need to work before we can work with the DOM
 
 const balance = { //creating object to store value
   savings: 0,
@@ -20,48 +19,64 @@ const balance = { //creating object to store value
 const updateScreen = function() { //function to update screen with amount
   $('#checking-balance').html(balance.checking);
   $('#savings-balance').html(balance.savings);
-  console.log(balance);
-  if ((balance.savings && balance.checking) === 0) {
-    $('.account').addClass("account-changed");
-  }
-  // if balance = 0
-  // $('.account')
 
-}
+  if (balance.savings === 0) {
+    $('#savings').addClass('balancezero');
+  } else {
+    $('#savings').removeClass('balancezero');
+  }
+
+  if (balance.savings > 0) {
+    $('#savings').addClass('balancewithmoney');
+  } else {
+    $('#savings').removeClass('balancewithmoney');
+  }
+
+  if (balance.checking === 0) {
+    $('#checking').addClass('balancezero');
+  } else {
+    $('#checking').removeClass('balancezero');
+  }
+
+  if (balance.checking > 0) {
+    $('#checking').addClass('balancewithmoney');
+  } else {
+    $('#checking').removeClass('balancewithmoney');
+  }
+};
 
 const deposit = function(amount, account) {
-  balance[account] = balance[account] + parseInt(amount); //the parseInt will need to convert the amount of the displayed in the account into a number
-  const result = updateScreen();
-  return result;
-}
+  balance[account] += parseInt(amount); //the parseInt will need to convert the amount of the displayed in the account into a number
+  updateScreen();
+};
 
 const withdraw = function(amount, account) {
-  if (balance[account] > 0) {
-  balance[account] = balance[account] - parseInt(amount);
-  const result = updateScreen();
-  return result;
+
+if (amount <= balance[account]) {
+    balance[account] -= parseInt(amount); //x = x - y
+  } else if (amount < balance.checking + balance.savings) {
+    console.log("hello");
+    let overdraft = balance.checking - parseInt(amount)
+    let newBalance = balance.savings - overdraft;
   }
-}
+    updateScreen();
+};
 
 $(document).ready(function() {
-  console.log("ready"); //only those functions needing the document ready function will need to go here
+
+  updateScreen();
 
 $('#checking-deposit').on('click', function() {
-  // console.log("goodbye");
     let num = $('#checking-amount').val()
-    deposit (num, "checking"); //function within a function, jquery
-
+    deposit (num, "checking");
 });
 
 $('#checking-withdraw').on('click', function() {
-  // console.log('hello');
   let num = $('#checking-amount').val()
   withdraw (num, "checking");
-
 });
 
 $('#savings-deposit').on('click', function() {
-  // console.log('hello');
   let num = $('#savings-amount').val()
   deposit (num, "savings");
 });
@@ -71,8 +86,17 @@ $('#savings-withdraw').on('click', function() {
   withdraw (num, "savings");
 });
 
-
-
 });  // closing document ready
 
-// $('#checking-amount').val() {
+
+//  if ( withdraw < balance )
+//    withdraw();
+// else if ( withdraw <  balance + otherbalance )
+//    overdraftamnt = withdraw - balance; // amount to withdraw from other account
+//    withdraw balance from account;
+//    withdraw overdraftamnt from other account;
+// else
+//    not enough money
+
+ // } else if (balance[account] < 0) {
+ // balance[account] - balance[account + parseInt(amount);

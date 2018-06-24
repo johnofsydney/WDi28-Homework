@@ -1,0 +1,144 @@
+@@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet");
+@@import url(link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet");
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+body {
+  background-image: url(http://cdn.facesofopensource.com/wp-content/uploads/2017/03/16181944/linustorvalds.faces22106.web_.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  }
+
+ul {
+  /* max-width: 800px; */
+  font-family: 'Inconsolata', sans-serif;
+  font-size:17px;
+  /* color: rgba(129, 133, 136, 1); */
+  color: #919191;
+
+}
+
+.writing {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 19%;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 10px;
+  color: #919191;
+}
+.title {
+  color: #919191;
+  text-decoration: none;
+
+}
+
+.title:hover {
+  color: #fff;
+
+}
+
+.train {
+  text-align: center;
+}
+
+.pic {
+  /* text-align:center
+    height: auto;
+    width: auto;
+    max-width: 5%;
+    max-height: 5%; */
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  /* background: url(http://cdn.facesofopensource.com/wp-content/uploads/2017/03/16181944/linustorvalds.faces22106.web_.jpg) no-repeat 15% 15%; */
+  display: table;
+  top: 0;
+  background-size: cover;
+  max-width: 900px;
+}
+
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  /* max-width: 500px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #c9c7c7;
+  text-shadow: 0 0 300px #000;
+  font-size: 400%;
+  margin-top: 27%;
+}
+
+.btn {
+  /* border-radius: 9px; */
+  font-family: 'Inconsolata', sans-serif;
+  color: #c9c7c7;
+  font-size: 135%;
+  padding: 10px 20px;
+  /* border: solid #036a81 3px; */
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #fff;
+  border: solid #fff 3px;
+  transition: 0.5s;
+  opacity: 30%;
+}
+.vectors {
+  /* margin-left: 0 10px 0 10px; */
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+p {
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+
+/* #page2 { -webkit-animation:fadein 5s; animation:fadein 5s }
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} } */
+
+@@media screen and (max-width: 500px) {
+  .content h1 {
+    font-size: 400%
+  }
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 160%;
+  }
+}

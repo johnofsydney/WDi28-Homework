@@ -32,7 +32,7 @@ $(document).ready(function() {
   }
 //withdraws money from available balance
   const withdrawal = function () {
-    console.log('withdrawal called');
+
     let totalBank = bank.checking + bank.savings;
 
     let amount = parseInt($($(this).prevAll("input")[1]).val());
@@ -42,11 +42,13 @@ $(document).ready(function() {
 
     if (accountType === 'checking') {
       supportAccount = 'savings';
+
     } else {
-      supportAccount = 'savings';
+      supportAccount = 'checking';
+
     };
 
-    console.log(supportAccount);
+
 
     if (amount <= bank[accountType]) {
       bank[accountType] -= amount;

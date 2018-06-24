@@ -40,7 +40,7 @@ a:visited {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
   to {
     width: 100%

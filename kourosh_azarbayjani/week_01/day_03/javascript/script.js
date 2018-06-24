@@ -191,7 +191,7 @@ for (var i = innerSecondArray.length-1; i >=0; i--) {
 //
 // For each choice, log to the screen a string like: "My #1 choice is blue."
 // Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is.
-// 
+//
 const top5Books = ["Martian's Chronicles", "100 years of Solitude", "1984", "Doctor Zhivago", "Haarry Potter and the Order of phoenix"];
 for (let i = 0; i < top5Books.length; i++) {
   if(i===0){
@@ -202,7 +202,6 @@ for (let i = 0; i < top5Books.length; i++) {
   }
   if(i===2){
     console.log(`My ${i+1}rd choice of Books is ${top5Books[i]}`);
-
   }
   if(i>=3){
     console.log(`My ${i+1}th choice of Books is ${top5Books[i]}`);

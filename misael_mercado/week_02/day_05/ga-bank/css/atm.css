@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+body {
+  background-color: rgb(50, 47, 55);
+}
+
+#content {
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+}
+
+#nav {
+  margin: 50px 0px;
+}
+
+#title {
+  color: tomato;
+  font-family: 'Arvo', serif;
+  font-size: 50px;
+}
+
+#checking {
+  float: left;
+}
+
+#savings {
+  float: right;
+}
+
+img {
+border-radius: 10px;
+}
+
+.account {
+  background-color: #bad6bf;
+  border: 1px solid #295A33;
+  padding: 10px;
+}
+
+.balance {
+  background-color: #E3E3E3;
+  border: 1px solid #676767;
+  font-family: 'Ruluko', sans-serif;
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.zero {
+  background-color: tomato;
+  color: #FFF;
+}
+
+input[type=button] {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #cee926;
+  margin: 0.2em 0.1em 0.1em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #1a1818;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+input[type=button]:hover {
+  color: #000000;
+  background-color: #ebe18a;
+}

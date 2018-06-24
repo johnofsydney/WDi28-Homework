@@ -11,14 +11,17 @@
 // * Are there ways to refactor your code to make it DRYer?
 
 
-const balance = { //creating object to store value
+const balance = { //creating object to store values of accounts
   savings: 0,
   checking: 0
 }
 
-const updateScreen = function() { //function to update screen with amount
+const updateScreen = function() { //function to update screen with amount. Using html() method to set the contents of all elements with class of 'checking-balance' and 'savings-balance' with the property values from balance object
+
   $('#checking-balance').html(balance.checking);
   $('#savings-balance').html(balance.savings);
+
+//when update screen is run, the below will check whether the conditions are true and add/remove the class defined in css e.g. add or remove the colour red
 
   if (balance.savings === 0) {
     $('#savings').addClass('balancezero');
@@ -45,45 +48,39 @@ const updateScreen = function() { //function to update screen with amount
   }
 };
 
+//deposit function passes the amount & account arguments based on user input
+
 const deposit = function(amount, account) {
   balance[account] += parseInt(amount); //the parseInt will need to convert the amount of the displayed in the account into a number
-  updateScreen();
+  updateScreen(); //run updatescreen function to display new balance after deposit
 };
 
-// What happens when the user wants to withdraw more money from the checking account than is in the account? These accounts have overdraft protection, so if a withdrawal can be covered by the balances in both accounts, take the checking balance down to $0 and take the rest of the withdrawal from the savings account. If the withdrawal amount is more than the combined account balance, ignore it.
-
+//Withdraw function & overdraft protection rules
 const withdraw = function(amount, account) {
 
-if (amount <= balance[account]) {
+if (amount <= balance[account]) { //normal withdrawal when amount is < savings or checking account
     balance[account] -= parseInt(amount); //x = x - y
-  } else if (amount < balance.checking + balance.savings) {
-    let overdraftAmt = balance[account] - parseInt(amount);
-    balance[account] = 0
-    if (balance.checking === 0) {
+  } else if (amount < balance.checking + balance.savings) { //overdraft kicks in when amount < total balance in both accs
+    let overdraftAmt = balance[account] - parseInt(amount); //amount to be overdraft
+    balance[account] = 0 //let the overdrawn account = 0
+    if (balance.checking === 0) { //two scenarios here - if balance.checking account is 0 then take the overdraft amount defined above from the balance.savings account and vice versa for the other account
       balance.savings += overdraftAmt;
     } else if (balance.savings === 0){
       balance.checking += overdraftAmt;
     }
   } else {
-    alert("insufficient funds");
+    alert("insufficient funds"); //display alert if amount > balance[account] OR > total balance
   }
-    updateScreen();
+    updateScreen(); //update screen with values calculated from above function
 };
 
-// else if ( withdraw <  balance + otherbalance )
-//    overdraftamnt = withdraw - balance; // amount to withdraw from other account
-//    withdraw balance from account;
-//    withdraw overdraftamnt from other account;
-// else
-//    not enough money
+$(document).ready(function() { //start of document ready containing jquery functions
 
-$(document).ready(function() {
+  updateScreen(); //first run update screen to apply everything above
 
-  updateScreen();
-
-$('#checking-deposit').on('click', function() {
-    let num = $('#checking-amount').val()
-    deposit (num, "checking");
+$('#checking-deposit').on('click', function() { //when user clicks on deposit button
+    let num = $('#checking-amount').val() //grab value from html with #checking-amount class
+    deposit (num, "checking"); //run deposit function for amount calculated above
 });
 
 $('#checking-withdraw').on('click', function() {

@@ -3,7 +3,7 @@ console.log("connected");
 
   const balance = {
   savings: 0,
-  checking: 0 
+  checking: 0
 }
 
 
@@ -46,6 +46,29 @@ console.log("connected");
   balance[account] = balance[account] - ammount
   updateScreen(balance)
 }
+
+
+// if ( withdraw < balance )
+//   withdraw();
+// else if ( withdraw <  balance + otherbalance )
+//   overdraftamnt = withdraw - balance; // amount to withdraw from other account
+//   withdraw balance from account;
+//   withdraw overdraftamnt from other account;
+// else
+//   not enough money
+
+
+
+
+
+
+
+
+
+
+
+
+
 // BUTTON ACTIONS
 //////////////////////////////////////////////////////////
 

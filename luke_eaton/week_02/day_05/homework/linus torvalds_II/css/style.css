@@ -16,6 +16,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
+  transition: opacity 300ms ease-in-out 1s;
+  
   }
 
 ul {
@@ -68,6 +70,7 @@ ul {
   top: 0;
   background-size: cover;
   max-width: 900px;
+  /* transition: opacity 300ms ease-in-out 1s; */
 }
 
 }
@@ -83,7 +86,7 @@ ul {
   /* max-width: 500px; */
   margin: 0 auto;
   text-align: center;
-}
+  }
 
 .content h1 {
   font-family: 'Raleway', sans-serif;
@@ -129,7 +132,7 @@ p {
 @-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
 @keyframes fadein { from {opacity:0} to {opacity:1} } */
 
-@@media screen and (max-width: 500px) {
+@@media screen and (max-width: 900px) {
   .content h1 {
     font-size: 400%
   }

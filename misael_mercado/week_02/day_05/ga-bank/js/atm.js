@@ -17,12 +17,13 @@ $(document).ready(() => {
     // update the screen with new balance
     $("#checking-balance").html(`$ ${$balanceCheck}`);
     // clear the input text after clicking deposit button
-    $("#checking-amount").val("");
+
     // When the values is equal to empty string show alert and go back to $0.// not working!//
-    // if ($("#checking-amount").val() === "") {
-    //   alert("Input can not be left blank");
-    //   $("#checking-balance").html("$0");
-    // }
+    if ($("#checking-amount").val() === "") {
+      alert("Input can not be left blank");
+      $("#checking-balance").html("$0");
+    }
+    $("#checking-amount").val("");
     // if the cheking balance is not $0, keep the colour gray //
     if ($("#checking-balance").html() !== "$0") {
       $("#checking-balance").css({
@@ -54,7 +55,7 @@ $(document).ready(() => {
       // We get rid off the dollar sign //
       const savingsMinusDollar = parseInt($("#savings-balance").html().slice(1));
       // if the user tries to withdraw less than the checking balance and the savings //
-      if ($amount <= $balanceCheck + savingsMinusDollar) {
+      if ($amount < $balanceCheck + savingsMinusDollar) {
 
         const balanceDiff = $amount - $balanceCheck;
         const newSavBalance = savingsMinusDollar - balanceDiff;
@@ -68,6 +69,11 @@ $(document).ready(() => {
       };
     };
 
+    // we create an alert to tell the user that they need to enter an  value
+    if ($("#cheking-withdraw").val() === "") {
+      alert("Input can not be left blank");
+      $("#checking-balance").html("$0");
+    }
     // clear the imput text after clicking the withdraw button
     $("#checking-amount").val("");
     // if either the checking balance or the savings balance is $0, change the background colour to "tomato" (red).
@@ -99,6 +105,12 @@ $(document).ready(() => {
 
     // update the screen with new balance
     $("#savings-balance").html(`$ ${$savingsBalance}`);
+
+
+    if ($("#savings-amount").val() === "") {
+      alert("Input can not be left blank");
+      $("#savings-balance").html("$0");
+    }
     // clear the input text after clicking deposit button
     $("#savings-amount").val("");
     // if the cheking balance is not $0, keep the colour gray
@@ -148,14 +160,17 @@ $(document).ready(() => {
         alert("Sorry for the inconvenience! But you are trying to withdraw more than your remaining balance.");
       };
     };
-
+    if ($("#savings-whitdraw").val() === "") {
+      alert("Input can not be left blank");
+      $("#savings-balance").html("$0");
+    }
     // clear the imput text after clicking the withdraw button
     $("#savings-amount").val("");
     // if either the checking balance or the savings balance is $0, change the background colour to "tomato" (red).
     if ($("#savings-balance").html() === "$0") {
       $("#savings-balance").addClass("zero");
     }
-
+    debugger;
     if ($("#checking-balance").html() === "$0") {
       $("#checking-balance").addClass("zero");
     }

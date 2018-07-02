@@ -6,6 +6,12 @@ const DrEvil = function(amount) {
   }
 };
 
+<<<<<<< HEAD
+=======
+//let msg = amount + "dollars"
+// msg += "(pinky)"
+
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4
 
 DrEvil(10);
 DrEvil(1000000);
@@ -39,6 +45,7 @@ const fixStart = function (str) {
  const verbing = function (str) {
    const lastThree = str.substr(str.length - 3);
    //console.log("lastThree is " + lastThree);
+<<<<<<< HEAD
    if (str.length >= 3 && lastThree === "ing"); {
       const result = str + "ly";
       console.log (result);
@@ -55,12 +62,32 @@ const fixStart = function (str) {
        //return result;
      }
    };
+=======
+   let result;
+   if (str.length >= 3 && lastThree === "ing") {
+      result = str + "ly";
+      //console.log (result);
+      //return result; // why can't i just use return and remove console.log? Just using return the result will not show.
+        }
+   if (str.length >= 3 && lastThree !== "ing" ) {
+      result = str + "ing";
+      //console.log (result);
+      //return result; // why can't i just use return and remove console.log? Just using return the result will not show.
+        }
+     if (str.length < 3 ) {
+       result = str;
+       //return result;
+     }
+     console.log(result);
+};
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4
 //not getting adding "ly" part correct :(
    verbing("swim");
    verbing("go");
    verbing("swimming");
 
 
+<<<<<<< HEAD
 const notBad = function (str, strArray){
   for (var i = 0; i < strArray.length; i++) {
     if (strArray[i].match(str)) return i;
@@ -78,3 +105,11 @@ notBad("not", "This dinner is not that bad!");
 // var found = str.match(re);
 //
 // console.log(found);
+=======
+
+const notBad = function (str){
+  str.indexOf('not')
+};
+
+notBad("It's not a bad ")
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4

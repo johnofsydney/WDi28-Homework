@@ -18,14 +18,22 @@ const squaredNumber = function (num) {
     console.log('The result of squaring the number ' + num + ' is ' + squaredNumber);
     return squaredNumber;
 }
+<<<<<<< HEAD
 squareNumber(3);
+=======
+squaredNumber(3);
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4
 
 const halfNumber = function (num) {
     const half = num / 2;
     console.log('Half of ' + num + ' is ' +  half);
     return half;
 }
+<<<<<<< HEAD
 halfOf(5);
+=======
+halfNumber(5);
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4
 
 const percentOf = function (num1, num2) {
     const percent = (num1/num2) * 100;
@@ -35,15 +43,28 @@ const percentOf = function (num1, num2) {
 percentOf(5, 10);
 
 const areaOfCircle = function (radius) {
+<<<<<<< HEAD
     const area = Math.PI * squareNumber(radius);
+=======
+    const area = Math.PI * squaredNumber(radius);
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4
     console.log('The area of circle with radius ' + radius + ' is ' + area);
     return area;
 }
 areaOfCircle(2);
 function doCrazyStuff(num) {
+<<<<<<< HEAD
     const half    = halfOf(num);
     const squared = squareNumber(half);
     const area    = areaOfCircle(squared);
     const result  = percentOf(squared, area);
 }
 doCrazyStuff(5);}
+=======
+    const half    = halfNumber(num);
+    const squared = squaredNumber(half);
+    const area    = areaOfCircle(squared);
+    const result  = percentOf(squared, area);
+}
+doCrazyStuff(5);
+>>>>>>> 3fb37484a642d78b3ddb4b1056cba2fdb111dec4

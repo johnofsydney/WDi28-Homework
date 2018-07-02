@@ -26,7 +26,11 @@ const fixStart = function(string) {
   const splitter = string.split(""); //splitting the array up into letters
 for (var i = 1; i < string.length; i++) {
   if (splitter[i] === string[0]) {
+<<<<<<< HEAD
+    splitter[i] = "*";
+=======
     splitter[i] = "*"; //strings cannot be changed, you can only add and remove
+>>>>>>> ac228c35c0a230efef84c409ab3163c93a28398b
   }
 }
 const combine = splitter.join("");

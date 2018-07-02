@@ -5,11 +5,6 @@
 # price per gallon
 # speed in miles per hour
 
-
-
-#NOTE COULDNT GET IT TO PRINT $$$ AMOUNT
-
-
 require 'rainbow'
 
 def calc_option
@@ -49,6 +44,8 @@ until calc_choice == 'q'
     result = trip_cost(distance, miles_per_gal, price_per_gal)
 
     puts Rainbow("The cost of your #{distance} mile trip, based on your car's fuel consumption of #{miles_per_gal} miles per gallon at a cost of $#{price_per_gal} is is $#{result.round(2)}.").aqua
+    calc_option
+    calc_choice = gets.chomp.downcase
 
   when "t"
     print Rainbow("Please enter trip distance in miles: ").red

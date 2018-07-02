@@ -32,14 +32,14 @@ display:block;
 
 .box img{
   display: inline;
-  width: 300px;
-  height: 150px;
+  width: 30%;
+  height: 350px;
   border: 1px solid black;
-  margin: 50px 0px 0px 5px;
+  margin: 0px 0px 0px 15px;
 }
-.stylbox div{
-  display: inline-block;
-  colro: black;
+.stylbox ul{
+  display: inline;
+  color: black;
  margin:  40px 10px 10px 80px;
   font-size: 30px;
 

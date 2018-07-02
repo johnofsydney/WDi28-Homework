@@ -18,14 +18,14 @@ const squaredNumber = function (num) {
     console.log('The result of squaring the number ' + num + ' is ' + squaredNumber);
     return squaredNumber;
 }
-squareNumber(3);
+squaredNumber(3);
 
 const halfNumber = function (num) {
     const half = num / 2;
     console.log('Half of ' + num + ' is ' +  half);
     return half;
 }
-halfOf(5);
+halfNumber(5);
 
 const percentOf = function (num1, num2) {
     const percent = (num1/num2) * 100;
@@ -35,15 +35,15 @@ const percentOf = function (num1, num2) {
 percentOf(5, 10);
 
 const areaOfCircle = function (radius) {
-    const area = Math.PI * squareNumber(radius);
+    const area = Math.PI * squaredNumber(radius);
     console.log('The area of circle with radius ' + radius + ' is ' + area);
     return area;
 }
 areaOfCircle(2);
 function doCrazyStuff(num) {
-    const half    = halfOf(num);
-    const squared = squareNumber(half);
+    const half    = halfNumber(num);
+    const squared = squaredNumber(half);
     const area    = areaOfCircle(squared);
     const result  = percentOf(squared, area);
 }
-doCrazyStuff(5);}
+doCrazyStuff(5);

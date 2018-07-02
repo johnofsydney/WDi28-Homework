@@ -62,16 +62,17 @@ maxOfTwoNumbers(100, 300);
 
 //Define a function maxOfThree that takes three numbers as arguments and returns
 //the largest of them. NOT WORK
-
+//dziala Tim wyjsnienie takie ze komputer moze porownywac tylko dwie wartosci liczby
 let maxOfThree = function(num1, num2, num3){
-  if(num1 > num2 >num3){
+  //  (condition1) AND (condition2) -- only be true of both are true
+  if( (num1 > num2) && (num1 > num3)){
     return num1;
     //console.log(` From ${num1} ${num2} and ${num3} the bigest is ${num1}`)
-  }else if(num2 > num1 > num3){
+  }else if( (num2 > num1) && ( num2 > num3)){
     return num2;
   }else{
     return num3
   }
 };
-maxOfThree(10, 100, 3);
+maxOfThree(1000, 100, 3);
 //console.log(`The largest number from 134, 110, 5 is ${maxOfThree(134, 110, 5)}.`);

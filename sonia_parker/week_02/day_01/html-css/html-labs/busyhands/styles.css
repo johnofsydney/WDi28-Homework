@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: beige;
+}
+
+#container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: left;
+  padding: 0;
+  margin-right: 0;
+}
+
+.nav li {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.banner {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------------
+=05 SOCIAL MEDIA
+-----------------------------------------------------------------------------*/
+
+/* #socialMedia {
+  float: right;
+} */
+
+#socialMedia ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: blue;
+  text-indent: -9999em;
+}
+
+#socialMedia ul li.linkedIn {
+  background: url(images/socialNav.png) 0px 64px;
+}
+
+#socialMedia ul li.twitter {
+  background: url(images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+  background: url(images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+  background: url(images/socialNav.png) -180px 64px;
+}
+
+#socialMedia ul li.linkedIn:hover {
+  background: url(images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+  background: url(images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+  background: url(images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+  background: url(images/socialNav.png) -180px 0px;
+}
+
+.shadowImg {
+  box-shadow: 3px 3px 5px blue;
+}
+
+.text {
+  margin: 0 auto;
+  float: left;
+  width: 60%;
+  font-family: monospace;
+}
+
+.window img {
+  float: left;
+  display: inline;
+}

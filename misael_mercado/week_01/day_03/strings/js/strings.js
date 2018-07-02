@@ -30,12 +30,21 @@ console.log(mixUp("Chimpanzee", "National"));
 //
 // fixStart('babble'): 'ba**le'
 
+<<<<<<< HEAD
+var fixStart = function (word){
+
+	var firstLetter = word[0];
+	var newWord = word.slice(1);
+
+	var newestWord = newWord.split(firstLetter).join("*");
+=======
 const fixStart = function (word){
 
 	const firstLetter = word[0];
 const newWord = word.slice(1);
 
 	const newestWord = newWord.split(firstLetter).join("*");
+>>>>>>> ac228c35c0a230efef84c409ab3163c93a28398b
 
 	console.log(word[0] + newestWord);
 

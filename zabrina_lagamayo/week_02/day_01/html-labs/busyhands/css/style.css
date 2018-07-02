@@ -1,0 +1,166 @@
+div.body {
+padding-left: 200px;
+padding-right: 275px;
+margin: auto;
+
+}
+
+div.nav {
+  display: block;
+  padding-left: 200px;
+}
+nav {
+  max-width: auto;
+  background-color:black;
+  padding-left: 10px;
+}
+nav ul {
+  margin: 0 auto;
+  padding: 10px;
+  list-style-type: none;
+  height: 75px;
+  line-height: 75px;
+}
+
+nav li{
+  display: inline-block;
+  width: 100px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+img.logo {
+  display:inline-block;
+    padding: 20px 20px 20px 0px;
+}
+
+
+
+#socialMedia {
+  float:right;
+  display:block;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+
+
+
+ p.one{
+   display: inline-block;
+   width: 700px;
+   text-align: left;
+ }
+
+ img.button {
+   float right;
+   display: inline-block;
+   padding-top: 30px;
+ }
+ img.images {
+   display: inline-block;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding: 0;
+   border: 5px solid lightgrey;
+ }
+
+ h3.imagetext {
+   display: inline-block;
+   padding-right: 80px;
+   width:284px;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding: 0;
+}
+p.three {
+  display: inline-block;
+  width:284px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+div.footer {
+  background-color: black;
+}
+
+li.footers1 {
+  list-style-type: none;
+  color: grey;
+  line-height: 50px;
+  display: inline-block;
+}
+ul.foooter1 {
+  width: 100px;
+  display: inline-block;
+}
+
+ul.foooter2 {
+  width: 100px;
+  display: inline-block;
+}
+li.footers {
+  list-style-type: none;
+  color: grey;
+
+}
+
+h3.footerhead1{
+  color: white;
+  display: inline-block;
+  margin-top: 75px;
+  width: 100px;
+}
+
+h3.secondfooter {
+  color: white;
+  display: inline-block;
+  ;
+}
+p.secondpar {
+  display: inline-block;
+  color: grey;
+  width: 400px;
+}

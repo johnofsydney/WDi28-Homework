@@ -1,0 +1,144 @@
+
+
+
+
+header {
+  height: 35px;
+  background-color: black;
+  border-bottom-style: groove;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+header a {
+  color: #f0f0f0;
+  text-decoration: none;
+
+}
+
+header nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  margin-right: 2em;
+}
+
+header nav ul li {
+  font-family: "Encode Sans Condensed", sans-serif;
+  display: inline-block;
+  margin: .5em;
+  font-style: italic;
+  text-align: right;
+  transition: .3s ;
+
+}
+
+header nav ul li:hover {
+  /* text-shadow: 0px 8px 5px #4a64e4; */
+  border-bottom: 4px #e43c3c solid;
+  padding-bottom: .35em;
+}
+
+
+body {
+  margin-top: 0;
+  /* background-image: url(../images/stones.jpg); */
+    background-color: #434a6d;
+}
+
+main {
+  display: inline-block;
+
+}
+
+.site {
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+
+  background-color: #ececec;
+}
+
+.post {
+  width: 70%;
+  line-height: 1.5em;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+  border-radius: 30px;
+
+  padding: 1em;
+
+}
+
+.post p, h1 {
+  width: 90%;
+  margin-right: 1em;
+}
+
+.post img {
+  width: 30%;
+  box-shadow: 5px 5px 5px black;
+  float: right;
+  margin: .5em;
+}
+
+.quotes {
+  width: 18%;
+  font-size: 15px;
+  display: inline-block;
+  background-color: #e4b5b5;
+  color: black;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5em;
+  vertical-align: top;
+  font-style: italic;
+}
+
+.quotes h4 {
+  padding-left: 1em;
+}
+
+.quote {
+  width: 80%;
+  background-color: black;
+  color: white;
+
+  font-size: 13px;
+
+  border-radius: 10px;
+  margin: auto;
+}
+
+.quote p {
+  padding: 1em;
+}
+
+.trivia {
+  width: 100%;
+  margin: auto;
+  margin-top: 1em;
+
+}
+
+.Box {
+  display: inline-block;
+  width: 32%;
+  margin: auto;
+  text-align: center;
+  vertical-align: top;
+
+}
+
+.Box img {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px black;
+  transition: .2s;
+}
+
+.Box img:hover {
+  box-shadow: 0px 0px 20px black;
+}

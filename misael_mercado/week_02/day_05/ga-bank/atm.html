@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ATM</title>
+  <link rel="stylesheet" href="css/atm.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>');</script>
+  <script src="js/atm.js"></script>
+</head>
+<body>
+
+  <div id="content">
+
+    <div id="nav">
+      <div id="logo"><img src="img/ga.png" alt="Bank of GA"/></div>
+      <div id="title">Bank of GA</div>
+    </div>
+
+    <div class="account" id="checking">
+      <h1>Checking</h1>
+      <div class="balance" id="checking-balance">$0</div>
+      <input id="checking-amount" type="text" placeholder="enter an amount" />
+      <input id="checking-deposit" type="button" value="Deposit" />
+      <input id="checking-withdraw" type="button" value="Withdraw" />
+    </div>
+
+    <div class="account" id="savings">
+      <h1>Savings</h1>
+      <div class="balance" id="savings-balance">$0</div>
+      <input id="savings-amount" type="text" placeholder="enter an amount" />
+      <input id="savings-deposit" type="button" value="Deposit" />
+      <input id="savings-withdraw" type="button" value="Withdraw" />
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+</body>
+</html>

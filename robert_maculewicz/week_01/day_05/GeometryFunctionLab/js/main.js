@@ -104,6 +104,18 @@ const cashRegister = function(cart){
   return total
 };
 console.log(cashRegister(cartForParty)); //60.55
+//secend way
+
+const cashRegister1 = function(obj){
+  let arr = Object.values(obj);
+  let sum = 0;
+  for(var i =0; i < arr.length; i++){
+    sum = sum + +(arr[i])
+  }
+  };
+
+
+
 
 // second way
  /*const cashRegister = function(cart){
@@ -139,3 +151,30 @@ let numbers = [];
 //console.log(validateCreditCard(numbers));
 validateCreditCard();
 */
+//////////////////////////
+//Bank
+const bank = {
+  accounts: [
+    {
+      name: "john",
+      balance: 1000,
+    },
+    {
+      name: "joel",
+      balancs: 2
+    }
+  ],
+  addAccount: function(newName){
+    let newAccoount = {
+      name: newName,
+      balance: 0
+    }
+    bank.accounts.push(newAccoount)
+  },
+  deposit: function(name, value){
+
+  },
+  withrolmony: function (name, value){
+
+  }
+}

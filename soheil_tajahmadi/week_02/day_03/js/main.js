@@ -6,11 +6,14 @@ theCat.style.left = '0px';
 theCat.style.top = '400px';
 
 const changeGif = function() {
+  walkId = setInterval(walk, 10);
+  // theCat.src = "./walking-cat.gif";
   theCat.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
 }
 
 const danceNow = function() {
-
+  clearInterval(walkId);
+  // theCat.src="./cat-Dance.gif";
   theCat.src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/7/7d/Dancing-cat.gif";
   window.setTimeout(changeGif,3000)
 }

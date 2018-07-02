@@ -16,25 +16,66 @@ console.log("connected - 14-7-6");
 // 34 has neither 3, 5 nor 7 as a factor.
 // Raindrop-speak doesn't know what to make of that, so it just goes with the straightforward "34".
 
-const pling = function(num) {
-  let result = ""
 
-  if (num % 3 === 0 ) {
-    result = result + "Pling";
+const raindrops = function (num) {
+
+  let output = ""
+
+  if ( num % 3 === 0 ) {
+    output = output + "Pling"
   }
 
   if ( num % 5 === 0 ) {
-    result = result + "Plang"
+    output = output + "Plang"
   }
 
   if ( num % 7 === 0 ) {
-    result += "Plong"
+    output  = output + "Plong"
   }
 
-  if ( result === "" ) {
-    result = num
+  if ( output === "" ) {
+    output = output + num 
   }
+  // console.log(num)
 
-  
-  return result
+  console.log(output)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const pling = function(num) {
+//   let result = ""
+//
+//   if (num % 3 === 0 ) {
+//     result = result + "Pling";
+//   }
+//
+//   if ( num % 5 === 0 ) {
+//     result = result + "Plang"
+//   }
+//
+//   if ( num % 7 === 0 ) {
+//     result += "Plong"
+//   }
+//
+//   if ( result === "" ) {
+//     result = num
+//   }
+//
+//
+//   return result
+// }

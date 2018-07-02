@@ -23,7 +23,7 @@
 # price per gallon
 # speed in miles per hour
 
-require 'pry'
+# require 'pry'
 
 def show_menu
   puts "Calculator"

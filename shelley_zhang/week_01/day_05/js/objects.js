@@ -15,6 +15,8 @@ const rectangleA = {
   width: 8
 };
 
+//the below function checks that the rectange is square. If we want to pass something into a function we need to use the argument
+
 const isSquare = function(rectangle) {
   if (rectangle.length === rectangle.width) {
     return true;
@@ -89,14 +91,14 @@ const cartForParty = {
 };
 
 const cashRegister = function() {
-  let array = Object.values(cartForParty);
+  let array = Object.values(obj);
   //creating array from object list
-  let numbers = array.map(Number) //converting array to numbers from strings
   let total = 0; //store result fron loop
-  for (i = 0; i < numbers.length; i++) {
-      total = total + numbers[i]; //numbers[index number]
+  for (let i = 0; i < array.length; i++) {
+      total = total + +(array[i]); //[index number] & the extra plus sign converts the array into numbers
   } return total; //looping above to get total
 };
+//obj can be whatever you want it to be - so you can test it for various
 
 // Credit Card Validation
 // You're starting your own credit card business. You've come up with a new way to validate credit cards with a simple function called validateCreditCard that returns true or false.
@@ -120,7 +122,6 @@ const cashRegister = function() {
 
 
 const validator = function (cardNum) { //need to revise this later John's version
-
 
   // replace dashes with empty string
   cardNum = cardNum.replace(/-/g, "");
@@ -190,48 +191,64 @@ for (var i = 0; i < testCases.length; i++) {
 // The bank has many accounts. Accounts should be objects that all share a set of common functionality.
 //
 // Accounts
-// Accounts have a current balance and owner's name. You should be able to deposit or withdraw from an account to change the balance.
+// Accounts have a current balance and owner's name. You should be able to deposit or withdraw from an account to change the balance. (These should be methods/functions in the object list (function in object is a method))
 //
 // There is no need to write a user interface. Make sure functions return values -- you may also have your functions console.log() values to help you see your code working.
 //
 // You should write a basic story through a series of JavaScript commands that shows that the methods do indeed work as expected: add some accounts, show the total balance, make some deposits and withdrawals, show the new total balance.
 
 //create a bank that holds an array of accounts that all share a set of common functionality
-let bank = [
-  {
-    currentBalance: 1000,
-    ownersName: "Shelley"
+const bank = [
+  accounts: [ //object list in array
+    {
+      balance: 1000,
+      name: "Shelley"
+    },
+
+    {
+      balance: 2000,
+      name: "David"
+    },
+
+    {
+      balance: 80.25,
+      name: "Idiot"
+    }
+  ],
+
+  const totalSum = function(arr) {
+    let total = 0; //create variable to store the result from the loop
+      for (i = 0; i < arr.length; i++) { // i whole object bank
+        total = total + arr[i].currentBalance; //reference property in object i using dot notation
+      } return total
   },
 
-  {
-    currentBalance: 2000,
-    ownersName: "David"
+  addAccount: function(name) { //function in array
+    let newAccount = {
+      name: newName,
+      balance: 0;
+      bank.push(addAccount);
+      return bank
+    }
   },
 
-  {
-    currentBalance: 80.25,
-    ownersName: "Idiot"
+  deposit: function(name, value) {
+
   }
-];
 
+  withdraw: function(name, value) {
+
+  }
+
+];
 //create a function that goes loops the array and adds all currentBalance together which will equal to total sum of money in the accounts
 
-const totalSum = function(arr) {
-  let total = 0; //create variable to store the result from the loop
-    for (i = 0; i < arr.length; i++) { // i whole object bank
-      total = total + arr[i].currentBalance; //reference property in object i using dot notation
-    } return total
-};
+//the point of having arr or own defined name is that so we can pass any argument we want into the function (reusable)
 
-let newAccount = {
-  currentBalance: 5000,
-  ownersName: "Sonia"
-}
 
-let addAccount = function(newAccount) {
-  bank.push(newAccount);
-  return bank;
-}
+
+
+
 
 //
 

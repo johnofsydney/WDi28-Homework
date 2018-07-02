@@ -126,9 +126,13 @@ const cashRegister = function( shop ) {
   }
     return result
   };
-
 console.log(cashRegister(cartForParty));
 
+
+let sum = 0;
+for (i = 0; i < cart.length; i ++) {
+  sum = sum + Number(cart[i]);
+}
 
 // Credit Card Validation
 
@@ -203,3 +207,29 @@ const validateCreditCard = function (cardNumb) {
 // Bonus
 // Ensure that the accounts cannot have negative values.
 // Write a 'transfer' on the bank that allows you to transfer amounts between two accounts.
+
+const bank = {
+  accounts: [
+    {
+      name:"toto",
+      balance:2000
+    },
+    {
+      name:"bibi",
+      balance:100
+    }
+  ],
+  addAccount: function(newname) {
+    let newAccount ={
+      name: "sisi",
+      balance: 0
+    }
+    bank.accounts.push(newAccount)
+  },
+  deposit: function(name,value) {
+
+  },
+  withdrawal: function(name,value) {
+
+  }
+}

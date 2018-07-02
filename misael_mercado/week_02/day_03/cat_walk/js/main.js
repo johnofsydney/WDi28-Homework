@@ -106,15 +106,15 @@ let timer1 = window.setInterval(dogAppears, 100);
 
 //////////////////////////////////////////////////////////////////////////
 
-// const imgButton = document.getElementById('tony-button');
+const imgButton = document.getElementById('tony-button');
 const tony = document.getElementById("imgChange");
-tony.addEventListener("click", function() {
-  if (this.classList.contains("changed")) {
-    this.src = 'img/tonyMontana.gif';
-    this.className = "";
+imgButton.addEventListener("click", function() {
+  if (tony.classList.contains("changed")) {
+    tony.src = 'img/tonyMontana.gif';
+    tony.className = "";
   } else {
-    this.className = "changed";
-    this.src = "img/tony2.gif";
+    tony.className = "changed";
+    tony.src = "img/tony2.gif";
   }
 });
 

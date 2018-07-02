@@ -48,14 +48,15 @@ until calc_choice == 'q'
     price_per_gal = gets.to_f
     result = trip_cost(distance, miles_per_gal, price_per_gal)
 
-    puts Rainbow("The cost of your #{distance} mile trip, based on your car's fuel consumption of #{miles_per_gal} miles per gallon at a cost of $#{price_per_gal} is is $#{trip_cost(distance, miles_per_gal, price_per_gal).round(2)}.").aqua
+    puts Rainbow("The cost of your #{distance} mile trip, based on your car's fuel consumption of #{miles_per_gal} miles per gallon at a cost of $#{price_per_gal} is is $#{result.round(2)}.").aqua
 
   when "t"
     print Rainbow("Please enter trip distance in miles: ").red
     distance = gets.to_f
     print Rainbow("Please enter your speed in miles: ").red
     speed = gets.to_f
-    puts Rainbow("If you are making a #{distance} mile long trip and traveling at a speed of approximately #{speed} miles per hour you should reach your destination in #{trip_time(distance, speed).round(0) } hour(s).").aqua
+    result = trip_time(distance, speed)
+    puts Rainbow("If you are making a #{distance} mile long trip and traveling at a speed of approximately #{speed} miles per hour you should reach your destination in #{result.round(0) } hour(s).").aqua
 
     calc_option
     calc_choice = gets.chomp.downcase

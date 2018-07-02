@@ -167,11 +167,12 @@ $(document).ready(() => {
     // clear the imput text after clicking the withdraw button
     $("#savings-amount").val("");
     // if either the checking balance or the savings balance is $0, change the background colour to "tomato" (red).
-    if ($("#savings-balance").html() === "$0") {
+    debugger;
+    if ($("#savings-balance").html() <= "0" ) {
       $("#savings-balance").addClass("zero");
     }
-    debugger;
-    if ($("#checking-balance").html() === "$0") {
+
+    if ($("#checking-balance").html() <= "0" ) {
       $("#checking-balance").addClass("zero");
     }
 
@@ -179,12 +180,12 @@ $(document).ready(() => {
   });
 
 
-  // Keep colour tomato (red) if both accounts have a remaining of "$0"
-  if ($("#checking-balance").html() === "$0") {
+  // Keep colour tomato (red) if both accounts have a remaining of "$"0""
+  if ($("#checking-balance").html() <= "0" ) {
     $("#checking-balance").addClass("zero");
   }
 
-  if ($("#savings-balance").html() === "$0") {
+  if ($("#savings-balance").html() <= "0" ) {
     $("#savings-balance").addClass("zero");
   }
 

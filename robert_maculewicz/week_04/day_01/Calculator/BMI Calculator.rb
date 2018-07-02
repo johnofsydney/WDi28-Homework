@@ -1,3 +1,4 @@
+=begin   # this only function for BMI
 def calculator
 puts "BMI Calculator"
 puts "Plase entry you name:"
@@ -10,5 +11,5 @@ height = gets.to_f
 result = weight / (height ** 2) * 10000
 puts "Your BMI is: #{result.round(2)}"
 end
-
 calculator
+=end

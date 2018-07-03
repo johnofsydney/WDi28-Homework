@@ -33,3 +33,27 @@ const walkBack = function() {
     }
 }
 var animate = setInterval(catWalk,100);
+///////////////////Joe way clik button////////
+
+const Numbers = function(){
+  let number = document.getElementById('test').value;
+  if(number > 0)document.getElementById('result').innerHTML="number plus";
+};
+const button = document.getElementById(('t'));
+button.addEventListener('click',Numbers);
+
+
+const Numbers1 = function(){
+  let robnum = document.getElementById('rob1').value;
+  if(robnum > 0)document.getElementById('wynik').innerHTML="nowy number";
+};
+const button1 = document.getElementById(('r'));
+button1.addEventListener('click',Numbers1);
+
+const Number2 = function(){
+  let robertnumbers = document.getElementById('robcik').value;
+  if(robertnumbers > 0)
+  document.getElementById('wyplut').innerHTML="magic number";
+};
+const button2 = document.getElementById(('robo'));
+button2.addEventListener('click', Number2);

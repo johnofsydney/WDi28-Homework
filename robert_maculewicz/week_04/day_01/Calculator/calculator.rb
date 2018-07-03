@@ -31,7 +31,7 @@ puts "-----------You are overweight---------------"
   elsif result > 29.9
 puts "-----------You are obese - STOP EAT------------"
   else
-  puts "ffffff"
+  puts "empty"
   end
 end
 

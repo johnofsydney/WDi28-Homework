@@ -9,6 +9,22 @@ var CatWalk = function() {
   var oldLeft = parseInt(img.style.left);
   var newLeft = oldLeft + 5;
   img.style.left = newLeft + 'px';
+
+let direction = true;
+
+if (direction === true) {
+  cat.left = cat.left + 10
+} else {
+  cat.left = cat.left - 10
+}
+
+if (cat.left > window.innerWidth) {
+  direction = !direction
+}
+
+if ( cat.left < 0 ) {
+  direction = !direction
+}
 };
 
 setInterval(CatWalk, 100);

@@ -198,65 +198,50 @@ for (var i = 0; i < testCases.length; i++) {
 // You should write a basic story through a series of JavaScript commands that shows that the methods do indeed work as expected: add some accounts, show the total balance, make some deposits and withdrawals, show the new total balance.
 
 //create a bank that holds an array of accounts that all share a set of common functionality
-const bank = [
-  accounts: [ //object list in array
-    {
-      balance: 1000,
-      name: "Shelley"
-    },
 
-    {
-      balance: 2000,
-      name: "David"
-    },
+let bank = {
+  accounts: [],
+  addAccount: function ( accountName, openingBalance ) {
+    accNum = -1 + this.accounts.push({ // -1 since push returns the NEW length of the array.
+      accountNumber: this.accounts.length,
+      accountName: accountName,
+      balance: parseInt(openingBalance)
+    });
 
-    {
-      balance: 80.25,
-      name: "Idiot"
-    }
-  ],
+    console.log( `Account creation successful. Your new account number is ${ accNum }`);
 
-  const totalSum = function(arr) {
-    let total = 0; //create variable to store the result from the loop
-      for (i = 0; i < arr.length; i++) { // i whole object bank
-        total = total + arr[i].currentBalance; //reference property in object i using dot notation
-      } return total
+    return accNum;
   },
 
-  addAccount: function(name) { //function in array
-    let newAccount = {
-      name: newName,
-      balance: 0;
-      bank.push(addAccount);
-      return bank
+  accountBalance: function ( accountNumber ) {
+    return this.accounts[ accountNumber ].balance;
+  },
+
+  withdraw: function ( accountNumber, amount ) {
+    if ( amount > this.accountBalance( accountNumber ) ) {
+      console.log( `Insufficient Balance` );
+      return false;
+    } else {
+        this.accounts[ accountNumber ].balance -= amount;
+        console.log( `${ this.accounts[ accountNumber ].accountName }'s After Withdrawal Balance: $${ this.accountBalance( accountNumber ) }`);
+        return true;
     }
   },
 
-  deposit: function(name, value) {
+  deposit: function ( accountNumber, amount ) {
+    this.accounts[ accountNumber ].balance += amount;
+    console.log( `${ this.accounts[ accountNumber ].accountName }'s After Deposit Balance: $${ this.accountBalance( accountNumber ) }`);
+    return;
+  },
 
+  transfer: function ( fromAccount, toAccount, amount ) {
+    if ( this.withdraw( fromAccount, amount ) ) { //withdraw returns true if successful
+      this.deposit( toAccount, amount );
+      console.log( 'Transfer successful' );
+      return true;
+    } else {
+      console.log( 'Transfer failed' );
+      return false;
+    }
   }
-
-  withdraw: function(name, value) {
-
-  }
-
-];
-//create a function that goes loops the array and adds all currentBalance together which will equal to total sum of money in the accounts
-
-//the point of having arr or own defined name is that so we can pass any argument we want into the function (reusable)
-
-
-
-
-
-
-//
-
-const withdrawAccount = function(name, money) {
-   let newBalance = bank.currentBalance + money;
-   return
-}
-
-
-
-const depositAccount = function() {name, money}
+};

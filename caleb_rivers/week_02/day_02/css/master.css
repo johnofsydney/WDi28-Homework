@@ -82,7 +82,7 @@ aside img {
 
 .hidden {
   visibility: hidden;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .hidden:hover {

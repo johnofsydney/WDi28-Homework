@@ -50,6 +50,8 @@ const updateScreen = function() { //function to update screen with amount. Using
 
 //deposit function passes the amount & account arguments based on user input
 
+
+
 const deposit = function(amount, account) {
   balance[account] += parseInt(amount); //the parseInt will need to convert the amount of the displayed in the account into a number
   updateScreen(); //run updatescreen function to display new balance after deposit
@@ -57,9 +59,9 @@ const deposit = function(amount, account) {
 
 //Withdraw function & overdraft protection rules
 const withdraw = function(amount, account) {
-
+debugger;
 if (amount <= balance[account]) { //normal withdrawal when amount is < savings or checking account
-    balance[account] -= parseInt(amount); //x = x - y
+    balance[account] -= parseInt(amount); //x = x - y parseInt can also be +
   } else if (amount < balance.checking + balance.savings) { //overdraft kicks in when amount < total balance in both accs
     let overdraftAmt = balance[account] - parseInt(amount); //amount to be overdraft
     balance[account] = 0 //let the overdrawn account = 0
@@ -74,12 +76,12 @@ if (amount <= balance[account]) { //normal withdrawal when amount is < savings o
     updateScreen(); //update screen with values calculated from above function
 };
 
-$(document).ready(function() { //start of document ready containing jquery functions
+$(document).ready(function() { //start of document ready containing jquery functions, make sure the DOM is ready
 
   updateScreen(); //first run update screen to apply everything above
 
 $('#checking-deposit').on('click', function() { //when user clicks on deposit button
-    let num = $('#checking-amount').val() //grab value from html with #checking-amount class
+    let num = $('#checking-amount').val() //grab value from html with #checking-amount class / find the amount deposited and add the amount to the balance and update the screen
     deposit (num, "checking"); //run deposit function for amount calculated above
 });
 
@@ -99,3 +101,6 @@ $('#savings-withdraw').on('click', function() {
 });
 
 });  // closing document ready
+
+
+//you can separate the two js files - logic for bank and jquery/DOM js file.

@@ -1,17 +1,65 @@
 
 
 body {
-  background-color: rgba(255, 0, 0, 0.5);
-  background-image: url(/img/library.jpg)
+  max-width: 960px;
+  margin: auto;
+  background-image: url(/img/library.jpg);
+  color: #FFF;
+
+
 }
 
 h1 {
   text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 4vw;
+
 }
 
-.container {
+form {
+  justify-content: center;
+  margin: auto;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 2vw;
+  padding: 1em;
+}
+
+input {
+  padding: 1em;
+  font-size: 1vw;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+button {
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1vw;
+  margin: 1em;
+}
+
+/* .container {
   max-width: 960px;
   margin: auto;
-  background-color: rgba(100, 255, 100, 0.5);
+  background-color: rgba(255, 255, 0, 0.3);
   padding: 1em;
+} */
+
+
+p {
+  align-items: center;
+  margin: auto;
+}
+
+strong {
+font-family: 'Paytone One', sans-serif;
+font-size: 3vw;
+color: #40E0D0;
+align-items: center;
+}
+
+img {
+  border: 1px, #40E0D0;
+  width: 18vw;
+  align-items: center;
 }

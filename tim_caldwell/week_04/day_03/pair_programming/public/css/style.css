@@ -1,69 +1,48 @@
-/*div {
-	border: 1px solid #f0f;
-}*/
-
-
 body {
-	background-color: black;
+	background: radial-gradient(#222, black);
 }
 
 #container {
 	text-align:center;
-    font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
-
+	font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-width: 100vw;
+	min-height: 100vh;
 }
-
-.linkleft {
-	text-align: left;
-	margin-top: 200px;
-	color: green;
-}
-
-.linkleft a:link {
-	color: green;
-}
-
-.linkright {
-	text-align: right;
-
-}
-
-.linkright a:link {
-	color: gray;
-}
-
 
 .text {
 	font-size: 40px;
 	font-weight: bold;
-	margin-top: 200px;
 	margin-bottom: 10px;
 	color: white;
+	padding: 1em 0 1em 0;
+	animation: 
+		swoop .5s ease-in;
+		
 }
 
-.beck_text {
-	font-size: 25px;
-	font-weight: bold;
-	margin: 0 180px;
-	text-align: center;
-	line-height: 120%;
-	color: white;
+/* The typing effect */
+@keyframes swoop {
+  from { 
+		transform: skew(21deg, 21deg) rotate(180deg);
+		font-size: .01rem;
+		
+	}
+  to { 
+		/* transform: skew(0, 0); */
+	}
 }
 
-a {
-	color: #080;
-	text-decoration: none;
-}
-
-.beck_citation {
-	color: gray;
-	font-size: 20px;
-}
 .buttons {
 	margin-top: 30px;
+	list-style: none;
 }
 
 .btn-large {
 	margin: 0 15px;
 }
+
 

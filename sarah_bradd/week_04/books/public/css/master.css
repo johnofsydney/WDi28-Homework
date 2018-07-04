@@ -1,0 +1,14 @@
+body {
+
+  text-align: center;
+  text-shadow: .2px;
+  text-decoration-color: green;
+}
+
+.container {
+    width: 320px;
+     padding: 10px;
+     border: 5px solid gray;
+     position: absolute;
+
+}

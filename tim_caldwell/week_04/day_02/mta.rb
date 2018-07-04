@@ -1,9 +1,3 @@
-
-
-require 'pry'
-
-
-
 ## DATA for MTA
 MTA = {
   "N" => ["Times Square","34th", "28th", "23rd", "Union Square", "8th"],
@@ -13,7 +7,25 @@ MTA = {
 
 INTERCHANGE = "Union Square"
 
-def plan_trip ( from_line, from_station, to_line, to_station )
+def trip_same_line ( from_line, from_station, to_line, to_station )
+  start_stop = MTA[from_line].find_index from_station
+  final_stop = MTA[from_line].find_index to_station
+
+  trip = get_stops start_stop, final_stop, MTA[from_line]
+
+  puts "You must travel through the following stops on the #{from_line} line:\n #{trip.join ', '}"
+  puts "#{ trip.length } stops in total."
+end
+
+def get_stops ( start_stop, final_stop, stations )
+if start_stop < final_stop
+    stations[start_stop...final_stop]
+  else 
+    stations[final_stop+1..start_stop].reverse
+  end
+end
+
+def trip_change_line ( from_line, from_station, to_line, to_station )
   # get stations from fromStation to Interchange
   from_trip = MTA[from_line]
 
@@ -26,21 +38,22 @@ def plan_trip ( from_line, from_station, to_line, to_station )
   final_stop = to_trip.find_index to_station
   to_interchange = to_trip.find_index INTERCHANGE
 
-  first_stage = start_stop < from_interchange ? from_trip[start_stop...from_interchange] : from_trip[from_interchange..start_stop].reverse.pop
+  first_stage = get_stops start_stop, from_interchange, from_trip
 
-  second_stage = to_interchange < final_stop ? to_trip[to_interchange..final_stop].shift : to_trip[final_stop...to_interchange].reverse
+  second_stage = get_stops final_stop, to_interchange, to_trip
   
-  puts "You must travel through the following stops on the #{from_line}: #{first_stage.join ', '}"
+  puts "You must travel through the following stops on the #{from_line} line:\n#{first_stage.join ', '}"
   puts "Change at #{INTERCHANGE}"
-  puts "Your journey continues thorugh the following stops: #{second_stage.join ', '}"
-  puts "#{ (first_stage + second_stage).length } in total."
+  puts "Your journey continues thorugh the following stops:\n#{second_stage.join ', '}"
+  puts "#{ (first_stage + second_stage).length + 1 } stops in total."
 end
 
-
-# pry
-
-plan_trip '6', '33rd','N', 'Times Square'
-
-plan_trip 'N', 'Times Square','6', '33rd'
-
-pry
+def plan_trip ( from_line, from_station, to_line, to_station )
+  if from_line == to_line
+    trip_same_line from_line, from_station, to_line, to_station
+  else
+    trip_change_line from_line, from_station, to_line, to_station
+  end
+  
+  
+end

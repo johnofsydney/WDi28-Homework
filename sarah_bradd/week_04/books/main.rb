@@ -14,22 +14,13 @@ end
 
 get '/book' do
 
-  @book_info = params[:book_title]
+  @book_info = params[:book_info]
+  result = HTTParty.get "https://www.googleapis.com/books/v1/volumes?q=title:#{@book_info}" #raw data filtered from api
+  @thumbnailURL = result['items'].first['volumeInfo']['imageLinks']['thumbnail']
 
-  @items = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-  result = HTTParty.get "https://www.googleapis.com/books/v1/volumes/pyfvAgAAQBAJ#{@items}"
 
-  @volumeInfo = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-  result = HTTParty.get "https://www.googleapis.com/books/v1/volumes/pyfvAgAAQBAJ#{@volumeInfo}"
+  #redirect to('/') if @title.nil?
 
-  @imageLinks = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-  HTTParty.get "https://www.googleapis.com/books/v1/volumes/pyfvAgAAQBAJ#{@imageLinks}"
-
-  @thumbnail = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-  result = HTTParty.get "http://books.google.com/books/content?id=pyfvAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api#{@thumbnail}""
-
-  redirect to('/') if @title.nil?
-
-  erb :book
+  erb :books # links to books.erb file.
 
 end

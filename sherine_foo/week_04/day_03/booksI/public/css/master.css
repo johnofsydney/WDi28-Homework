@@ -4,8 +4,7 @@ body {
   max-width: 960px;
   margin: auto;
   background-image: url(/img/library.jpg);
-  color: #FFF;
-
+  color: #40E0D0;
 
 }
 
@@ -54,12 +53,11 @@ p {
 strong {
 font-family: 'Paytone One', sans-serif;
 font-size: 3vw;
-color: #40E0D0;
+color: #FFF;
 align-items: center;
 }
 
 img {
-  border: 1px, #40E0D0;
   width: 18vw;
   align-items: center;
 }

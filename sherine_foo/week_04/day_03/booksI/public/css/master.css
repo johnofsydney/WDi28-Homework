@@ -1,0 +1,17 @@
+
+
+body {
+  background-color: rgba(255, 0, 0, 0.5);
+  background-image: url(/img/library.jpg)
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: rgba(100, 255, 100, 0.5);
+  padding: 1em;
+}

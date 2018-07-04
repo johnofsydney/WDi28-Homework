@@ -29,16 +29,16 @@ img.style.left = '0px';
 
 // const direction = true;  //define newloc > window.innerWidth; condition for newloc < 0
 
-let change = +10; //defining variable outside function
+let change = +1; //defining variable outside function
 
   const catWalk = function() {
   const startingPoint = parseInt(img.style.left);
   const newLoc = startingPoint + change;
   img.style.left = newLoc + 'px';
   if (newLoc >= window.innerWidth) {
-    change = -10;
+    change = -1;
   } else if (newLoc === 0) { //
-    change = +10;
+    change = +1;
   }
 };
 

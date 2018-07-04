@@ -16,8 +16,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
-  transition: opacity 300ms ease-in-out 1s;
-  
   }
 
 ul {

@@ -1,0 +1,9 @@
+
+body {
+background-image: url(/img/instruments.jpg);
+text-align: center;
+}
+
+.container {
+  background-color: orange;
+}

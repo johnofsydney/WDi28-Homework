@@ -1,0 +1,11 @@
+<h1>LIST OF CACTI</h1>
+<div class="">
+
+
+<% @cacti.each do |cacti|%>
+ 
+ <a href="/cacti/<%= cacti[0]%>"><%=cacti['name']%></a>
+<% end %>
+</div>
+
+<a href="/cacti/new">NEW</a>

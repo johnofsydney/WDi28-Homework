@@ -1,0 +1,73 @@
+
+
+
+body {
+  background-color: #F9F6F4; /* hex */
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Marck Script', cursive; */
+}
+
+.nav {
+  max-width: 960px;
+  margin: 15px auto ;
+  padding: 15px auto;
+  background-color: #E9E0DB
+}
+.nav {text-align: center;}
+
+.container1 {
+  max-width: 960px;
+  margin: auto;
+  background-color: #ccc;
+  padding: 15px 15px 15px 15px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+background-color: #E9E0DB; /* hex */
+}
+
+.container2 {
+  max-width: 960px;
+  margin: 15px auto ;
+  background-color: #ccc;
+  padding: 15px 15px 15px 15px
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+background-color: #E9E0DB; /* hex */
+}
+
+
+h1 {
+  text-align: center;
+  color: #black;
+  padding: 5px 5px 5px 5px;
+
+}
+
+main {
+  display: inline-block;
+  padding: 15px 15px 15px 15px
+
+}
+
+main img {
+display: inline;
+float: right;
+padding-bottom: 15px;
+padding-left: 15px;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 20;
+}
+
+footer {
+  text-align: center;
+  font-size: 30px;
+  font-family: fantasy;
+}

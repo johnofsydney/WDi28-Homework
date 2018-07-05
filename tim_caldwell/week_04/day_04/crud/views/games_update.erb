@@ -1,0 +1,12 @@
+<h1>Update <%= @game['title']%></h1>
+<form action="/games/<%= @game['id']%>" method="post">
+  <label for="title"></label>
+  <input type="text" id="title" name="title" value="<%= @game['title']%>"/>
+  <label for="genre"></label>
+  <input type="text" id="genre" name="genre" value="<%= @game['genre']%>"/>
+  <label for="blurb"></label>
+  <input type="text" id="blurb" name="blurb" value="<%= @game['blurb']%>"/>
+  <label for="art"></label>
+  <input type="url" id="art" name="art" value="<%= @game['art']%>"/>
+  <button class="abutton">Update Record</button>
+</form>

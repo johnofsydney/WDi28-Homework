@@ -53,4 +53,4 @@ def plan_trip(from_line_string, from_station_string, to_line_string, to_station_
   end
 end
 
-plan_trip 'N', 'Times Square', '6', '33rd'
+plan_trip 'N', '7th', 'N', '8th'

@@ -1,13 +1,32 @@
 img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 body {
+margin: 0;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+a:hover {
+  color: darkgreen;
+}
+
+.list a {
+  display: block;
+}
+.list {
+  padding-left: 50px;
 }
 
 nav {
+  position: fixed;
+  top: 0;
 	width: 100%;
   margin: 0;
   padding: 0;
@@ -15,27 +34,38 @@ nav {
 	height: 50px;
   background-color: black;
 
+
 }
 nav a {
-  color: white;
+  color: #ffffffd1;
   text-decoration: none;
   font-size: 20px;
   line-height: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+
+  padding-right: 30px;
+  float: right;
+}
+
+nav a:hover{
+  color: white;
+
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 90px;
+  display: inline;
+  line-height: 150px;
+  padding-left: 50px;
+  font-family: 'Ubuntu', sans-serif;
+
 }
-
-
 
 .title {
 
-    padding: 15px;
+    height: 150px;
+margin-top: 30px;
   	color: #fff;
-  	background: linear-gradient(-45deg, #a1f442, #8cf441, #67f700, #3c9100);
+  	background: linear-gradient(-45deg, #57c108, #387b06, #204604, #102302);
   	background-size: 400% 400%;
   	-webkit-animation: Gradient 15s ease infinite;
   	-moz-animation: Gradient 15s ease infinite;
@@ -79,15 +109,27 @@ h1 {
   }
 
 
-
+.container1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
 
 
 .container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-row-gap: 20px;
+  padding: 40px;
+
 
 }
 
 .box > a {
   display: block;
+}
+
+.fas{
+  height: 40px;
+  width: 40px;
 }

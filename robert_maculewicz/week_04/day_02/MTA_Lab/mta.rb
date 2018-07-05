@@ -18,15 +18,15 @@ def single_trip line,start_station,finish_station
     line_array[ start_index..finish_index ]
 
       if
-      line_array[ start_index..finish_index ].select{|a| a.include? 'Union Square'}
+      line_array[ start_index..finish_index ].select{|x| x == "Union Square"}
       puts " You must travel line #{line} through the following stop: #{line_array[ start_index..finish_index].join ', '}"
       puts 'Change at Union Square'
 
-      elsif
+    elsif
 
       puts " You must travel line #{line} through the following stop: #{line_array[ start_index..finish_index].join ', '}"
       end
 end
 
-single_trip "L", "8th", "1st"
-#binding.pry
+single_trip "L", "8th", "6th"
+binding.pry

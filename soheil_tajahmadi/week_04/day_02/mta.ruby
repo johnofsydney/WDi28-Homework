@@ -56,3 +56,5 @@ puts "="*90
 puts "trip : '6','33rd','N','Times Square'"
 plan_trip('6','33rd','N','Times Square')
 puts "="*90
+
+plan_trip('6','7rd','6','33rd')

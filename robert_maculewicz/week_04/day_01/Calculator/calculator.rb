@@ -12,12 +12,13 @@ def show_menu      #we create function menu
 end
 
 def bmi
-  puts "BMI Calculator"
-  puts "Plase entry you name:"
-  name = gets.chomp
-  puts "Hello #{name}, let's start"
-  puts "Plase enter You weight in kg: "
-  weight = gets.to_f
+puts "BMI Calculator"
+puts "Plase entry you name:"
+ name = gets.chomp
+puts "Hello #{name}, let's start"
+puts "Plase enter You weight in kg: "
+ weight = gets.to_f
+
 puts "Plase enter You height in cm: "
   height = gets.to_f
   result = weight / (height ** 2) * 10000
@@ -31,7 +32,9 @@ puts "-----------You are overweight---------------"
   elsif result > 29.9
 puts "-----------You are obese - STOP EAT------------"
   else
+
   puts "empty"
+
   end
 end
 

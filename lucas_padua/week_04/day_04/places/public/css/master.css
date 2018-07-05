@@ -1,0 +1,29 @@
+body {
+  background-color: #4cb5f5;
+
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+front_img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  image-orientation: center;
+}

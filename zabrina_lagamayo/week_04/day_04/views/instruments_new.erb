@@ -2,11 +2,18 @@
 <h1>Add an instrument to the repository</h1>
 
 <form action="/instruments" method="post">
-  <label>Instrument Name: </label>
-  <input type="text" name="name" placeholder="Piano" required>
-  <label>Classification: </label>
-  <input type="text" name="family" placeholder="String" required>
-  <label>Video Example: </label>
-  <input type="url" name="video" placeholder="http://...">
+  <div class="name">
+    <label>Instrument Name: </label>
+    <input type="text" name="name" placeholder="Piano" required>
+  </div>
+  <div class="family">
+    <label>Classification: </label>
+    <input type="text" name="family" placeholder="String" required>
+  </div>
+  <div class="vid">
+    <label>Video Example: </label>
+    <input type="url" name="video" placeholder="http://...">
+  </div>
+
   <button>Submit</button>
 </form>

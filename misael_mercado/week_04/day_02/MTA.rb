@@ -29,6 +29,7 @@
 # The key to the lab is finding the index positions of each stop. (hint: index)
 # Make sure the stops that are the same for different lines have different names (i.e. 23rd on the N and on the 6 need to be differentiated)
 require 'pry'
+require 'rainbow'
 # Train lines as a hash
 TRAIN_LINES = {
   :N => ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'],
@@ -39,7 +40,7 @@ TRAIN_LINES = {
 # we can use freeze to create inmutable constants
 
 def prompt(message)
-  print message
+  print Rainbow(message).green
   gets.chomp.split.map(&:capitalize).join(' ')
 end
 
@@ -81,7 +82,7 @@ def getting_stops(start_line, on_stop, end_line, off_stop)
     # delete "Union Square" from stops[1] as it is duplicate with stops[0]
     stops[1].shift
 
-    puts "You have to travel through: #{stops[0].join(' -> ')}\n Change at: Union Square\n Your travel continues through: #{stops[1].join(' -> ')}\n The total number of stops you have to travel is: #{stops.flatten.length}"
+    puts Rainbow("You have to travel through:").aqua + Rainbow("#{stops[0].join(' -> ')}").gold + Rainbow("\n Change at:").aqua + Rainbow(" Union Square\n").gold + Rainbow(" Your travel continues through:").aqua + Rainbow("#{stops[1].join(' -> ')}").gold + Rainbow("\n The total number of stops you have to travel is:").aqua + Rainbow(" #{stops.flatten.length}").gold
   end
 end
 
@@ -90,12 +91,12 @@ def my_trip
   trip = []
 
   start_line = prompt('Please choose a subway line to get on (N L 6): ')
-  puts "You have selected line #{start_line}"
+  puts Rainbow("You have selected line ").silver + Rainbow(start_line).gold
 
   on_stop = prompt('Please choose a stop to get on: ')
 
   end_line = prompt('Please choose a subway line to get off (N L 6): ')
-  puts "You have selected line #{end_line}"
+  puts Rainbow("You have selected line ").silver + Rainbow(end_line).gold
 
   off_stop = prompt('Please choose a stop to get off: ')
 
@@ -106,12 +107,12 @@ end
 mta = my_trip
 
 # if the lines user entered do not exist, prompt error message
-puts 'Line does not exist!' unless TRAIN_LINES.key?(mta[0].to_sym)
-puts 'Line does not exist!' unless TRAIN_LINES.key?(mta[2].to_sym)
+puts Rainbow('Line does not exist!').red unless TRAIN_LINES.key?(mta[0].to_sym)
+puts Rainbow('Line does not exist!').red unless TRAIN_LINES.key?(mta[2].to_sym)
 
 # if the stops user entered do not exist, prompt error message
-puts 'Stop does not exist!' unless TRAIN_LINES[mta[0].to_sym].include?(mta[1])
-puts 'Stop does not exist!' unless TRAIN_LINES[mta[2].to_sym].include?(mta[3])
+puts Rainbow('Stop does not exist!').red unless TRAIN_LINES[mta[0].to_sym].include?(mta[1])
+puts Rainbow('Stop does not exist!').red unless TRAIN_LINES[mta[2].to_sym].include?(mta[3])
 
 # otherwise, we will tell the user the stops he need to travel
 puts ( getting_stops (TRAIN_LINES[mta[0].to_sym]), mta[1], TRAIN_LINES[mta[2].to_sym], mta[3])

@@ -62,9 +62,46 @@ main {
 .gametile {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  background-color: rgba(255,255,255,.1);
+  min-width: 30em;
+  max-width: 60em;
+  padding: 1em;
+}
+
+.gametile h3 {
+  margin: auto 1em 0 1em;
+}
+
+.gametile p {
+  margin: auto 1em;
+}
+
+.gametile img {
+  max-height: 300px;
 }
 
 .col-span2 {
   grid-column: span 2;
+}
+
+.row-span2 {
+  grid-row: span 2;
+}
+.row-span3 {
+  grid-row: span 3;
+}
+
+.gameview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  justify-content: center;
 }

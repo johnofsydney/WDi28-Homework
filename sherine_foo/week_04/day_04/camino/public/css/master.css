@@ -35,13 +35,20 @@ a {
 }
 
 form {
+
   padding: 1em;
-  text-align: center
+    text-align: left;
+    display: block;
+    margin: auto;
+    padding-left: 15em;
 }
 
 label {
-  font-size: 2em;
-  color:#40E0D0;
+    font-size: 2em;
+    color: #40E0D0;
+    min-width: 110px;
+    display: inline-block;
+    text-align: left;
 }
 
 input {
@@ -57,6 +64,7 @@ input {
   padding: 1em;
   min-height: 90vh;
   background-color: #222;
+  text-align: center;
 }
 
 nav {
@@ -85,9 +93,7 @@ img.home_img {
   margin: auto;
 }
 
-div {
-  display: inline-block;
-}
+
 
 .all_image {
   width: 10em;

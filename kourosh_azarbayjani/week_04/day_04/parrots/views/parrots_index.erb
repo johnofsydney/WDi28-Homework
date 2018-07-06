@@ -1,0 +1,9 @@
+<h1>All Parrots</h1>
+
+<% @parrots.each do |parrot| %>
+  <p>
+    <a href="/parrots/<%= parrot["id"] %>">
+      <%= parrot["name"] %>
+    </a>
+  </p>
+<% end %>

@@ -48,21 +48,22 @@ end
 #show
 get "/songs/:id" do
   @song = Song.find params[:id]
+  @album = Album.find @song[:album_id]
   erb :songs_show
 end
 
 #edit
 get "/songs/:id/edit" do
-  @song = Song.find params [:id]
+  @song = Song.find params[:id]
   erb :songs_edit
 end
 
 #update
 post "/songs/:id" do
-  song = Song.find params [:id]
-  song.name = params [:name]
+  song = Song.find params[:id]
+  song.name = params[:name]
   song.youtube_url = params[:youtube_url]
-  song.album_id = params [:album_id]
+  song.album_id = params[:album_id]
   song.save
   redirect to("/songs/#{song.id}")
 end

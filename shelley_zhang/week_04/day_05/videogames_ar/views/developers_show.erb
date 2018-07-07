@@ -1,0 +1,11 @@
+<h1><%= @developer['name'] %></h1>
+<h2><%= @developer['genre'] %></h2>
+
+<% unless @developer['image'].nil? %>
+  <img class="feature" src="<%= @developer['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/developers/<%= @developer['id'] %>/edit">Edit</a>
+  <a href="/developers/<%= @developer['id'] %>/delete">Delete</a>
+</div>

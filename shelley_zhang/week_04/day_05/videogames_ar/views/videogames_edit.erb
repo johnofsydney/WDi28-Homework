@@ -1,0 +1,12 @@
+<h1>Edit Video Game</h1>
+
+<form action="/videogames/<%= @videogame['id'] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @videogame['name'] %>" placeholder="Video Game" required autofocus>
+  <label>Genre:</label>
+  <input type="text" name="genre" value="<%= @videogame['genre'] %>" placeholder="Genre" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @videogame['image'] %>" placeholder="http://...">
+  
+  <button>Update</button>
+</form>

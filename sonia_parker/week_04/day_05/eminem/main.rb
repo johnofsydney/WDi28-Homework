@@ -70,3 +70,56 @@ get "/songs/:id/delete" do
   song.destroy
   redirect to ("/songs") #another get request
 end
+
+#index for albums
+get "/albums" do
+  @albums = Album.all
+  erb :albums_index
+end
+#new
+get "/albums/new" do
+  erb :albums_new
+end
+
+#create
+post "/albums" do
+  album = Album.new
+  album.name = params[:name]
+  album.release_year = params[:release_year]
+  album.cover_url = params[:cover_url]
+  album.save
+  redirect to ("/albums/#{album.id}")
+end
+
+#show
+get "/albums/:id" do
+  @album = Album.find params[:id]
+  erb :albums_show
+end
+
+#edit
+get "/albums/:id/edit" do
+  @album = Album.find params[:id]
+  erb :albums_edit
+end
+
+#update
+post "/albums/:id" do
+  album = Album.find params[:id]
+  album.name = params[:name]
+  album.release_year = params[:release_year]
+  album.cover_url = params[:cover_url]
+  album.save
+  redirect to ("/albums/#{album.id}")
+end
+
+#Delete
+get "/albums/:id/delete" do
+  album = Album. find params[:id]
+  album.destroy
+  redirect to("/albums")
+end
+
+get "/pry" do
+  binding.pry #naughty stuffff
+end

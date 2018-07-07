@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
 body {
-  background-color: rgb(88, 193, 221);
+  font-family: 'Gaegu', cursive;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .container {
@@ -7,21 +11,23 @@ body {
   margin: 0 auto;
 }
 
+
 nav {
   text-align: right;
+  background-color: #94bbe9;
+  font-size: 2vw;
 }
 
-nav a:visited {
-  color: black;
-}
 
 a {
   color: black;
 }
 
-a:visited {
-  color: black;
+a:hover {
+  color: white;
+  background-color: #eeaeca;
 }
+
 
 .feature {
   max-width: 100%;

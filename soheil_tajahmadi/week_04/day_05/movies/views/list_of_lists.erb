@@ -1,0 +1,17 @@
+
+<ul>
+
+<% @lists.each do |list| %>
+<li>
+<%= list["name"]%>
+
+<form class="button" action="/list/edit/<%= list["id"]%>" method="post">
+  <button type="submit" >Edit</button>
+</form>
+<form class="button" action="/list/delete/<%= list["id"]%>" method="post">
+  <button type="submit" >Delete</button>
+</form>
+
+</li>
+<% end%>
+</ul>

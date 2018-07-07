@@ -1,0 +1,9 @@
+<h1> For Adoption</h1>
+<% @dog_shelter.each do |dog| %>
+  <p>
+    <a href="/dog_shelter/<%= dog["id"] %>">
+  <%= dog['name'] %>
+</a>
+</p>
+
+  <% end %>

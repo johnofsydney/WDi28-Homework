@@ -8,18 +8,18 @@ require "pry"
 #config the ActiveRecord Module
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database => "database.sqlite3"
+  :database => "eminem.db"
 )
 class Song < ActiveRecord::Base
   belongs_to :album, :optional =>true
 end
 
 class Album < ActiveRecord::Base
-  has_many :butterflies
+  has_many :songs
 end
 
 get "/" do
-  erb: home
+  erb :home
 end
 
 #Index
@@ -39,22 +39,24 @@ post "/songs" do
   song = Song.new
   song.name = params[:name]
   song.youtube_url = params[:youtube_url]
-  song.album_id = params [:album_id]
+  song.album_id = params[:album_id]
   song.save #an id will be added to the object
   redirect to("/songs/#{song.id}") #this will be a get request
 end
 
 
 #show
-get "/song/:id" do
+get "/songs/:id" do
   @song = Song.find params[:id]
   erb :songs_show
 end
+
 #edit
 get "/songs/:id/edit" do
   @song = Song.find params [:id]
   erb :songs_edit
 end
+
 #update
 post "/songs/:id" do
   song = Song.find params [:id]
@@ -64,6 +66,8 @@ post "/songs/:id" do
   song.save
   redirect to("/songs/#{song.id}")
 end
+
+
 #delete
 get "/songs/:id/delete" do
   song = Song.find params[:id]
@@ -71,6 +75,8 @@ get "/songs/:id/delete" do
   redirect to ("/songs") #another get request
 end
 
+
+#*****************ALBUMS ROUTES****************
 #index for albums
 get "/albums" do
   @albums = Album.all

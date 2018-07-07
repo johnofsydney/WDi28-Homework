@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col">
+    <h1>All Eminem Songs</h1>
+    <% @songs.each do |song| %>
+    <p>
+      <a href="/songs/<%= song["id"]%>">
+        <%= song["name"]%>
+      </a>
+    </p>
+    <% end %>
+  </div>
+
+</div>

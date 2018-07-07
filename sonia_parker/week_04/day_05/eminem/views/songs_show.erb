@@ -1,0 +1,17 @@
+<h1><%= @song["name"]%></h1>
+
+<% unless @song.album.nil? %>
+<h2>
+  YouTube Video of the Song:
+</h2>
+<% end %>
+
+<% unless @song["youtube_url"].nil? %>
+<p><%= @song["youtube_url"]%></p>
+<%end%>
+
+<div class="controls">
+  <a class="btn btn-primary" href="/songs/<%= @song["id"]%>/edit">Edit</a>
+  <a class="btn btn-primary" href="/songs/<%= @song["id"]%>/delete">Delete</a>
+
+</div>

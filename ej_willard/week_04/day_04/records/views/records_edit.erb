@@ -1,0 +1,24 @@
+<h1 class="new">Drop the Needle on a New One</h1>
+
+
+<!-- method post means we are sending data to server and have server create new thing? -->
+<form action="/records/<%=@record['id']%>" method="post">
+
+  <label>Artist:</label>
+  <input type="text" name="artist" value="<%=@record['artist']%>" placeholder="Artist Name"  required autofocus>
+
+  <label>Record Title:</label>
+  <input type="text" name="record_name" value="<%=@record['title']%>" placeholder="Record Title" required>
+
+  <label>Edition Deets:</label>
+  <input type="text" name="record_specs" value="<%=@record['record_specs']%>" placeholder="LTD, STD, 180g etc..">
+
+  <label>Release Year:</label>
+  <input type="integer" name="pressing_year" value="<%=@record['pressing_year']%>" placeholder="2018">
+
+  <label>Image:</label>
+  <input type="url" name="image" value="<%=@record['image']%>" placeholder="https://...">
+
+  <button>Update it!</button>
+
+</form>

@@ -1,7 +1,7 @@
 CREATE TABLE developers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
-  headquarters TEXT
+  headquarters TEXT,
   image TEXT
 );
 

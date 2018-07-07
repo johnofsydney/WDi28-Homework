@@ -3,7 +3,6 @@ require 'sinatra/reloader'
 require 'sqlite3'
 require 'active_record' #ruby gems
 
-require 'pry'
 
 #our logic file
 
@@ -126,7 +125,7 @@ post '/developers/:id' do
   developer.headquarters = params[:headquarters]
   developer.image = params[:image]
   developer.save
-  redirect to("/developers/#{ developer.id}")
+  redirect to("/developers/#{ developer.id }")
 end
 
 #delete

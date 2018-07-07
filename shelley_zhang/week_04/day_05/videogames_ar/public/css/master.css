@@ -1,5 +1,5 @@
 body {
-  background-color: #aaa;
+  background-color: rgb(88, 193, 221);
 }
 
 .container {
@@ -12,15 +12,15 @@ nav {
 }
 
 nav a:visited {
-  color: white;
+  color: black;
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color: #e0e0e0;
+  color: black;
 }
 
 .feature {

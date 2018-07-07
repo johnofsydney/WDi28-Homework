@@ -1,10 +1,10 @@
 <h1><%= @developer.name %></h1>
-<h2><%= @developer.headquarters</h2>
+<h2><%= @developer.headquarters %></h2>
 
 <% unless @developer.videogames.empty? %>
   <h2>Associated Games:</h2>
   <ul>
-    <% @developer.videogames.each do |developer| %>
+    <% @developer.videogames.each do |videogame| %>
       <li>
         <a href="/videogames/<%= videogame.id %>">
           <%= videogame.name %>
@@ -15,7 +15,7 @@
 <% end %>
 
 <% unless @developer['image'].nil? %>
-  <img class="feature" src="<%= @developer.image %>" />
+  <img class="feature" src="<%= @developer['image'] %>" />
 <% end %>
 
 <div class="controls">

@@ -16,6 +16,7 @@
     <% Developer.all.each do |developer| %>
       <option value="<%= developer.id %>" <%= "selected" if developer.id == @videogame.developer_id %>> <%= developer.name %> </option>
       <%end%>
+  </select>
 
   <button>Update</button>
 </form>

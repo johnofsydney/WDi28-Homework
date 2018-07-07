@@ -2,8 +2,8 @@
 
 <% @developers.each do |developer| %>
   <p>
-    <a href="/developers/<%= developer["id"] %>">
-      <%= developer["name"] %>
+    <a href="/developers/<%= developer.id %>">
+      <%= developer.name %>
     </a>
   </p>
 <% end %>

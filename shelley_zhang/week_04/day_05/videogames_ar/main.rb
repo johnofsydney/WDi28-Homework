@@ -46,6 +46,7 @@ post '/videogames' do #input data recevied into videogame based on below params
   videogame.name = params[:name]
   videogame.genre = params[:genre]
   videogame.image = params[:image]
+  videogame.developer_id = params[:developer_id]
   videogame.save #ID will be added to my object
   redirect to("/videogames/#{ videogame.id }") #get requesting id of videogame.
 end
@@ -77,7 +78,7 @@ end
 get '/videogames/:id/delete' do
   videogame = Videogame.find params[:id]
   videogame.destroy
-  redirect to('videogames')
+  redirect to('/videogames')
 end
 
 #END OF VIDEOGAMES LOGIC
@@ -102,7 +103,7 @@ post '/developers' do
   developer.headquarters = params[:headquarters]
   developer.image = params[:image]
   developer.save
-  redirect to("/developers/#{ developer.id}")
+  redirect to("/developers/#{ developer.id }")
 end
 
 #show

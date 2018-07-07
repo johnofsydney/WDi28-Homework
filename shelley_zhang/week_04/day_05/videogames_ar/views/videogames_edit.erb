@@ -7,6 +7,15 @@
   <input type="text" name="genre" value="<%= @videogame['genre'] %>" placeholder="Genre" required>
   <label>Image:</label>
   <input type="url" name="image" value="<%= @videogame['image'] %>" placeholder="http://...">
-  
+
+  <label>Developer:</label>
+  <select name="developer_id">
+    <!-- let user choose developer from db-->
+    <option></option>
+
+    <% Developer.all.each do |developer| %>
+      <option value="<%= developer.id %>" <%= "selected" if developer.id == @videogame.developer_id %>> <%= developer.name %> </option>
+      <%end%>
+
   <button>Update</button>
 </form>

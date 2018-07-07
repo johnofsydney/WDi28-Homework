@@ -7,4 +7,4 @@ CREATE TABLE developers (
 
 -- seed data
 
-INSERT INTO developers (name, headquarters) VALUES('Rockstar Games', 'New York');
+INSERT INTO developers (name, headquarters) VALUES ('Rockstar Games', 'New York');

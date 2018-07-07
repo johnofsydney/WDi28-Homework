@@ -3,14 +3,14 @@
 
 
   <h1><%= @album["name"]%></h1>
-
+<p>Release year: <%=@album["release_year"] %></p>
   <% unless @album.cover_url.nil? %>
   <h2>
     Album Cover:
   </h2>
   <img class="img-fluid"src="<%= @album.cover_url %>" alt="">
   <% end %>
-<p>Release year: <%=@album["release_year"] %></p>
+
 
   <div class="controls">
     <a class="btn btn-primary" href="/albums/<%= @album["id"]%>/edit">Edit</a>

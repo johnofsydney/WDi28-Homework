@@ -121,8 +121,12 @@ post "/albums/:id" do
 end
 
 #Delete
-get "/albums/:id/delete" do
+get "/albums/:id/delete" do ## TODO: delete all songs for this album first
   album = Album. find params[:id]
+
+  # Before deleting the album, we first delete all songs with albums
+  songs = Song.where(album_id: params[:id]).destroy_all
+
   album.destroy
   redirect to("/albums")
 end

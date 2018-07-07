@@ -1,14 +1,26 @@
-<h1>Edit Album</h1>
+<div class="row">
+  <div class="col-6 m-auto">
 
-<form action="/albums/<%= @album['id']%>" method="post">
+
+<h1 class="text-center">Edit Album</h1>
+
+<form class="p-3"action="/albums/<%= @album['id']%>" method="post">
+  <div class="form-group">
+
+
   <label>Name: </label>
   <input type="text" name="name" value="<%= @album['name']%>" placeholder="album name" required autofocus>
+  </div>
+  <div class="form-group">
   <label>cover image Url: </label>
   <input type="url" name="cover_url" value="<%= @album['cover_url']%>" required placeholder="https://">
-
+  </div>
+  <div class="form-group">
   <label>Release Year</label>
   <input type="text" name="release_year" value = "<%= @album['release_year']%>"required placeholder="1999">
-
-  <button>Update</button>
+  </div>
+  <button class="btn btn-warning">Update</button>
 </select>
 </form>
+</div>
+</div>

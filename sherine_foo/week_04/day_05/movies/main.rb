@@ -33,7 +33,7 @@ end
 
 
 #CREATE
-post '/movies' do  # added /new but where is the new directory goes?
+post '/movies/new' do  # added /new but where is the new directory goes?
   movie = Movie.new
   movie.name = params[:name]
   movie.genre = params[:genre]

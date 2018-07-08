@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 6vw;
+  font-size: 3vw;
   color: #40E0D0;
   text-align: center;
   background-color: rgba(64,224, 208, 0.2);
@@ -47,15 +47,17 @@ p {
 
 a {
   color: #40E0D0;
-  padding: 1em;
+  padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   align-items: center;
 }
 
 img.feature {
   display:block;
   max-width: 100%;
+  margin: 0 auto;
+  width: 25em;
 }
 
 .all_image {

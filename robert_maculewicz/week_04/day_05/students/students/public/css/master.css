@@ -1,0 +1,51 @@
+body {
+  background-color: lightgrey;
+
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: black;
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+}
+.front{
+width: 85vw;
+height: 45vw;
+}
+.photo{
+  width: 50vw;
+  height: 30vw;
+  margin:0px 200px;
+  display: inline;
+}
+.index{
+  font-size: 20px;
+  display:block;
+  margin: -310px 3px 324px 24px;
+}
+.student1, .student2{
+  color: black;
+}
+.uniname1{
+  color: black;
+}
+.rob{
+  color: black;
+}
+.delete{
+  color: red;
+}

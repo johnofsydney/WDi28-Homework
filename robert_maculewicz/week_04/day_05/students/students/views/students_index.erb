@@ -1,0 +1,18 @@
+<h1>All Students</h1>
+ <!-- <img class="front1" src="https://alfahir.hu/sites/default/files/indexfoto/diploma_3.jpg " />  -->
+<div class="photo">
+
+  <img class="photo" src="https://alfahir.hu/sites/default/files/indexfoto/diploma_3.jpg " />
+</div>
+<% @students.each do |student| %>
+  <p class="index">
+    <a class="student2" href="/students/<%= student["id"] %>">
+      <%= student["name"] %>
+      </a>
+
+       <a class="student1" href="/students/<%= student["id"] %>">
+        <%= student["family"] %>
+        </a>
+
+  </p>
+<% end %>

@@ -1,0 +1,9 @@
+<h1><%= @error.name %></h1>
+<p class="code"><%= @error.error_msg %></p>
+<% unless @error.err_meaning.nil? %>
+ <span><a href="/err_meaning/<%= @error.err_meaning.id %>">Possible Meaning</a></span> 
+<% end %>
+<div class="options">
+  <a href="<%= @error.id %>/edit">Edit</a>
+  <a href="<%= @error.id %>/delete">Delete</a>
+</div>

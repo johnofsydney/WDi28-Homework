@@ -1,0 +1,20 @@
+<h1><%= @country['name'] %></h1>
+
+
+<% unless @country.drink.nil? %>
+  <h2>
+    Drink:
+    <a href="/drinks/<%= @country.drink.id %>">
+      <%= @country.drink.name %>
+    </a>
+  </h2>
+<% end %>
+
+<% unless @country['image'].nil? %>
+  <img class="feature" src="<%= @country['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/countries/<%= @country['id'] %>/edit">Edit</a>
+  <a href="/countries/<%= @country['id'] %>/delete">Delete</a>
+</div>

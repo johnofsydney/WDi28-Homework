@@ -1,0 +1,8 @@
+<% @pizzas.each do |pizza| %>
+  <p>
+    <%= pizza["name"] %>
+    <%= pizza["vegetarian"]==1? '[v]':'' %>...............$<%= pizza["price"] %>
+    [<a href="/pizzas/<%= pizza["id"] %>/edit">edit</a>]
+    [<a href="/pizzas/<%= pizza["id"] %>/delete">x</a>]
+  </p>
+<% end %>

@@ -1,0 +1,17 @@
+<h1>Current Bangers on Heavy Rotation</h1>
+
+<% @records.each do |record| %>
+<p>
+  <a class='catlinks' href="/records/<%=record['id'] %>">
+    <%=record["artist"] %><br />
+    <%unless record['image'].nil?%>
+    <img class="hero" src="<%=record['image']%>"/>
+    <%end%>
+  </a>
+
+</p>
+<%end %>
+
+
+
+<!-- NOTE was trying to add small image instead of just hyperlink with name  -->

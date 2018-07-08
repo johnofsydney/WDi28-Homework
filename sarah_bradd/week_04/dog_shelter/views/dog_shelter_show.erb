@@ -1,0 +1,16 @@
+<h1> <%= @dog['breed'] %></h1>
+
+<h2> <%= @dog['name'] %></h2>
+
+<h3> <%= @dog['location'] %></h3>
+
+<% unless @dog['image'].nil? %>
+
+<img class="feature" src="<%= @dog['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/dog_shelter/<%= @dog['id'] %>/edit">Edit</a>
+  <a href="/dog_shelter/<%= @dog['id'] %>/delete">Delete</a>
+
+</div>

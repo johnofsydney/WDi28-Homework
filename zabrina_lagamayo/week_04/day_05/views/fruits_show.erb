@@ -1,0 +1,24 @@
+
+<% unless @fruit.colour.nil? %>
+  <h1 class= "header">
+  <%= @fruit['name']%>
+</h1>
+<% end %>
+
+<% unless @fruit['image'].nil? %>
+  <img class="image" src="<%= @fruit['image'] %>" />
+<% end %>
+
+<!-- controls -->
+<div class="controls">
+  <a href="/fruits/<%=@fruit['id']%>/edit">Edit</a>
+  <a href="/fruits/<%=@fruit['id']%>/delete">Delete</a>
+</div>
+
+<div class="fruits">
+  <h3>Colour of this fruit</h3>
+  <% unless @fruit.colour.nil? %>
+    <a href="/colours/<%= @fruit.colour.id %>">
+      <%= @fruit.colour.name %>
+    </a>
+  <% end %>

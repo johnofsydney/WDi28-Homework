@@ -1,3 +1,4 @@
+<a href="/add/list">Make a new Movie List</a>
 
 <ul>
 
@@ -5,6 +6,9 @@
 <li>
 <%= list["name"]%>
 
+<form class="button" action="/list/view/<%= list["id"]%>" method="get">
+  <button type="submit" >View</button>
+</form>
 <form class="button" action="/list/edit/<%= list["id"]%>" method="post">
   <button type="submit" >Edit</button>
 </form>

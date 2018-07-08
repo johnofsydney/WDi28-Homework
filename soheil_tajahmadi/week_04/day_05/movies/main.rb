@@ -15,11 +15,16 @@ ActiveRecord::Base.logger = Logger.new(STDERR)
 
 
 class List < ActiveRecord::Base
-  has_many :movies
+  has_and_belongs_to_many :movies
+
 end
+
 class Movie < ActiveRecord::Base
-  has_many :lists
+  has_and_belongs_to_many :lists
+
 end
+
+
 
 get '/' do
   erb :home
@@ -41,6 +46,11 @@ end
 get '/lists' do
   @lists = List.all
   erb :list_of_lists
+end
+
+get '/list/view/:id' do
+  @list = List.find params[:id]
+  erb :list_view
 end
 
 
@@ -99,6 +109,21 @@ post '/movie/delete/:id' do
   redirect to("/movies")
 end
 
+post '/movie/addtolist/:id' do
+  @movie_id = params[:id]
+  erb :movie_add_to_list
+end
+
+post '/list/addmember/:id' do
+  movie_id = params[:id]
+  list_id = params[:list_id]
+  list = List.find list_id
+  # binding.pry
+  list.movie_ids += [movie_id]
+  list.save
+  redirect to("/list/view/#{params[:list_id]}")
+end
+
 post '/list/edit/:id' do
   @list = List.find params[:id]
   erb :list_edit
@@ -108,4 +133,14 @@ post '/list/delete/:id' do
   list = List.find params[:id]
   list.destroy
   redirect to("/lists")
+end
+# remving a movie from a list, sent from list_view.erb
+post '/list/remove/:id' do
+
+  movie_id = params[:id]
+  list = List.find params[:list_id]
+    # binding.pry
+  list.movie_ids -= [movie_id.to_i]
+  list.save
+  redirect to("/list/view/#{params[:list_id]}")
 end

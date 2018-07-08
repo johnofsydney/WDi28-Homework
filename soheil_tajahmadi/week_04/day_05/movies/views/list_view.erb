@@ -1,0 +1,12 @@
+<h1><%= @list.name %></h1>
+<p>Decription: <%= @list.comment %></p>
+<% @list.movie_ids.each do |movie_id|%>
+  <%movie = Movie.find movie_id %>
+  <h2><%= movie.name%></h2>
+  <p><%= movie.director%></p>
+
+  <form class="button" action="/list/remove/<%= movie["id"]%>" method="post">
+    <button type="submit" value = "<%= @list.id %>" name="list_id">Remove</button>
+  </form>
+
+<%end %>

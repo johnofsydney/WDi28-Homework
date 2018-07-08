@@ -18,3 +18,9 @@ CREATE TABLE lists (
 );
 
 INSERT INTO lists (name,comment) VALUES ('Greatest movies of all time', 'A selection of Best movies ever!');
+
+
+CREATE TABLE lists_movies (
+  movie_id INTEGER,
+  list_id INTEGER
+);

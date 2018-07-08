@@ -6,7 +6,7 @@ body {
 
 .container {
   background-color: lightBlue;
-  min-height: 900px;
+  /* min-height: 900px; */
 }
 
 h2 {
@@ -19,6 +19,6 @@ form {
   border-radius: 10px;
 }
 
-footer {
+/* footer {
   margin-top: 25%;
-}
+} */

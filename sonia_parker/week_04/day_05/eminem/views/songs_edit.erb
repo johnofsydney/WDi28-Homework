@@ -1,11 +1,21 @@
-<h1>Edit Song</h1>
+<div class="row">
+  <div class="col-6 m-auto">
 
-<form action="/songs/<%=@song['id']%>" method="post">
+
+<h1 class="text-center">Edit Song</h1>
+
+<form class="p-3 m-2 bg-dark text-white"action="/songs/<%=@song['id']%>" method="post">
+  <div class="form-group">
+
+
   <label>Name: </label>
   <input type="text" name="name" value="<%= @song['name']%>" placeholder="song name" required autofocus>
-  <label>youtube Url: </label>
-  <input type="text" name="youtube_url" value="<%= @song['youtube_url']%>" required placeholder="https://">
-
+  </div>
+    <div class="form-group">
+  <label>youtube Url:(include 11-letter combination after "v=") </label>
+  <input type="text" name="youtube_url" value="<%= @song['youtube_url']%>" required placeholder="wfWIs2gFTAM">
+  </div>
+    <div class="form-group">
   <label>Choose Album</label>
   <select  name="album_id">
     <option></option>
@@ -13,7 +23,9 @@
     <option value ="<%= album.id %>" <%="selected" if album.id==@song.album_id %>> <%= album.name %> </option>
     <% end %>
   </select>
-
-  <button>Update</button>
+  </div>
+  <button class="btn btn-warning">Update</button>
 </select>
 </form>
+</div>
+</div>

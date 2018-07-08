@@ -1,10 +1,10 @@
 
 
 body {
+  margin: 0, auto;
   text-align: center;
   background-color: #222;
   color: white;
-  margin: 0, auto;
   font-family: 'Paytone One', sans-serif;
 }
 
@@ -60,7 +60,7 @@ img.feature {
 
 .all_image {
   width: 10em;
-  text-align: 
+  tex
 }
 
 form {

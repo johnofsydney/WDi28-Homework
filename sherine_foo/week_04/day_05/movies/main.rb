@@ -31,13 +31,9 @@ get '/movies' do
   erb :movies_index
 end
 
-#new
-get '/movies/new' do
-  erb :movies_new
-end
 
 #CREATE
-post '/movies/new' do  # added /new but where is the new directory goes?
+post '/movies' do  # added /new but where is the new directory goes?
   movie = Movie.new
   movie.name = params[:name]
   movie.genre = params[:genre]
@@ -47,10 +43,9 @@ post '/movies/new' do  # added /new but where is the new directory goes?
   redirect to ("/movies/#{movie.id}")
 end
 
-#show
-get '/movies/:id' do
-  @movie = Movie.find params[:id]
-  erb :movies_show
+#new
+get '/movies/new' do
+  erb :movies_new
 end
 
 #edit
@@ -58,6 +53,14 @@ get '/movies/:id/edit' do
   @movie = Movie.find params[:id]
   erb :movies_edit
 end
+
+#show
+get '/movies/:id' do
+  @movie = Movie.find params[:id]
+  erb :movies_show
+end
+
+
 
 #update
 post '/movies/:id' do
@@ -83,10 +86,6 @@ get '/directors' do
   erb :directors_index
 end
 
-#new directors
-get 'directors/new' do
-  erb :directors_new
-end
 
 #Create directors
 post '/directors' do
@@ -97,17 +96,27 @@ post '/directors' do
   redirect to ("directors/#{ director.id }")
 end
 
-#show directors
-get '/directors/:id' do
-  @director = Director.find params[:id]
-  erb :directors_show
+
+#new directors
+get '/directors/new' do
+
+  erb :directors_new
 end
+
 
 #edit
 get 'directors/:id/edit' do
   @director = Director.find params[:id]
   erb :directors_edit
 end
+
+#show directors
+get '/directors/:id' do
+
+  @director = Director.find params[:id]
+  erb :directors_show
+end
+
 
 #Update
 post '/directors/:id' do

@@ -1,0 +1,24 @@
+<h1>Name: <%= @developer.name %></h1>
+<h2>Headquarters: <%= @developer.headquarters %></h2>
+
+<% unless @developer.videogames.empty? %>
+  <h2>Associated Games:</h2>
+  <ul>
+    <% @developer.videogames.each do |videogame| %>
+      <li>
+        <a href="/videogames/<%= videogame.id %>">
+          <%= videogame.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @developer['image'].nil? %>
+  <img class="feature" src="<%= @developer['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/developers/<%= @developer.id %>/edit">Edit</a>
+  <a href="/developers/<%= @developer.id %>/delete">Delete</a>
+</div>

@@ -1,0 +1,27 @@
+<h1>Drop the Needle on a New Album</h1>
+
+<form action="/albums" method="post">
+  <!-- title  -->
+  <label>Title:</label>
+  <input type="text" name="title" placeholder="Album Title" required autofocus>
+
+  <!-- year -->
+  <label>Year Released:</label>
+  <input type="integer" name="year" placeholder="Enter year" required>
+
+  <!-- image -->
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://...">
+
+<!-- associating artist with album on page.... -->
+  <label>Artist:</label>
+    <select name="artist_id">
+  <!-- can select artist in drop down -->
+      <option></option>
+      <% Artist.all.each do |artist| %>
+        <option value="<%= artist.id %>"><%= artist.name %></option>
+      <% end %>
+    </select>
+
+  <button>Add Album!</button>
+</form>

@@ -1,0 +1,23 @@
+<h1><%= @artist.name %></h1>
+
+<% unless @artist.albums.empty? %>
+  <h2>Albums by <%= @artist.name %>:</h2>
+  <ul>
+    <% @artist.albums.each do |album| %>
+      <li>
+        <a href="/albums/<%= album.id %>">
+          <%= album.title %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @artist.image.nil? %>
+  <img class="feature" src="<%= @artist.image %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/artists/<%= @artist.id %>/edit">Edit</a>
+  <a href="/artists/<%= @artist.id %>/delete">Delete</a>
+</div>

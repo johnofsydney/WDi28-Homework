@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  background-image: url("../images/recordhands.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+}
+
+.container {
+  /* grid-template-rows: 1em, auto, 2em; */
+  min-height: 100%;
+  min-width: 100%;
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   grid-template-columns: 100%;
+  /* box-sizing: border-box; */
+  text-align: center;
+}
+
+nav {
+    text-align: left;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(211, 211, 211);
+    border-bottom-width: 0.1px;
+    padding-bottom: 0.8em;
+    padding-top: 0.5em;
+
+}
+
+nav a {
+  padding: 0.4em;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #8C5D4F;
+  transition: 2s;
+}
+
+h1 {
+  padding-top: 0.7em;
+}
+
+.hero {
+  max-height: 35vh;
+  border-radius: 4px;
+}
+
+.edlinks {
+  color: white;
+  text-decoration: none;
+  padding: 0.35em;
+}
+
+.edlinks a:hover {
+  color: #8C5D4F;
+  transition: 2s;
+}
+
+.catlinks {
+  color: white;
+  text-decoration: none;
+}
+
+.new {
+  padding-top:2em;
+  padding-bottom: 1em;
+}
+
+.formdiv {
+  display:inline-grid;
+  grid-column: 1, auto;
+  grid-auto-rows: 6;
+  grid-row-gap: 1em;
+}
+
+.formdiv label {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.formdiv button {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  height: 2.5em;
+}
+
+.formdiv input {
+  background-color: lightgrey;
+  border-radius: 4px;
+  height: 2em;
+
+}
+
+.c1 img {
+height: 25vh;
+border-radius: 20%;
+border-bottom: solid 2px rgba(255, 255, 255, 0.8);
+border-right: solid 2px rgba(255, 255, 255, 0.8);
+}
+
+.c2 img {
+  height: 25vh;
+  border-radius: 20%;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.8);
+  border-right: solid 2px rgba(255, 255, 255, 0.8);
+  /* text-shadow: 2px, 2px, 2px rgba(0, 0, 0, 0.8); */
+}
+
+.c1 button, .c2 button {
+
+background-color: black;
+/* color: white; */
+border-radius: 4px;
+height: 2.5em;
+}
+
+.c1 a, .c2 a {
+  text-decoration:  none;
+  color: white;
+}
+
+footer {
+  background-color: rgba(211, 211, 211, 0.7);
+  display: grid;
+  grid-template-rows: 2;
+  max-width: 100vw;
+  max-height: 20vh;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.blackicon {
+  max-width: 5vh;
+  max-height: 5vh;
+  display:inline-flex;
+  align-items: center;
+  padding-bottom: 1em;
+
+}
+
+/* .twittericon:hover{
+  background:url(../images/twittericonwhite.png);
+}
+
+.instaicon:hover{
+  background:url(../images/instaiconwhite.png);
+} */
+
+footer p {
+  text-align: center;
+  color: black;
+}

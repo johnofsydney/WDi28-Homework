@@ -57,8 +57,8 @@ end
 #edit albums
 
 get '/albums/:id/edit' do
-  @album = Album.find ##NOTE ASK WHY IT IS THIS SYNTAX
-  params[:id]
+  @album = Album.find params[:id] ##NOTE ASK WHY IT IS THIS SYNTAX
+
   erb :albums_edit
 end
 
@@ -100,7 +100,7 @@ post '/artists' do
   artist.name = params[:name]
   artist.image = params[:image]
   artist.save
-  redirect to("/arists/#{artist.id}")
+  redirect to("/artists/#{ artist.id }")
 end
 
 #READ/SHOW ARTIST
@@ -111,7 +111,7 @@ end
 
 #EDIT ARTISTS
 get '/artists/:id/edit' do
-  @artist = Artist.find params [:id]
+  @artist = Artist.find params[:id]
   erb :artists_edit
 end
 
@@ -121,7 +121,7 @@ post '/artists/:id' do
   artist.name = params[:name]
   artist.image = params[:image]
   artist.save
-  redirect to("/arists/#{artist.id}")
+  redirect to("/artists/#{ artist.id }")
 end
 
 #delete artist

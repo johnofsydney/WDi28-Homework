@@ -1,17 +1,17 @@
 <h1>All Albums on Heavy Rotation</h1>
-
-<% @albums.each do |album| %>
-<p>
-  <a class='catlinks' href="/albums/<%=album["id"] %>">
-    <%=album["title"] %>
-    <%unless album["image"].nil?%>
-    <img class="hero" src="<%=album["image"]%>"/>
-    <%end%>
-  </a>
-
-</p>
-<%end %>
+<div class="topofindex">
 
 
+  <% @albums.each do |album| %>
+  <p>
+    <a class='catlinks' href="/albums/<%=album["id"] %>">
+      <%=album["title"] %><br></br>
+      <%unless album["image"].nil?%>
+      <img class="hero" src="<%=album["image"]%>"/>
+      <%end%>
+    </a>
 
-<!-- NOTE was trying to add small image instead of just hyperlink with name  -->
+  </p>
+  <%end %>
+
+</div>

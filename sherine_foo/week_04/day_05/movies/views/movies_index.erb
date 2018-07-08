@@ -1,10 +1,15 @@
 <h1>Movies Collection</h1>
 
-<% @movies.each do |movie| %>
+<div class="container1">
 
-  <p>
+<% @movies.each do |movie| %>
+  <div class="box">
+
     <a href="/movies/<%= movie["id"] %>">
       <%= movie["name"] %>
     </a>
-  </p>
+    <img class ="all_image" src="<%= movie['image'] %>" />
+
+    </div>
+
 <% end %>

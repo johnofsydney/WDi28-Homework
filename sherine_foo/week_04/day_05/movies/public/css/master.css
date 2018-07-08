@@ -17,6 +17,15 @@ body {
   text-align: center;
 }
 
+.container1 {
+ display: grid;
+ grid-template-columns: 25% 25% 25% 25%;
+ grid-row-gap: 20px;
+ padding: 40px;
+ padding-left: 100px;
+
+}
+
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 7vw;
@@ -40,13 +49,18 @@ a {
   color: #40E0D0;
   padding: 1em;
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 2vw;
   align-items: center;
 }
 
 img.feature {
   display:block;
-  max-width: 100%
+  max-width: 100%;
+}
+
+.all_image {
+  width: 10em;
+  text-align: 
 }
 
 form {

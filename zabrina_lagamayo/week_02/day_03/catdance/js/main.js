@@ -4,6 +4,7 @@
 const image = document.getElementsByTagName('img')[0];
 const poop = document.getElementsByTagName('img')[1];
 
+
 let direction = 'forward'
 
 
@@ -51,8 +52,6 @@ const walkBackward = function () {
     image.style.transform = "scaleX(1)";
  }
 }
-
-
 setInterval(catWalk, 0.005);
 
 // const poopFall = function () {

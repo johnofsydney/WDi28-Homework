@@ -1,0 +1,10 @@
+<h1><%= @dog['breed']%></h1>
+
+<h2>Ranking (0-10) : <%= @dog['ranking']%></h2>
+
+<img src="<%= @dog['image'] %>" alt="">
+
+<div class="controls">
+  <a href="/dogs_list/<%= @dog['id'] %>/edit">Edit</a>
+  <a href="/dogs_list/<%= @dog['id']%>/delete">Delete</a>
+</div>

@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: blue;
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

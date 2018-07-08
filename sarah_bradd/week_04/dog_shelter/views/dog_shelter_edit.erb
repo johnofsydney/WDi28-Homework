@@ -1,0 +1,14 @@
+<h1> edit Dog_Shelter </h1>
+
+<form action="/dog_shelter/<%= @dog['id'] %>" method="post">
+  <label>Breed:</label>
+  <input type="text" name="breed" value="<%= @dog['breed'] %>" placeholder="breed name" required autofocus>
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @dog['name']%>" placeholder="name" required>
+  <label>Location:</label>
+  <input type="text" name="location" value="<%= @dog['location'] %>" placeholder="location name" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @dog['image'] %>" placeholder="http://...">
+
+  <button>create</button>
+</form>

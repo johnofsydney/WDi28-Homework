@@ -1,0 +1,18 @@
+
+
+
+
+
+<div class="container1">
+
+<% @brands.each do |brands|%>
+<div class="box">
+
+
+  <a href="/brands/<%= brands['id']%>"><img src="<%= brands['logo']%>"></a>
+
+</div>
+
+<% end %>
+</div>
+</div>

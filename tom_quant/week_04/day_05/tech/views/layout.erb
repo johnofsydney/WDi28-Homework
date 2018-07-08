@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Earphones</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+
+    <div class="title">
+      <h1>Quality Sounds</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">home</a>
+        </li>
+        <li>
+          <a href="/earphones">All Earphones</a>
+        </li>
+
+        <li>
+          <a href="/brands">Brand List</a>
+        </li>
+
+        <div class="dropdown">
+          <button class="dropbtn"> New <i class="fas fa-bars"></i></button>
+          <div class="dropdown-content">
+            <a href="/brands/new">Brand</a>
+            <a href="/earphones/new">Earphone</a>
+          </div>
+        </div>
+      </ul>
+
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

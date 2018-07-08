@@ -1,3 +1,6 @@
+<div class="lists">
+
+
 <a href="/add/list">Make a new Movie List</a>
 
 <ul>
@@ -6,6 +9,7 @@
 <li>
 <%= list["name"]%>
 
+<div class="controls">
 <form class="button" action="/list/view/<%= list["id"]%>" method="get">
   <button type="submit" >View</button>
 </form>
@@ -16,6 +20,9 @@
   <button type="submit" >Delete</button>
 </form>
 
+</div>
+
 </li>
 <% end%>
 </ul>
+</div>

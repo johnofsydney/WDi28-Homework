@@ -25,15 +25,17 @@ class Movie < ActiveRecord::Base
 end
 
 
-
+# HomePage
 get '/' do
   erb :home
 end
 
+# adding a new movie to the database page
 get '/add/movie' do
   erb :new_movie
 end
 
+# creating a new list page
 get '/add/list' do
   erb :new_list
 end
@@ -54,7 +56,8 @@ get '/list/view/:id' do
 end
 
 
-
+# adding a new movie to the database action and
+# then back to movies  page, called from new_movie.erb
 post '/movies/new' do
   movie = Movie.new
   movie.name = params[:name]
@@ -66,6 +69,7 @@ post '/movies/new' do
   redirect to('/movies')
 end
 
+# Updating the movie database
 post '/movies/update/:id' do
   movie = Movie.find params[:id]
   movie.name = params[:name]

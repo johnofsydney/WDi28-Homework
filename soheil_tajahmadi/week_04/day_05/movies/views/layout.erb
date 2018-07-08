@@ -6,26 +6,29 @@
     <title>Another Movie List Maker</title>
   </head>
   <body>
+    <div class="container">
 
-    <header>
-      <h1>Make your own movies lists</h1>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/movies">List of all the movies</a>
-        <a href="/lists">Movies lists</a>
-      </nav>
-      <hr>
-    </header>
 
-    <main>
+      <header>
+        <h1>Making movie lists</h1>
+              <hr>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/movies">Movies</a>
+          <a href="/lists">Movie Lists</a>
+        </nav>
 
-      <%= yield %>
+      </header>
 
-    </main>
+      <main>
 
-    <footer>
+        <%= yield %>
 
-    </footer>
+      </main>
 
+      <!-- <footer>
+        All information on this page has been taken from IMDB database.
+      </footer> -->
+    </div>
   </body>
 </html>

@@ -1,7 +1,8 @@
 
 
-<form class="" action="/list/addmember/<%= @movie_id %>" method="post">
-  <label>Add this movie to: </label>
+<form class="new_entry" action="/list/addmember/<%= @movie_id %>" method="post">
+  <%movie =  Movie.find params[:id]%>
+  <label>Add <%= movie.name%> to: </label>
   <select name="list_id">
     <option></option>
     <% List.all.each do |list| %>

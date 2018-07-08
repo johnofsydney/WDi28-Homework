@@ -1,12 +1,21 @@
 <h1><%= @list.name %></h1>
-<p>Decription: <%= @list.comment %></p>
+<p><em>Decription:</em> <%= @list.comment %></p>
+<div class="movieList">
 <% @list.movie_ids.each do |movie_id|%>
   <%movie = Movie.find movie_id %>
-  <h2><%= movie.name%></h2>
-  <p><%= movie.director%></p>
+  <div class="movieItem">
 
-  <form class="button" action="/list/remove/<%= movie["id"]%>" method="post">
-    <button type="submit" value = "<%= @list.id %>" name="list_id">Remove</button>
-  </form>
+    <div class="movieImage">
+      <img src="<%= movie["thumbnail"]%>" alt="">
+    </div>
+    <div class="movieInfo">
+      <h2><%= movie.name%></h2>
+      <p>Director: <%= movie.director%></p>
 
+      <form class="button" action="/list/remove/<%= movie["id"]%>" method="post">
+        <button type="submit" value = "<%= @list.id %>" name="list_id">Remove</button>
+      </form>
+    </div>
+  </div>
 <%end %>
+</div>

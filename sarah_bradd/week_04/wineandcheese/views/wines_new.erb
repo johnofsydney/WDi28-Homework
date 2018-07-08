@@ -1,0 +1,25 @@
+<h1> this is a new wine </h1>
+
+<form action="/wines" method="post">
+<label>Type:</label>
+<input type="text" name="type" placeholder="Wine name" required autofocus>
+
+<label>Name:</label>
+<input type="text" name="name" placeholder="type name" required>
+
+<label>Region</label>
+<input type="text" name="region" placeholder="region name" required>
+
+<label>Image:</label>
+<input type="url" name="image" placeholder="http://...">
+
+<label>Cheeses:</label>
+  <select name='cheese_id'>
+    <option></option>
+    <% Cheese.all.each do |cheese | %>
+    <option value="<%= cheese.id %>"><%= cheese.name %></option>
+    <% end %>
+</select>
+
+  <button>create</button>
+</form>

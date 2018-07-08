@@ -89,7 +89,7 @@ get 'directors/new' do
 end
 
 #Create directors
-post '/directors/new' do
+post '/directors' do
   director = Director.new
   director.name = params[:name]
   director.image = params[:image]

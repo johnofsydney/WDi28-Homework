@@ -2,7 +2,7 @@
 <form action="/wines/<%= @wine['id'] %>" method="post">
 
 <Label>Type:</label>
-<input type="text" name="type" value="<% @wine_type['wine'] %>" placeholder="Wine Type" required autofocus>
+<input type="text" name="type" value="<% @wine['wine'] %>" placeholder="Wine Type" required autofocus>
 
 <lable>Name:</label>
 <input type="text" name="name" value="<%= @wine['name'] %>" placeholder="type name" required>
@@ -11,7 +11,7 @@
 <input type="text" name="region" value="<%= @wine['region'] %>" placeholder="region name" required>
 
 <label>Image:</label>
-<input type="url" name="image" value="<% @wines['image'] %>" placeholder="http://...">
+<input type="url" name="image" value="<% @wine['image'] %>" placeholder="http://...">
 
 <label>Cheeses:</label>
 <select name='cheese_id'>

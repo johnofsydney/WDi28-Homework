@@ -24,7 +24,7 @@ ActiveRecord::Base.logger = Logger.new(STDERR) #save information to log files at
 
 
 get '/' do
-  erb :home
+ erb :home
 end
 
 #index wine_type
@@ -67,18 +67,18 @@ end
 
 post '/wines/:id' do
   wine = Wine.find params[:id]
-  wine.type = params[:type]
+  wine.wine_type = params[:type]
   wine.name = params[:name]
   wine.region = params[:region]
   wine.image = params[:image]
-  wine.wines_id = params[:wines_id]
+ wine.cheese_id = params[:cheese_id]  #wine.wines_id = params[:wines_id]
 redirect to ("wines/#{ wine.id }")
 end
 
 #delete
 get '/wines/:id/delete' do
   @wine = Wine.find params[:id]
-  wine.destroy
+  @wine.destroy
   redirect to ('/wines')
 end
 #index

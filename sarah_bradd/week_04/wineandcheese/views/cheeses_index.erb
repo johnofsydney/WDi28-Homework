@@ -1,8 +1,8 @@
-<h1> All Cheeses </h1>
+<h1> Add your cheese </h1>
 <% @cheeses.each do |cheese| %>
   <p>
     <a href="/cheeses/<%= cheese["id"] %>">
-  <%= cheese['type'] %>
+  <%= cheese['name'] %>
 </a>
 </p>
 

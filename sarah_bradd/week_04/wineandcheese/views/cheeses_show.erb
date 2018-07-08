@@ -1,11 +1,11 @@
-<h1><%= @cheese['type'] %></h1>
+<h1><%= @cheese['name'] %></h1>
 <% unless @cheese.wines.empty? %>
 
 <h2>Cheeses:</h2>
 <ul>
   <% @cheese.wines.each do |wine| %>
   <li>
-    <a href="/wines/<%= wine.id %>"><% wine.name %></a>
+    <a href="/wines/<%= wine.id %>"><%= wine.name %></a>
   </li>
   <% end %>
 </ul>

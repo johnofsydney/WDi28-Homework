@@ -1,10 +1,10 @@
 <h1> <%= @wine['wine_type'] %></h1>
 
-<h2> Name: <% @wine['name']%></h2>
+<h2> Name: <%= @wine['name']%></h2>
 
-<h3> Region: <% @wine['region']%></h3>
+<h3> Region: <%= @wine['region']%></h3>
 
-<% unless @wine.cheeses.nil? %>
+<% unless @wine.cheese.nil? %>
 
 <h4>Cheese:
 <a href="/cheeses/<%= @wine.cheese.id %>"><%= @wine.cheese.name %>

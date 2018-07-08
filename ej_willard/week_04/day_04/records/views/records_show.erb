@@ -1,0 +1,15 @@
+  <h1>Records are always a Sound Purchase</h1>
+
+<h1 class='h1show'><%=@record['artist']%></h1>
+<h1 class='h1show'><%=@record['record_title']%></h1>
+<h1 class='h1show'><%=@record['record_specs']%></h1>
+
+<%unless @record['image'].nil?%>
+<img class="hero" src="<%=@record['image']%>"/>
+<%end%>
+
+<div class="controls">
+  <a class="edlinks" href="/records/<%= @record['id']%>/edit">Edit</a>
+  <a class="edlinks" href="/records/ <%= @record['id'] %> /delete">Delete</a>
+
+</div>

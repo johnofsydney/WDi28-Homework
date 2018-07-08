@@ -1,0 +1,8 @@
+<h1>All Eminem Albums</h1>
+<% @albums.each do |album|%>
+<p>
+  <a href="/albums/<%=album["id"]%>">
+  <%= album["title"]%> <%= album["release_year"]%>
+  </a>
+</p>
+<%end%>

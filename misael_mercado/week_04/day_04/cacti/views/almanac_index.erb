@@ -1,0 +1,9 @@
+<h1>The Almanac</h1>
+
+<% @cacti.each do |cacti| %>
+  <p>
+    <a href="/almanac/<%= cacti["id"] %>">
+      <%= cacti["name"] %>
+    </a>
+  </p>
+<% end %>

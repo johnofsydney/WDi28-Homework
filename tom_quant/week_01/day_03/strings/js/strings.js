@@ -24,6 +24,10 @@ const final1 = startword1.join("")+endword2.join("")
 const final2 = startword2.join("")+endword1.join("")
 console.log(final1, final2)
 
+const mixStringOne = str1.slice(0,2) + str2.slice(2)
+const mixStringTwo = str2.slice(0,2) + str1.slice(2)
+console.log (mixStringOne + ' ' + mixStringTwo)
+
 }
 
 mixUp('cat', 'dog');
@@ -89,6 +93,93 @@ const wordLength = word.length
 verbing('swim')
 verbing('swimming')
 verbing('xa')
+
+
+const palindrome = function(str) {
+  var count = 0
+  if (str === "") {
+    console.log('nothing found')
+    return false
+  }
+if (str.length % 2 === 0 ){
+  count = str.length / 2
+}
+else {
+  if (str.length === 1){
+    console.log('palindrome')
+    return true
+  }
+  else {
+    count = (str.length -1) /2
+  }
+}
+for (i = 0; i < count; i ++){
+  if (str[i] != str.slice(-1 -i)[0]){
+  console.log('not a palindrome')
+  return false
+  }
+}
+console.log('palindrome')
+return true
+
+}
+
+
+const alphabetise = function (str){
+  const reorder = str.split("").sort().join("")
+  console.log(reorder)
+  return reorder
+
+}
+
+alphabetise('sdasvrevwesefsef')
+
+const capitalise = function (str) {
+  const array1 = str.split(" ")
+  const newArray = []
+  for (i= 0; i < array1.length; i++){
+  newArray.push(array1[i].charAt(0).toUpperCase() + array1[i].slice(1))
+}
+  return newArray.join(' ')
+}
+
+
+const biggestWord = function(str) {
+  const array1 = str.split(" ")
+  var big = array1[0]
+  for (i=0; i < array1.length; i++){
+    if (array1[i].length > big.length){
+      big = array1[i]
+    }
+
+  }
+  console.log(big)
+
+
+}
+
+
+const vowel = function(str){
+  var count = 0
+  for (i=0; i < str.length; i++){
+    if (str.charAt(i) === 'a' || str.charAt(i) === 'e' ||  str.charAt(i) === 'i' || str.charAt(i) === 'o'|| str.charAt(i) === 'u'){
+      count += 1
+}
+}
+return count
+}
+
+// 2nd and 2nd last number
+
+const sort1 = function(num) {
+  const sort2 = num.sort()
+  console.log(sort2);
+  return `${sort2[1]} ${sort2[sort2.length-2]}`
+  //sort2[sort2.length-1]
+};
+
+
+
 
 
 

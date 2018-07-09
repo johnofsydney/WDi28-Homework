@@ -1,0 +1,19 @@
+<h1><%= @song["name"]%></h1>
+
+<% unless @song.album.nil? %>
+<h2>
+  YouTube Video of the Song:
+</h2>
+<% end %>
+
+<% unless @song["youtube_url"].nil? %>
+<p><%= @song["youtube_url"]%></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/<%=@song['youtube_url'] %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<%end%>
+<p>Album: <%= @album["name"]%></p>
+
+<div class="controls">
+  <a class="btn btn-primary" href="/songs/<%= @song["id"]%>/edit">Edit</a>
+  <a class="btn btn-primary" href="/songs/<%= @song["id"]%>/delete">Delete</a>
+
+</div>

@@ -1,0 +1,12 @@
+<h1>Edit Cover</h1>
+
+<form action="/covers/<%= @cover['id'] %>" method="post">
+  <label>Artist:</label>
+  <input type="text" name="artist" value="<%= @cover['artist'] %>" placeholder="Artist name" required autofocus>
+  <label>Album:</label>
+  <input type="text" name="album" value="<%= @cover['album'] %>" placeholder="Album name" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @cover['image'] %>" placeholder="http://...">
+
+  <button>Update</button>
+</form>

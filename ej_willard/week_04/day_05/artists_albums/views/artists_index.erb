@@ -1,0 +1,17 @@
+<h1>All Artists</h1>
+<div class="topofindex">
+
+
+  <% @artists.each do |artist| %>
+    <p>
+
+      <a class="index_hero" href="/artists/<%= artist.id %>">
+        <%= artist.name %> <br></br>
+        <%unless artist["image"].nil?%>
+        <img class="index_hero" src="<%=artist["image"]%>"/>
+        <%end%>
+      </a>
+    </p>
+  <% end %>
+
+</div>

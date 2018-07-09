@@ -1,0 +1,13 @@
+
+
+<form class="new_entry" action="/list/addmember/<%= @movie_id %>" method="post">
+  <%movie =  Movie.find params[:id]%>
+  <label>Add <%= movie.name%> to: </label>
+  <select name="list_id">
+    <option></option>
+    <% List.all.each do |list| %>
+      <option value="<%= list.id %>"><%= list.name %></option>
+    <% end %>
+  </select>
+  <button type="submit" > Add </button>
+</form>

@@ -57,7 +57,7 @@ ul {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
 }
 
 li {
@@ -69,7 +69,7 @@ li {
 
 
 .feature {
-  max-width: 100%;
+  max-width: 60vw;
   display: block;
   margin: 0 auto;
   border-radius: .6em;

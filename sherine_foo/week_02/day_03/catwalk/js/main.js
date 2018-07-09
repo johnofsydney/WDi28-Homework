@@ -11,10 +11,10 @@ console.log("cat walking");
 //
 // Call that function every 50 milliseconds. Your cat should now be moving across the screen from left to right. Hurrah!
 
-
 const img = document.getElementsByTagName('img')[0];
 
 img.style.left = '0px';
+img.style.top =  (window.innerHeight - 300 ) + "px";
 let change = + 1;
 
 const catWalk = function()
@@ -33,7 +33,6 @@ const catWalk = function()
     {
     change = + 1;
     img.style.webkitTransform= "scaleX(+1)";
-
     }
   //   else if (newLoc === (window.innerWidth/2))
   //   {
@@ -43,6 +42,3 @@ const catWalk = function()
   //   };
 }
 setInterval(catWalk,1);
-
-
-// Bonus #1: When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.

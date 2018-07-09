@@ -67,9 +67,19 @@ console.log(account);
       else
       {
         $('#'+ account +'-balance').css('background-color', 'red');
+
       }
     }
 }
+
+// checkForZero = function() {
+//   $('.zero').removeClass('zero');
+//
+//   const checkingBalance = +$(`#checking-balance`).text().slice(1);
+//   if (checkingBalance <= 0){
+//
+//   }
+// }
 
 // * Make sure you are updating the display and manipulating the HTML of the page
 // action: input#checking-amount add in to balance when user click input#checking-deposit  ===    .checking-amount = amount
@@ -104,9 +114,6 @@ const updateScreen = function (bankBalance) {
     $('#checking-balance').html(bankBalance.checking);
     $('#savings-balance').html(bankBalance.savings);
   }
-
-
-
 
 
 // }); // from  $(document).ready(function(){

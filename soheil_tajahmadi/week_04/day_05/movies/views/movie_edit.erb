@@ -1,0 +1,16 @@
+<form class="new_entry" action="/movies/update/<%= @movie["id"] %>" method="post">
+
+  <label>Movie Name: </label>
+  <input type="text" name="name"  value="<%= @movie["name"] %>">
+  <label>Release year: </label>
+  <input type="number" name="year"  value="<%= @movie["year"] %>">
+  <label>Director: </label>
+  <input type="text" name="director"  value="<%= @movie["director"] %>">
+  <label>Movie cast: </label>
+  <input type="text" name="cast"  value="<%= @movie["cast"] %>">
+  <label>Thumbnail: </label>
+  <input type="text" name="thumbnail"  value="<%= @movie["thumbnail"] %>">
+
+  <button type="submit" >Done</button>
+
+</form>

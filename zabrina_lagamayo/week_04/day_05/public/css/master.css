@@ -1,0 +1,74 @@
+body {
+background-image: url(/img/back_ground.png);
+background-size: cover;
+
+}
+
+.container {
+  background-color: rgba(249, 195, 181, 0.86);
+  display: block;
+  margin: 0 auto;
+  height: 50vh;
+  width: 50vw;
+  font-size: 20px;
+}
+
+nav {
+
+  height: 5vh;
+}
+
+nav a {
+  font-size: 20px;
+  margin:30px;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(249, 195, 181, 1);
+  padding: 10px;
+  border-radius: 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.header {
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: 230px;
+  height: 219px;
+}
+
+.controls {
+  text-align: center;
+
+}
+
+.controls a {
+  text-decoration: none;
+  color: black;
+}
+
+.controls a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.fruits {
+  background-color: rgba(249, 195, 181, 0.86);
+  height: 20vh;
+}
+
+.fruits a {
+  text-decoration: none;
+  color: black;
+}
+
+.fruits li {
+  margin-left: 10px;
+}

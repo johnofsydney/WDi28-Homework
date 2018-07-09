@@ -1,0 +1,20 @@
+
+<h1 class= "header"><%= @colour['name']%></h1>
+<img class="image" src= "<%= @colour['image'] %>">
+
+
+<!-- controls -->
+<div class="controls">
+<a href="/colours/<%=@colour['id']%>/edit">Edit</a>
+<a href="/colours/<%=@colour['id']%>/delete">Delete</a>
+</div>
+
+
+<div class="fruits">
+  <h3>Fruits with this colour:</h3>
+  <% @colour.fruits.each do |fruit| %>
+  <li>
+    <a href="/fruits/<%= fruit.id %>"><%= fruit.name %></a>
+  </li>
+  <% end %>
+</div>

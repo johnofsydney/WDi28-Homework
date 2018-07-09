@@ -1,0 +1,12 @@
+<h1>Edit Developer</h1>
+
+<form action="/developers/<%= @developer.id %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @developer.name %>" required autofocus>
+  <label>Headquarters:</label>
+  <input type="text" name="headquarters" value="<%= @developer.headquarters %>">
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @developer.image %>" placeholder="http://...">
+
+  <button>Update</button>
+</form>

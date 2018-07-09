@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+  background-color: #e2ae6a;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+h1 {
+
+   font-family: 'Roboto', sans-serif;
+   font-size: 3vw;
+   text-align: center;
+   color: #29272b;
+}
+
+p {
+text-align: center;
+font-size: 1.5vw
+color: #29272b;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+}
+
+nav a {
+  color: #9b6cc6;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #29272b;
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+}
+
+li {
+    list-style: none;
+    /* width: calc(100% / 3); */
+    height: 1em;
+    padding: 3em;
+  }
+
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: .6em;
+  margin-bottom: 3em;
+}
+.btn {
+  background: #e2ddf0;
+  background-image: -webkit-linear-gradient(top, #e2ddf0, #b75fd9);
+  background-image: -moz-linear-gradient(top, #e2ddf0, #b75fd9);
+  background-image: -ms-linear-gradient(top, #e2ddf0, #b75fd9);
+  background-image: -o-linear-gradient(top, #e2ddf0, #b75fd9);
+  background-image: linear-gradient(to bottom, #e2ddf0, #b75fd9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: #030303;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #eaebda;
+  background-image: -webkit-linear-gradient(top, #eaebda, #e0be69);
+  background-image: -moz-linear-gradient(top, #eaebda, #e0be69);
+  background-image: -ms-linear-gradient(top, #eaebda, #e0be69);
+  background-image: -o-linear-gradient(top, #eaebda, #e0be69);
+  background-image: linear-gradient(to bottom, #eaebda, #e0be69);
+  text-decoration: none;
+}
+ form {
+   text-align: center;
+ }
+
+ input {
+   width: 16em;
+   height: 2.6em;
+   font-size: .8vw;
+   text-align: center;
+   border-radius: 10px;
+   font-family: 'Roboto', sans-serif;
+ }

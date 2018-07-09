@@ -1,0 +1,15 @@
+<% @all_cars.each do |car| %>
+
+<div class="car_info">
+
+  <img src="<%= car['image']%>" alt="">
+  <p>Make:  <%= car["make"]%></p>
+  <p>Model:  <%= car["model"]%></p>
+  <p>Horsepower:  <%= car["hp"]%>hp</p>
+
+  <a href="/delete/<%= car["id"]%>">Delete car</a>
+  <br>
+  <a href="/edit/<%= car["id"]%>">Edit car details</a>
+</div>
+
+<% end %>

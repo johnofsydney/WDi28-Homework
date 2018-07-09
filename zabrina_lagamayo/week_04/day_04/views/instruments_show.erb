@@ -1,0 +1,14 @@
+<h1><%= @instrument['name'] %></h1>
+
+<h2>Classification: <%=@instrument['family']%></h2>
+
+ <% unless @instrument['video'].nil? %>
+ <%= @video.iframe %>
+ <% end %>
+
+
+<div class="controls">
+  <a href="/instruments/<%= @instrument['id'] %>/edit">Edit</a>
+  <a href="/instruments/<%=@instrument['id'] %>/delete">Delete</a>
+
+</div>

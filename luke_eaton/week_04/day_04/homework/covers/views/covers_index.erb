@@ -1,0 +1,9 @@
+<h1>All Covers</h1>
+
+<% @covers.each do |cover| %>
+  <p>
+    <a href="/covers/<%= cover["id"] %>">
+      <%= cover["artist"] %>
+    </a>
+  </p>
+<% end %>

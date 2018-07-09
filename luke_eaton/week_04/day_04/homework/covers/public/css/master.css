@@ -1,0 +1,32 @@
+body {
+  background-color: #aaa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 300;
+  text-align: center;
+  
+
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+}

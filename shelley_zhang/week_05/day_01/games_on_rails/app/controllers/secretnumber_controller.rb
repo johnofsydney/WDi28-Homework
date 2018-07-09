@@ -7,11 +7,11 @@ class SecretnumberController < ApplicationController
   def info
     @random_number = rand(10)
     #get the user input value
-    @userinput = params[:number]
+    @userinput = params[:number].to_i
     if @random_number == @userinput
-        
-        render :info
-      # else redirect_to secretnumber_path
+      render :win
+    else
+      render :info
     end
   end
 end

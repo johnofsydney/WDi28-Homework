@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get '/magic8' => 'games#magic8'
   get '/secret_n' => 'games#secret'
   get '/rps' => 'games#rps'
-
+  post '/secret_n' => 'games#secret'
   get '/rps/:throw' => 'games#rps_play'
 end

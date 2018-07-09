@@ -29,13 +29,20 @@ class GamesController < ApplicationController
   end
 
   def secret
-    if !params[:g].nil?
+    # raise params.inspect
+    if params[:n].nil? || params[:n].empty?
       @num = (1..10).to_a.sample
+    else
+      @num = params[:n]
+    end
+
+    if !params[:g].nil?
       @win = @num == params[:g]
+      @num = "" if @win == true
     else
       @win = nil
     end
-
+    # raise params.inspect
     render :secret
   end
 

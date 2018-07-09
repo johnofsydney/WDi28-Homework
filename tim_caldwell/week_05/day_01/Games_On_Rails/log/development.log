@@ -1405,3 +1405,520 @@ Processing by GamesController#secret as HTML
 Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/secret_n?utf8=%E2%9C%93&g=1" for 127.0.0.1 at 2018-07-10 08:58:37 +1000
+  
+SyntaxError (/Users/xael/dev/WDI Projects/WDi28-Homework/tim_caldwell/week_05/day_01/Games_On_Rails/app/controllers/games_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 08:58:42 +1000
+  
+SyntaxError (/Users/xael/dev/WDI Projects/WDi28-Homework/tim_caldwell/week_05/day_01/Games_On_Rails/app/controllers/games_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/games_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 08:58:51 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 275ms (Views: 273.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:02 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3LERqaXEIVFnAT868Cv+0oarEulQKpfywfBRWGmAuo8tKlkvhXF39rjAJdjwG7mmSAHDNhNV7EiXz0FvQcasg==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:05 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YYDUNUeJ9BI0zLfBKxSEj7iLoNbnCI7Q23oZ9d8Jq6l2RrkXXwshSKuzs6qjFEWSa7ELkZoFcz4yIuW1A6iz8Q==", "g"=>"2"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:06 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"flcDs8/j5mMQEj8wXSvtlBbFiDd/LEpQhDbUIwN8A8ZpkW6R12EzOY9tO1vVKyyJxf8jcAIht75tbihj390bng==", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:07 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEsqpZUBDuWvF/QA3wTSHp8BrLSXdk3gBnidK82MPjFXjUeHjYPbvzBo8GtXBBMDTDsH8+p7sA7vIGFrES0maQ==", "g"=>"4"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:07 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z5+jT+AVcQOEcLYrcD1kLCk2xlxoNprOerOgPUoTqZfYWc5t+JekWRsPskD4PaUx+gxtGxU7ZyCT61x9lrKxzw==", "g"=>"5"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:08 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UVmNWyfqsnHZ0aZEKvTo/+ro0vRxzU9JKtLAFZTHTHhGn+B5P2hnK0auoi+i9CniOdJ5swzAsqfDijxVSGZUIA==", "g"=>"6"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:08 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"npX8m7UpOFvQ4LhHjHAjMDRa5UwHKTC8SbSxtQKLilaJU5G5ravtAU+fvCwEcOIt52BOC3okzVKg7E313iqSDg==", "g"=>"7"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:09 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wtVQ52mnvkJq0BKwzmi7TCSjjmM8ZTMBsAnqkXlRINfVEz3FcSVrGPWvFttGaHpR95klJEFozu9ZURbRpfA4jw==", "g"=>"8"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:10 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3GbQW5MU/oVxtUChlOUNGeAaUPsbhPp5gRt09Vlbj83LoL15i5Yr3+7KRMoc5cwEMyD7vGaJB5doQ4i1hfqXlQ==", "g"=>"9"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 08:59:10 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWO5diEhIdVAQHBkeF40nTVb0Keo59XJ4kkEd2s2x18GpdRUOaP0j98/dA/wXvWA5mF74NXqKCcLEfg3t5ffBw==", "g"=>"10"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:00:25 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/xael/dev/WDI Projects/WDi28-Homework/tim_caldwell/week_05/day_01/Games_On_Rails/app/views/games/secret.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/games/secret.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/games_controller.rb:42:in `secret'
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:00:51 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:00:52 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9uvHL/+72TfLQ5AJoGlwna99qJv0gSOAQiObESem+F/hLaoN5zkMbVQ8lGIoabGAfEcD3ImM3m6re2dR+wfgBw==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:01:10 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ey3qjVvjubPfhNrfSKbRoIcy9TuPf1V1zvUKEdFJJ85s64evQ2Fs6UD73rTAphC9VAhefPJyqJsnrfZRDeg/lg==", "g"=>"2"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:01:12 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlfN9UrtmHPVNR8RuXcTAucsiZ9NE5miR0OVj4GzOONdkaDXUm9NKUpKG3oxd9IfNBYi2DAeZEyuG2nPXRIguw==", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:01:13 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:02:10 +1000
+Processing by GamesController#secret as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"controller"=>"games", "action"=>"secret"} permitted: false>):
+  
+app/controllers/games_controller.rb:41:in `secret'
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:02:21 +1000
+Processing by GamesController#secret as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"controller"=>"games", "action"=>"secret"} permitted: false>):
+  
+app/controllers/games_controller.rb:41:in `secret'
+Started PUT "/__web_console/repl_sessions/03986f0e1391dc10f38b9a73d96217f0" for 127.0.0.1 at 2018-07-10 09:02:24 +1000
+Started PUT "/__web_console/repl_sessions/03986f0e1391dc10f38b9a73d96217f0" for 127.0.0.1 at 2018-07-10 09:02:27 +1000
+Started PUT "/__web_console/repl_sessions/03986f0e1391dc10f38b9a73d96217f0" for 127.0.0.1 at 2018-07-10 09:02:30 +1000
+Started PUT "/__web_console/repl_sessions/03986f0e1391dc10f38b9a73d96217f0" for 127.0.0.1 at 2018-07-10 09:02:31 +1000
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:02:50 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:03:19 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4aayBTdCICBs1TNiiC4gXhgIgXTumYqEUnbNXYnFIV72YN8nL8D1evOqNwkALuFDyzIqM5OUd2q7LjEdVWQ5Bg==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:03:50 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:04:08 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/v+PS16bTiu6/yCcuhalPpWP6gIfAe6M+8EOJ5SmUtbpOeJpRhmbcSWAJPcyFmQjRrVBRWIME2ISmfJnSAdKjg==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:04:41 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:04:46 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h6fc2kdHEcn8wMAG9dUK05oZBcC+pj7ijU69N60E8iaQYbH4X8XEk2O/xG191cvOSSOuh8OrwwxkFkF3caXqfg==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:05:22 +1000
+Processing by GamesController#secret as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"controller"=>"games", "action"=>"secret"} permitted: false>):
+  
+app/controllers/games_controller.rb:32:in `secret'
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:05:39 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:05:41 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YScLSsv/fgUSRqSrttBi2/oMc7x9ksXpWjqkJhxe3u924WZo032rX405oMA+0KPGKTbY+wCfOAezYlhmwP/Gtw==", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:06:14 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:06:23 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LCj55GW7U5/7BhOMKJAJ08eJ7F0Sd3LNjsDdMRzUHbE77pTGfTmGxWR5F+egkMjOFLNHGm96jyNnmCFxwHUF6Q==", "n"=>"", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:06:29 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"srQssiuXc60SQJhLMWWj9bJpsVsKbKJlsID9wATEn+WlckGQMxWm940/nCC5ZWLoYVMaHHdhX4tZ2AGA2GWHvQ==", "n"=>"", "g"=>"5"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:06:59 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:07:05 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0mbHPVzjEfxFVx2GQut9uLdx8Wj+OxgUuec8Xj7JWmYj/Y+7fFZHW5qWB2RC2zrMedsgt71EY67v2CxpFo9MQ==", "n"=>"4", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:07:33 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H9CXAICv08jhSQA2IHkmFxj7fNWWww6CbJHC4WcMzCsIFvoimC0Gkn42BF2oeecKy8HXkuvO82yFyT6hu63Ucw==", "n"=>"", "g"=>"4"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:07:37 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqZvjrO1tiD9e4LmfwCs1OVLcD5wZq5Dg8FawUDk9pSlYAKsqzdjemIEho33AG3JNnHbeQ1rU61qmaaBnEXuzA==", "n"=>"", "g"=>"8"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:00 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTSpQKWiZMaeWkV7voOq/iQtlGIXHQd1kvaw20zUMcJ68sRivSCxnAElQRA2g2vj9xc/JWoQ+pt7rkybkHUpmg==", "n"=>"", "g"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"utf8"=>"✓", "authenticity_token"=>"bTSpQKWiZMaeWkV7voOq/iQtlGIXHQd1kvaw20zUMcJ68sRivSCxnAElQRA2g2vj9xc/JWoQ+pt7rkybkHUpmg==", "n"=>"", "g"=>"3", "controller"=>"games", "action"=>"secret"} permitted: false>):
+  
+app/controllers/games_controller.rb:44:in `secret'
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:07 +1000
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:08 +1000
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:12 +1000
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:15 +1000
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:17 +1000
+Started PUT "/__web_console/repl_sessions/79d9fe1d881031055740984cc6e3671e" for 127.0.0.1 at 2018-07-10 09:08:19 +1000
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:39 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTSpQKWiZMaeWkV7voOq/iQtlGIXHQd1kvaw20zUMcJ68sRivSCxnAElQRA2g2vj9xc/JWoQ+pt7rkybkHUpmg==", "n"=>"", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:40 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HS2OoQWIdRiyAwtOYMkIWihOpiVVnFxbuEUETWhFq6AK6+ODHQqgQi18DyXoyclH+3QNYiiRobVRHfgNtOSz+A==", "n"=>"7", "g"=>"2"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:56 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62j0VBCvJ9HRU35sijf3F/gE0vJ097C9nOqTsPrMgkz8rpl2CC3yi04segcCNzYKKz55tQn6TVN1sm/wJm2aFA==", "n"=>"7", "g"=>"7"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:57 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"srhepdy1cN+85NEBIEbwvczf9fCPPEd++9TQvheHyWylfjOHxDelhSOb1WqoRjGgH+Vet/IxupASjCz+yybRNA==", "n"=>"7", "g"=>"8"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:08:58 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CvwjN5s+D08b4cKwLJPPQwdUylTUbv6wygC6wPipYSQdOk4Vg7zaFYSextukkw5e1G5hE6ljA14jWEaAJAh5fA==", "n"=>"7", "g"=>"7"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:39 +1000
+Processing by GamesController#secret as HTML
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:40 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YhH4aHGlHZSrvzm780AWUw9ybFZIKWKJxG8LMOCPSk5115VKaSfIzjTAPdB7QNdO3EjHETUkn2ctN/dwPC5SFg==", "n"=>"3", "g"=>"5"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:41 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w/u5ZrXYIj7+rr+dxXBZWpOSmpx26O3Sw1bQ0Cg6exHUPdRErVr3ZGHRu/ZNcJhHQKgx2wvlEDwqDiyQ9JtjSQ==", "n"=>"3", "g"=>"7"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:43 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vPVvZjkxtCWS1NA42r2oaV0FsHrQG1lrZGA+KFGZyGCrMwJEIbNhfw2r1FNSvWl0jj8bPa0WpIWNOMJojTjQOA==", "n"=>"3", "g"=>"9"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:44 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IrpBwxNyjbYWAE2Y+FitkOFh5L2sKi8NWkHwqUSaTE41fCzhC/BY7Il/SfNwWGyNMltP+tEn0uOzGQzpmDtUFg==", "n"=>"3", "g"=>"8"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:45 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNMS+n3ouZ1iG6zBnZ2dv2MU5+EB+syay530v61hlqFrFX/YZWpsx/1kqKoVnVyisC5Mpnz3MXQixQj/ccCO+Q==", "n"=>"3", "g"=>"10"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:46 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e12SuvTNHGp9zVuKUoANAUP2i1n7Zv/5+npmCMRp9UBsm/+Y7E/JMOKyX+HagMwckMwgHoZrAhcTIppIGMjtGA==", "n"=>"3", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:47 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G8bamIxSnwBjAFgkghBh6MVdPjN2Ngc+ozgDoN8bXfgMALe6lNBKWvx/XE8KEKD1FmeVdAs7+tBKYP/gA7pFoA==", "n"=>"3", "g"=>"2"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:47 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZTOoXCO02ykFts2yh0Jja+sOSabKaq3j/nKR8TEBTmdy9cV+OzYOc5rJydkPQqJ2ODTi4bdnUA0XKm2x7aBWPw==", "n"=>"3", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:49 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+D99xSsGbIRLzUpbL5gy7r7mJ9Ld37c8b3vb8DsXKRHv+RDnM4S53tSyTjCnmPPzbdyMlaDSStKGIyew57YxSQ==", "n"=>"", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:50 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W7xSJTOFPuZNaTpt4SJyBwciTk006ZxwCbH5Ekm69ERMej8HKwfrvNIWPgZpIrMa1BjlCknkYZ7g6QVSlRvsHA==", "n"=>"4", "g"=>"4"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:52 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eTywD2WX4g91mR6bto9lCCC1oXcCNUSVOKcFfRVt60xu+t0tfRU3VermGvA+j6QV848KMH84uXvR//k9yczzFA==", "n"=>"", "g"=>"4"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:53 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lWgEjkdVvO1hM6xIkcq7ZUT/Aa6E1/m24sCZ1PzsUXmCrmmsX9dpt/5MqCMZynp4l8Wq6fnaBFgLmGWUIE1JIQ==", "n"=>"3", "g"=>"5"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:54 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9eBnczusPCdyQA5ETP90hwYFfs7/UXrYmShi2cm5MAsEey/1GxlqgK2BFKZMzzPzyK+vEbwuAWLPF3Lu4f8mA==", "n"=>"3", "g"=>"6"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:55 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OHbTgh3DibylSese2BrimrJxVcQUax4bWmukt1BneiEvsL6gBUFc5jo273VQGiOHYUv+g2lm4/WzM1j3jMZieQ==", "n"=>"3", "g"=>"7"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:55 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lbSnQ6B1MYO5mY9XyFvWVXX8O7UUdgNLZzoTTpyccKaCcsphuPfk2SbmizxAWxdIpsaQ8ml7/qWOYu8OQD1o/g==", "n"=>"3", "g"=>"8"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:56 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VagPXhyheRgvU5u4Xs0ABimBuLY/uUGYSjbaxxm+joBCbmJ8BCOsQrAsn9PWzcEb+rsT8UK0vHajbiaHxR+W2A==", "n"=>"3", "g"=>"9"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:57 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WRgCajfBHxHL9JAptyfGbY2Abnm3ABpSdDBZ4hlgiVdO3m9IL0PKS1SLlEI/JwdwXrrFPsoN57ydaKWixcGRDw==", "n"=>"3", "g"=>"10"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:59 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZxDCxtEscn+hRt4gp3wdJkYso/lhqzRN4oYskiafYyFw1q/kya6nJT452ksvfNw7lRYIvhymyaML3tDS+j57eQ==", "n"=>"3", "g"=>"1"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:09:59 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9P+YgnixDsI/7vMaYpqcZC3oyz2wxuAoc1B+MhE9S5LjOfWgYDPbmKCR93Hqml15/tJges3LHcaaCIJyzZxTyg==", "n"=>"3", "g"=>"2"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/secret_n" for 127.0.0.1 at 2018-07-10 09:10:00 +1000
+Processing by GamesController#secret as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mEctkRVNkivuUfA3yS3ouCa0ttDOx2+7PiQxdphxOVyPgUCzDc9HcXEu9FxBLSml9Y4dl7PKklXXfM02RNAhBA==", "n"=>"3", "g"=>"3"}
+  Rendering games/secret.html.erb within layouts/application
+  Rendered games/secret.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+

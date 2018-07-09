@@ -2,7 +2,7 @@
 
 <ul>
 <% @earphone.each do |item|%>
-<li><a href="/earphones/<%=item["id"]%>"><%=item['name']%></a></li>
+<li><a href="/earphones/<%=item["id"]%>"><%=item['name']%> <b>$<%=item['price']%></b></a></li>
 
 
 <% end%>

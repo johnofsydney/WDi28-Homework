@@ -124,6 +124,7 @@ post '/brands/:id' do
   brands = Brands.find params[:id]
   brands.name = params[:name]
   brands.logo = params[:logo]
+  brands.notes = params[:notes]
   brands.save
   redirect to("/brands/#{ brands.id }")
 end
@@ -133,6 +134,7 @@ post '/brands' do
   brands = Brands.new
   brands.name = params[:name]
   brands.logo = params[:logo]
+  brands.notes = params[:notes]
   brands.save
   redirect to("/brands")
 end

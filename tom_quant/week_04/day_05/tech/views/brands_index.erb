@@ -9,6 +9,16 @@
 
 
 <% end%>
-
 </ul>
-<a href="/brands/new">NEW</a>
+
+
+<div class="container2">
+
+<% @brands.each do |brands|%>
+<div class="box2">
+
+
+  <a href="/brands/<%= brands['id']%>"><img src="<%= brands['logo']%>"></a>
+
+</div>
+<%end %>

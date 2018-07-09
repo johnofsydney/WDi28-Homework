@@ -1,0 +1,26 @@
+
+
+
+<h2><%= @brands.name%></h2>
+
+<img src="<%= @brands.logo%>" alt="">
+<p><%=@brands.notes%></p>
+
+<a href="/brands/<%=@brands["id"]%>/edit">EDIT BRAND</a>
+<a href="/brands/<%=@brands["id"]%>/delete">DELETE BRAND</a>
+
+<% unless @brands.earphones.empty? %>
+  <h2>Earphones:</h2>
+  <ul>
+    <% @brands.earphones.each do |item| %>
+      <li>
+        <a href="/earphones/<%= item.id %>">
+          <%= item.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<a href="/brands/<%=@brands["id"]%>/edit" class='btn'>EDIT</a>
+<a href="/brands/<%=@brands["id"]%>/delete" class='btn'>DELETE</a>

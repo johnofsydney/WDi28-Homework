@@ -1,0 +1,24 @@
+<h1><%= @uni['name'] %></h1>
+
+<% unless @uni.students.empty? %>
+  <h2>Associated University:</h2>
+  <ul>
+    <% @uni.students.each do |student| %>
+      <li>
+        <a class="uniname1" href="/students/<%= student.id %>">
+          <%= student.name %>
+          <%= student.family %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @uni.image.nil? %>
+  <img class="feature" src="<%= @uni.image %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/unis/<%= @uni.id %>/edit">Edit</a>
+  <a class="delete" href="/unis/<%= @uni.id %>/delete">Delete</a>
+</div>

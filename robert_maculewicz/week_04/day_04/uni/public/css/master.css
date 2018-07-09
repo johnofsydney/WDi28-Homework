@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  background-color: yellow;
 }
 
 .container {
@@ -12,7 +12,7 @@ nav {
 }
 
 nav a {
-  color: blue;
+  color: black;
 }
 
 .feature {

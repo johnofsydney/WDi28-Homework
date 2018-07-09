@@ -1,0 +1,15 @@
+  <h1>Edit cars</h1>
+
+  <form action="/models/<%= @models['id'] %>" method="post">
+    <label>Makes</label>
+    <input type="text" name="makes" value="<% @models['makes'] %>" placeholder="Makes" required autofocus>
+    <label>Models</label>
+    <input type="text" name="models" value="<% @models['models'] %>" placeholder="Models" required>
+    <label>Year</label>
+    <input type="integer" name="year" value="<% @models['year'] %>" placeholder="Year" required>
+    <label>Image</label>
+    <input type="url" name="image" value="<% @models['image'] %>" placeholder="http://...">
+
+    <button>Generate</button>
+
+  </form>

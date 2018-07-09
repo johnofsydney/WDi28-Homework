@@ -50,7 +50,7 @@ get '/places/:id/delete' do
 end
 
 def query_db(sql_statement)
-  db = SQLite3::Database.new 'database.sqlite3'
+  db = SQLite3::Database.new 'database.sqlite'
   db.results_as_hash = true
   results = db.execute sql_statement
 

@@ -1,0 +1,11 @@
+<h1>INDEX</h1>
+
+<ul>
+<% @earphone.each do |item|%>
+<li><a href="/earphones/<%=item["id"]%>"><%=item['name']%> <b>$<%=item['price']%></b></a></li>
+
+
+<% end%>
+</ul>
+
+<a href="/earphones/new">NEW</a>

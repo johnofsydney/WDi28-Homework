@@ -3909,3 +3909,255 @@ Processing by RockpaperscissorsController#form as HTML
 Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-09 20:35:38 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 247ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball" for 127.0.0.1 at 2018-07-09 20:35:48 +1000
+Processing by MagicballController#form as HTML
+  Rendering magicball/form.html.erb within layouts/application
+  Rendered magicball/form.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball/info?question=Is+spyro+a+good+boy" for 127.0.0.1 at 2018-07-09 20:36:12 +1000
+Processing by MagicballController#info as HTML
+  Parameters: {"question"=>"Is spyro a good boy"}
+  Rendering magicball/info.html.erb within layouts/application
+  Rendered magicball/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball/info?question=is+luna+a+good+cat" for 127.0.0.1 at 2018-07-09 20:36:23 +1000
+Processing by MagicballController#info as HTML
+  Parameters: {"question"=>"is luna a good cat"}
+  Rendering magicball/info.html.erb within layouts/application
+  Rendered magicball/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball/info?question=am+i+attractive" for 127.0.0.1 at 2018-07-09 20:36:35 +1000
+Processing by MagicballController#info as HTML
+  Parameters: {"question"=>"am i attractive"}
+  Rendering magicball/info.html.erb within layouts/application
+  Rendered magicball/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball/info?question=am+i+attractive" for 127.0.0.1 at 2018-07-09 20:36:43 +1000
+Processing by MagicballController#info as HTML
+  Parameters: {"question"=>"am i attractive"}
+  Rendering magicball/info.html.erb within layouts/application
+  Rendered magicball/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magicball/info?question=is+david+an+a+hole" for 127.0.0.1 at 2018-07-09 20:36:54 +1000
+Processing by MagicballController#info as HTML
+  Parameters: {"question"=>"is david an a hole"}
+  Rendering magicball/info.html.erb within layouts/application
+  Rendered magicball/info.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 20:37:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretnumber" for 127.0.0.1 at 2018-07-09 20:37:17 +1000
+Processing by SecretnumberController#form as HTML
+  Rendering secretnumber/form.html.erb within layouts/application
+  Rendered secretnumber/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretnumber/info?number=5" for 127.0.0.1 at 2018-07-09 20:37:32 +1000
+Processing by SecretnumberController#info as HTML
+  Parameters: {"number"=>"5"}
+  Rendering secretnumber/info.html.erb within layouts/application
+  Rendered secretnumber/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretnumber/info?number=9" for 127.0.0.1 at 2018-07-09 20:37:52 +1000
+Processing by SecretnumberController#info as HTML
+  Parameters: {"number"=>"9"}
+  Rendering secretnumber/info.html.erb within layouts/application
+  Rendered secretnumber/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 20:38:01 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors" for 127.0.0.1 at 2018-07-09 20:38:02 +1000
+Processing by RockpaperscissorsController#form as HTML
+  Rendering rockpaperscissors/form.html.erb within layouts/application
+  Rendered rockpaperscissors/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:38:09 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:52:45 +1000
+  
+SyntaxError (/Users/shelleyzhang/Projects/WDi28-Homework/shelley_zhang/week_05/day_01/games_on_rails/app/controllers/rockpaperscissors_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/rockpaperscissors_controller.rb:33: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:52:56 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/win.html.erb within layouts/application
+  Rendered rockpaperscissors/win.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/rockpaperscissors_controller.rb:29:in `info'
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:53:28 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors" for 127.0.0.1 at 2018-07-09 20:53:33 +1000
+Processing by RockpaperscissorsController#form as HTML
+  Rendering rockpaperscissors/form.html.erb within layouts/application
+  Rendered rockpaperscissors/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:53:37 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 20:55:10 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=paper" for 127.0.0.1 at 2018-07-09 21:02:07 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rockpaperscissors/win.html.erb within layouts/application
+  Rendered rockpaperscissors/win.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/" for 127.0.0.1 at 2018-07-09 21:02:11 +1000
+Processing by RockpaperscissorsController#form as HTML
+  Rendering rockpaperscissors/form.html.erb within layouts/application
+  Rendered rockpaperscissors/form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=rock" for 127.0.0.1 at 2018-07-09 21:02:13 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rockpaperscissors/win.html.erb within layouts/application
+  Rendered rockpaperscissors/win.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=scissors" for 127.0.0.1 at 2018-07-09 21:03:15 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 21:04:03 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 21:04:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 21:04:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 21:04:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors" for 127.0.0.1 at 2018-07-09 21:04:06 +1000
+Processing by RockpaperscissorsController#form as HTML
+  Rendering rockpaperscissors/form.html.erb within layouts/application
+  Rendered rockpaperscissors/form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=rock" for 127.0.0.1 at 2018-07-09 21:04:08 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rockpaperscissors/win.html.erb within layouts/application
+  Rendered rockpaperscissors/win.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=rock" for 127.0.0.1 at 2018-07-09 21:04:14 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rockpaperscissors/info.html.erb within layouts/application
+  Rendered rockpaperscissors/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=rock" for 127.0.0.1 at 2018-07-09 21:04:17 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rockpaperscissors/win.html.erb within layouts/application
+  Rendered rockpaperscissors/win.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rockpaperscissors/throw?throw=rock" for 127.0.0.1 at 2018-07-09 21:04:19 +1000
+Processing by RockpaperscissorsController#info as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rockpaperscissors/draw.html.erb within layouts/application
+  Rendered rockpaperscissors/draw.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+

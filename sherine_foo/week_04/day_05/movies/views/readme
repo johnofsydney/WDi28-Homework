@@ -1,0 +1,15 @@
+
+data
+
+MOVIES
+INSERT INTO movies VALUES ("Live or Let Die", "Action", "https://www.scifi-movies.com/images/contenu/data/0003904/affiche-vivre-et-laisser-mourir-live-and-let-die-1973-10.jpg")
+INSERT INTO movies VALUES ("The Inifinity War", "Science Fiction", "https://images-na.ssl-images-amazon.com/images/I/A1t8xCe9jwL._SL1500_.jpg")
+INSERT INTO movies VALUES ("The Avengers", "Science Fiction", "https://i.pinimg.com/originals/0f/03/e6/0f03e6733b0cf567cc92e8e20290462f.jpg")
+INSERT INTO movies VALUES ("Wonder Woman", "Science Fiction", "https://pre00.deviantart.net/b213/th/pre/i/2017/100/b/2/wonder_woman_teaseer_poster_ii_by_gerardosart-db5d9d4.jpg")
+INSERT INTO movies VALUES ("Star War - A New Hope", "Science Fiction", "https://www.officialmerchandise.com/assets/products/349879/large/star-wars-a-new-hope-poster-13828.jpg")
+INSERT INTO movies VALUES ("Indiana Jone and The King", "Action", "https://static.rogerebert.com/uploads/movie/movie_poster/indiana-jones-and-the-kingdom-of-the-crystal-skull-2008/large_6Lv49E0aEusW9vKEMgQgLdetlmO.jpg" )
+
+Directors
+INSERT INTO directors VALUES ("George Lucas", "https://vignette.wikia.nocookie.net/labyrinth/images/a/a1/139924-george-lucas.jpg/revision/latest?cb=20111008202038");
+INSERT INTO directors VALUES ("Joss Whedon", "https://pmcvariety.files.wordpress.com/2018/04/joss-whedon-wonder-woman.jpg?w=1000&h=563&crop=1")
+INSERT INTO directors VALUES ("Patty Jeukins", "https://pmcvariety.files.wordpress.com/2017/10/patty-jenkins-power-of-women-variety.jpg?w=1000&h=563&crop=1")

@@ -1,0 +1,20 @@
+<h1>Name: <%= @videogame['name'] %></h1>
+<h2>Genre: <%= @videogame['genre'] %></h2>
+
+<% unless @videogame.developer.nil? %>
+   <h2>
+     Developer:
+     <a href="/developers/<%= @videogame.developer.id %>">
+       <%= @videogame.developer.name %>
+     </a>
+   </h2>
+ <% end %>
+
+<% unless @videogame['image'].nil? %>
+  <img class="feature" src="<%= @videogame['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/videogames/<%= @videogame['id'] %>/edit">Edit</a>
+  <a href="/videogames/<%= @videogame['id'] %>/delete">Delete</a>
+</div>

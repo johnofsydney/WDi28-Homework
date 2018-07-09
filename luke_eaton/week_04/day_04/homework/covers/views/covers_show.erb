@@ -1,0 +1,11 @@
+<h1><%= @cover['artist'] %></h1>
+<h2>Family: <%= @cover['album'] %></h2>
+
+<% unless @cover['image'].nil? %>
+  <img class="feature" src="<%= @cover['image'] %>" />
+<% end %>
+
+<div class="controls">
+  <a href="/covers/<%= @cover['id'] %>/edit">Edit</a>
+  <a href="/covers/<%= @cover['id'] %>/delete">Delete</a>
+</div>

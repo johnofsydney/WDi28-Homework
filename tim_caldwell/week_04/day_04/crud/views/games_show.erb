@@ -1,0 +1,7 @@
+<h1><%= @game['title'] %></h1>
+  <div class="gameview">
+  <img src="<%= @game['art']%>">
+  <p><%= @game['genre']%></p>
+  <p><%= @game['blurb']%></p>
+  <span class="col-span2"><a class="abutton" href="/games/<%= @game['id']%>/edit">Edit</a><a class="abutton" href="/games/<%= @game['id']%>/delete">Delete</a></span>
+  </div>

@@ -1,0 +1,30 @@
+body {
+  background-color: #aaa;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a:visited {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: #e0e0e0;
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,24 @@
+
+
+
+ <div class="container3">
+   <% unless @earphones.brands.nil? %>
+   <h2><%= @earphones['name']%></h2>
+
+   <h3>Price: $<%= @earphones['price']%></h3>
+   <h2>Brand: <a href="/brands/<%=@earphones.brands.id%>"><%= @earphones.brands.name%></a></h2>
+
+
+
+   <img src="<%= @earphones['image']%>" alt="">
+
+   <h2><%= @earphones['noise_cancelling']%></h2>
+   <h4><%= @earphones['notes']%></h4>
+
+
+   <% end %>
+
+
+   <a href="/earphones/<%=@earphones["id"]%>/edit" class='btn'>EDIT</a>
+   <a href="/earphones/<%=@earphones["id"]%>/delete" class='btn'>DELETE</a>
+ </div>

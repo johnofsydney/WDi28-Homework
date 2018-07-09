@@ -183,31 +183,32 @@ const bank = {
     var tot = 0
     for (var i = 0; i < bank.accounts.length; i++) {
       tot = tot + bank.accounts[i].currentBalance
-
     }
     return bank.totalMoney = tot
   },
   depositMoney: (owner, amount) => {
     const newAmount =  bank.searchForAccount(owner).currentBalance +=  amount
-    console.log(`You have deposited $${amount} into ${owner}s account, there is now $${bank.searchForAccount(owner).currentBalance} in this account`);
+    console.log(`You have deposited $${amount} into ${owner}s account, there is now $${newAmount} in this account`);
     return newAmount
   },
   withdrawMoney: (owner, amount) => {
-    let newAmount
-    const withdrawCheck = bank.searchForAccount(owner).currentBalance - amount
-    if(withdrawCheck < 0 ){
+    if(amount >  bank.searchForAccount(owner).currentBalance){
       console.log('sorry you do not have the required funds to withdraw this much')
     }
     else {
-      newAmount =  bank.searchForAccount(owner).currentBalance -= amount
+      bank.searchForAccount(owner).currentBalance -= amount
       console.log(`You have withdrawn $${amount} from ${owner}s account, there is now $${bank.searchForAccount(owner).currentBalance} in this account`);
     }
-    return newAmount
   },
   transferMoney: (owner1, owner2, amount) => {
+    if(amount >  bank.searchForAccount(owner1).currentBalance){
+      console.log('sorry you do not have the required funds to withdraw this much')
+    }
+    else {
     bank.searchForAccount(owner2).currentBalance += amount
     bank.searchForAccount(owner1).currentBalance -= amount
     console.log(`$${amount} has been transferred from ${owner1} to ${owner2}s account`)
+  }
   }
 }
 bank.addAccount(2000, 'tom')

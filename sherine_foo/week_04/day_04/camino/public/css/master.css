@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  margin: 0, auto;
+  font-family: 'Paytone One', sans-serif;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 7vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 7vw;
+  color: #40E0D0;
+  text-align: center;
+  background-color: rgba(64,224, 208, 0.2);
+}
+
+p {
+  color: #40E0D0;
+  font-size: 3vw;
+  text-align: center;
+}
+
+a {
+  color: #40E0D0;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 3vw;
+  align-items: center;
+
+}
+
+form {
+
+  padding: 1em;
+    text-align: left;
+    display: block;
+    margin: auto;
+    padding-left: 15em;
+}
+
+label {
+    font-size: 2em;
+    color: #40E0D0;
+    min-width: 110px;
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: auto;
+}
+
+select {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: auto;
+}
+
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  min-height: 90vh;
+  background-color: #222;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+img.feature {
+  display: block;
+  margin: auto;
+  max-width: 100%
+}
+
+.controls {
+  text-align: center;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: #40E0D0;
+}
+
+img.home_img {
+  max-width: 100%;
+  margin: auto;
+}
+
+
+
+.all_image {
+  width: 10em;
+  align-items: center;
+
+}

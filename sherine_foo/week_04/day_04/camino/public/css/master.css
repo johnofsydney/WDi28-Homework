@@ -56,6 +56,11 @@ input {
   margin: auto;
 }
 
+select {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: auto;
+}
+
 
 
 .container {
@@ -98,6 +103,5 @@ img.home_img {
 .all_image {
   width: 10em;
   align-items: center;
-
 
 }

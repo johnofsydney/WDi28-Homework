@@ -15,6 +15,8 @@ get '/cover' do
   @book_info = HTTParty.get book_url;
 
   @cover = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-    erb :cover
+  @subtitle = @book_info['items'].first['volumeInfo']['subtitle']
+  @author = @book_info['items'].first['volumeInfo']['authors']
 
+  erb :cover
 end

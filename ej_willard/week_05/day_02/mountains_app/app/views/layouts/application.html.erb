@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MountainsApp</title>
+    <title>Mountains</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <div class="mainnav">
+
+
+    <nav>
+      <%= link_to 'All Mountains', mountains_path %> |
+      <%= link_to 'New Mountain', mountains_new_path %>
+    </nav>
+
+    </div>
     <%= yield %>
   </body>
 </html>

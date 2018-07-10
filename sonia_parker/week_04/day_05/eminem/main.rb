@@ -8,7 +8,7 @@ require "pry"
 #config the ActiveRecord Module
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database => "eminem.db"
+  :database => "database.sqlite3"
 )
 class Song < ActiveRecord::Base
   belongs_to :album, :optional =>true

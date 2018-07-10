@@ -1,0 +1,10 @@
+<h1>Magic 8-Ball</h1>
+<% unless @answer.nil? %>
+<h2>Magic 8-Ball Says:</h2>
+<h3><%= @answer %></h3>
+<% end %>
+<%= form_tag("/magic8/", method: "get") do %>
+  <%= label_tag(:q, "Ask Magic 8-Ball Something:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Ask") %>
+<% end %>

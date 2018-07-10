@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cheese and Wine pairing</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href='/'> Home</a>
+        <a href="/wines">Vino Varietals</a>
+        <a href="/wines/new">Input Your Wine</a>
+        
+        <a href="/cheeses">scrumptious cheese</a>
+        <a href="/cheeses/new">Input Your Cheese</a>
+      </nav>
+
+      <%= yield %>
+
+    </div>
+    <div class="wrapper" mi>
+      <div class="cup">
+        <div class="back"></div>
+        <div class="wine"></div>
+      </div>
+      <div class="rod"></div>
+      <div class="base"></div>
+    </div>
+  </body>
+</html>

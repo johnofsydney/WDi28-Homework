@@ -1,0 +1,9 @@
+<h1>Mount <%= @mountain.name %></h1>
+
+<%= image_tag @mountain.image unless @mountain.image.nil? %>
+<p>Elevation : <%= @mountain.elevation %></p>
+<p>Prominence : <%= @mountain.prominence %></p>
+<p>Facts : <%= @mountain.funfact %></p>
+
+<%= button_to 'Edit',"/mountains/#{@mountain.id}" %>
+<%= button_to 'Delete Mountain',"/mountains/#{@mountain.id}", :method => 'delete' %>

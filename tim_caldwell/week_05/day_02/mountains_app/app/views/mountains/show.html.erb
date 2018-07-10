@@ -1,0 +1,23 @@
+<div class="card">
+
+  <div class="mount_info">
+    <h1><%= @m.name %></h1>
+    <p><span class="sml">Height:</span><%= @m.height %></p>
+    
+    <div class="controls">
+      <%= link_to 'Edit', mountain_edit_path(@m.id) %>
+      &nbsp;|&nbsp;
+      <%= link_to 'Delete', mountain_path(@m.id), :method => 'delete' %>
+    </div>
+  </div>
+
+  <div class="mount_img">
+    <%= image_tag @m.image, :class => 'feature' unless @m.image.nil? %>
+  </div>
+
+  <div class="map">
+    <% unless @m.longitude.nil? || @m.latitude.nil? %>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1200591.0489691116!2d<%= @m.longitude %>!3d<%= @m.latitude %>!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sau!4v1531200422069"  frameborder="0" allowfullscreen></iframe>
+    <% end %>
+  </div>
+</div>

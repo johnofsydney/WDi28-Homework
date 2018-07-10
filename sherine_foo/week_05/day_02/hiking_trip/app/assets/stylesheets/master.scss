@@ -1,13 +1,77 @@
 body {
-  background-color: #ccf;
+  background-image: url(http://gipsypixel.com/wp-content/uploads/2017/11/Mountains-View-Wallpaper-Hd-Desktop-Images-Of-From-Green-Iphone-Cool.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+background-size: cover;
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: 'Paytone One', sans-serif;
+  background-color: #222;
+  color: white;
+}
+
+nav {
+    align-items: center;
+    // background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%
 }
 
 .container {
   max-width: 960px;
-  margin: 0 auto
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: rgba(0,0, 0, 0.5);
 }
 
 
 .feature {
-  max-width: 100%
+  max-width: 40em
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 7vw;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+h2 {
+  font-size: 7vw;
+  color: #40E0D0;
+  text-align: center;
+  background-color: rgba(64,224, 208, 0.2);
+}
+
+
+
+a {
+  color: #40E0D0;
+  padding: 1em;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+  font-size: 3vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center
+}
+
+a:hover {
+  color: white;
+  background-color: #40E0D0;
+}
+
+p {
+  color: #40E0D0;
+  font-size: 2.5vw;
+}
+button {
+
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: #40E0D0;
+}
+
+input {
+  font-size: 10em;
 }

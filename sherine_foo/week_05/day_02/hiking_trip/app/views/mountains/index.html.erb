@@ -2,9 +2,7 @@
 
 <% @mountains.each do |mountain| %>
 <p>
-Name : <%= link_to mountain.name, mountain_path(mountain.id) %>
-
-Heigh : <%= mountain.height %>
+Name : <%= button_to mountain.name, mountain_path(mountain.id), :method => 'get' %>
 
 Distance : <%= mountain.distance %>
 

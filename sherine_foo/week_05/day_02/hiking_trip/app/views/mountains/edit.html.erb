@@ -18,8 +18,31 @@
 </br>
   <button>Update Trial</button>
 
+</br>
+</br>
 
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Height</td>
+        <td>Distance</td>
+        <td>Country</td>
+      </tr>
+    </thead>
+  </table>
 
+  <tbody>
+    <tr>
+      <td><%= @mountain.name %></td>
+      <td><%= @mountain.height %></td>
+      <td><%= @mountain.distance %></td>
+      <td><%= @mountain.country %></td>
+
+    </tr>
+  </tbody>
+
+  <%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
 
 
 </form>

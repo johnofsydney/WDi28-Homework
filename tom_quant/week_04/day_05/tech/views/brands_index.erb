@@ -1,0 +1,24 @@
+<h1>INDEX brands</h1>
+<ul>
+
+
+<% @brands.each do |item|%>
+<li>
+    <a href="/brands/<%=item["id"]%>"><%=item['name']%></a>
+</li>
+
+
+<% end%>
+</ul>
+
+
+<div class="container2">
+
+<% @brands.each do |brands|%>
+<div class="box2">
+
+
+  <a href="/brands/<%= brands['id']%>"><img src="<%= brands['logo']%>"></a>
+
+</div>
+<%end %>

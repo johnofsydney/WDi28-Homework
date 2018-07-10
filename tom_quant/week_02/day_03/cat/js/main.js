@@ -4,12 +4,13 @@ img.style.position = 'absolute';
 img.style.left = '0px';
 var background = document.getElementsByTagName('body')[0]
 
-var audio = document.getElementById("myAudio");
+//var audio =$("#myAudio");
 function playAudio() {
-    audio.play();
+  $('#myAudio').trigger("play")
+    //audio.play();
 }
 function pauseAudio() {
-    audio.pause();
+  $('#myAudio').trigger("pause")
 }
 
 
@@ -53,8 +54,9 @@ const catDance = function () {
 }
 
 const startAgain = function () {
-  img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'
-  img.style.visibility = 'visible'
+  $('img').css('visibility', 'visible')
+
+  //img.style.visibility = 'visible'
   pauseAudio()
   document.body.style.background = 'white'
   timer = window.setInterval(catMove, 40)

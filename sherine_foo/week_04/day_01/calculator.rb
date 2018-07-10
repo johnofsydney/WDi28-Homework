@@ -12,7 +12,6 @@ def show_menu
   puts "[g] - Morgage Calculator"
   puts "[h] - BMI"
   puts "[i] - Trip Calculator"
-
   puts "[q] - Quit"
   print "Enter your selection: "
 
@@ -96,14 +95,3 @@ end
 end
 
 puts "Thank you for using crappy calculator"
-
-
-# Trip Calculator
-# Calculate a trip time and cost given inputs for
-#
-# distance
-# miles per gallon
-# price per gallon
-# speed in miles per hour
-
-# binding.pry

@@ -2,7 +2,7 @@
 
 <h2>Classification: <%=@instrument['family']%></h2>
 
- <% unless @instrument['video'].nil? %>
+ <% unless @instrument['video'] == "" %>
  <%= @video.iframe %>
  <% end %>
 

@@ -13,7 +13,7 @@ get '/book' do
 
   @book_info = HTTParty.get book_url;
   @thumbnail = @book_info['items'].first['volumeInfo']['imageLinks']['thumbnail']
-  @author = @book_info['items'].first['volumeInfo']['authors']
+  @author = @book_info['items'].first['volumeInfo']['authors'].join()
   @description = @book_info['items'].first['volumeInfo']['description']
   erb :book
 

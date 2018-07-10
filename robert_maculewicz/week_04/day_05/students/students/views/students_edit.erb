@@ -1,0 +1,20 @@
+<h1>Edit Students</h1>
+
+<form action="/students/<%= @student['id'] %>" method="post">
+  <label>Name:</label>
+    <input type="text" name="name" value="<%= @student['name'] %>"       placeholder="Student name" required autofocus>
+  <label>Family:</label>
+    <input type="text" name="family" value="<%= @student['family'] %>" placeholder="Family name" required>
+  <label>Image:</label>
+    <input type="url" name="image" value="<%= @student['image'] %>" placeholder="http://...">
+  <!-- is University beacouse mayby we wants chane Uni     -->
+  <label>University:</label>
+    <select name="uni_id">
+    <option></option>
+    <% Uni.all.each do |uni| %>
+      <option value="<%= uni.id %>" <%= "selected" if uni.id == @student.uni_id %>><%= uni.name %></option>
+    <% end %>
+  </select>
+
+  <button>Update</button>
+</form>

@@ -5,7 +5,8 @@ nav {
 	display: block;
 
 	height: 50px;
-  background-color: black
+  background-color: black;
+  
 }
 ul {
   margin: 0px;
@@ -47,9 +48,6 @@ ul {
   }
 .left {
   margin-left: 7%;
-}
-.indent p {
-  margin: auto;
 }
 
 	nav ul li {
@@ -95,12 +93,18 @@ ul {
 }
 
 .quote {
-  display: inline-block;
 
+  position: absolute;
+  top : 15px;
+  right: 15px;
   width: 20%;
 
 
 }
+.indent {
+  position: relative;
+}
+
 .indent p {
   display: inline-block;
   width: 75%;
@@ -109,6 +113,7 @@ ul {
 }
  p {
    font-size: 10px;
+   margin: 10px;
  }
 
 .container {

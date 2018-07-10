@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minerals</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><%= link_to "Home page", root_path %>
+          </li>
+          <li>
+            <%= link_to 'All Rocks', rocks_path %>
+          </li>
+          <li>
+            <%= link_to 'New Rock', rocks_new_path %>
+          </li>
+        </ul>
+      </nav>
+      <%= yield %>
+    </body>
+  </html>

@@ -1,0 +1,30 @@
+<h1><%= @rock.name %></h1>
+
+<%= image_tag @rock.image, :class => 'feature' unless @rock.image.nil? %>
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Colour</td>
+      <td>Density</td>
+      <td>Composition</td>
+      <td>Locality</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @rock.name %></td>
+      <td><%= @rock.colour %></td>
+      <td><%= @rock.density %></td>
+      <td><%= @rock.composition %></td>
+      <td><%= @rock.locality %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit rock', rock_edit_path(@rock.id) %>
+  <%= button_to 'Delete rock', rock_path(@rock.id), :method => 'delete' %>
+</div>

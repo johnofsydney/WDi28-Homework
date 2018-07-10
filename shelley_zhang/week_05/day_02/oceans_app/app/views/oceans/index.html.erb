@@ -1,0 +1,8 @@
+<h1>All Oceans</h1>
+
+<% @oceans.each do |ocean| %>
+
+<p> <%= link_to ocean.name, ocean_path(ocean.id) %> has a surface of: <%= ocean.surface %> and depth of: <%= ocean.depth %>
+</p>
+
+<% end %>

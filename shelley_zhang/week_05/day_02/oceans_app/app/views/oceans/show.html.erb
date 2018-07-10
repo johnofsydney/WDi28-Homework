@@ -1,0 +1,28 @@
+<h1><%= @ocean.name %></h1>
+
+<%= image_tag @ocean.image, :class => 'feature' unless @ocean.image.nil?%>
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Surface</td>
+      <td>Depth</td>
+      <td>Volume</td>
+    </tr>
+  </thead>
+</table>
+
+<tbody>
+  <tr>
+    <td><%= @ocean.name %></td>
+    <td><%= @ocean.surface %></td>
+    <td><%= @ocean.depth %></td>
+    <td><%= @ocean.volume %></td>
+  </tr>
+</tbody>
+
+<div class="controls">
+  <%= link_to 'Edit Ocean', ocean_edit_path(@ocean.id) %>
+  <%= button_to 'Delete Ocean', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

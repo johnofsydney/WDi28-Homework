@@ -1539,3 +1539,28 @@ Processing by RockController#game as HTML
 Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:09:34 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 253ms (Views: 244.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock" for 127.0.0.1 at 2018-07-10 09:09:37 +1000
+Processing by RockController#form as HTML
+  Rendering rock/form.html.erb within layouts/application
+  Rendered rock/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock/answer?hand=rock" for 127.0.0.1 at 2018-07-10 09:09:42 +1000
+Processing by RockController#game as HTML
+  Parameters: {"hand"=>"rock"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into Integer):
+  
+app/controllers/rock_controller.rb:9:in `rand'
+app/controllers/rock_controller.rb:9:in `game'

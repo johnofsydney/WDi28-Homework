@@ -1,0 +1,22 @@
+<h1>Edit Hiking Trial</h1>
+
+<form action="<%= mountains_path(@mountain.id) %>" method="post">
+  <label>Name :</label>
+  <input type="text" name="name" values="<%= @mountain.name %>" required>
+</br>
+  <label>Height :</label>
+  <input type="integer" name="height" values="<%= @mountain.height %>">
+</br>
+  <label>Distance</label>
+  <input type="integer" name="distance" values="<%= @mountain.distance %>">
+</br>
+  <label>Country</label>
+  <input type="text" name="country" values="<%= @mountain.country %>">
+</br>
+  <label>Image</label>
+  <input type="url" name="image" values="<%= @mountain.image %>">
+</br>
+  <button>Update Trial</button>
+
+
+</form>

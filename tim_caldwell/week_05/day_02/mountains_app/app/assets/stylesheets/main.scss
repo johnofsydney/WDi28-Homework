@@ -7,7 +7,9 @@ body {
   font-family: 'Fjalla One', sans-serif;
   background: url(/assets/cloud_bg.png), linear-gradient(#0068f3, #0099f3 80%, #7cccfb);
   color: white;
+  background-position: center;
 }
+
 
 .container {
   min-width: 100vw;
@@ -44,11 +46,38 @@ header a {
   border-radius: .5em;
 }
 
+span {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+}
+table {
+  margin-bottom: 1em;
+}
+
+td {
+  padding: .5em;
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+}
+
+thead td {
+  font-weight: bolder;
+  color: white;
+  border-bottom: 1px solid grey;
+  margin: 0;
+  margin-bottom: .25em;
+}
+
+tbody {
+  font-weight: 300;
 }
 
 .mountainbg {
@@ -64,10 +93,11 @@ main {
   background: repeating-linear-gradient(transparent, transparent 24em, black 20px, black calc(24em + 2px));
   position: relative;
   border-left: 1px solid black;
+  left: -14em;
 }
 
 .index li {
-  display: block;
+  display: flex;
   width: 20em;
   margin-bottom: .5em;
   background-color: rgba(255,255,255,.25);
@@ -76,12 +106,21 @@ main {
   top: calc( var(--summit) * 0.25em);
   padding: .25em 2em;
   text-align: center;
-  animation: move 10s ease-in-out
+   animation: move .5s ease-in-out;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes move {
-  from {top: 0}
-  to {top: calc( var(--summit) * 0.25em)}
+  from {
+    top: calc( var(--summit) * 0.25em - 4em);
+    opacity: 0;
+  }
+  to {
+    top: calc( var(--summit) * 0.25em);
+    opacity: 1;
+  }
 }
 
 .index li:before { 
@@ -97,27 +136,88 @@ main {
 .index a {
   font-size: 1.5em;
   text-decoration: none;
+  color: white;
+  text-shadow: .1em .1em .1em rgba(0,0,0,0.25)
 }
 
-.index span {
+.index a:hover {
+  color: goldenrod;
+}
+
+.index a:visited {
+  color: gold;
+}
+
+.newline {
   display:block;
   font-family: 'Audiowide', cursive;
 }
 
 .feature {
-  max-width: 60vw;
-  display: inline-block;
+  width: 100%;
+  display: block;
 }
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  overflow: hidden;
+  box-sizing: border-box;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header header" "map map";
+  grid-row-gap: .1em;
+  font-size: 1.5vw;
+  max-width: 960px;
+  width: 90vw;
+  margin: auto // centers on the page horizontally and vertically since parent is flex;
+  // grid-gap: 1em;
 }
 
-.mount_img {
-  grid-column: span 2;
-  text-align: center;
+@media (min-width: 1000px) {
+  .card {
+    font-size: 1em;
+  }
+}
+
+.mount_img, .mount_info {
+  // grid-column: span 2;
+  grid-area: header;
+}
+
+.mount_info {
+  color: white;
+  text-shadow: 0 0 .25em rgba(0,0,0,.5);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 2em;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: .5em;
+  text-align: right;
+  background: linear-gradient(67.5deg, transparent, transparent 65%, rgba(0,0,0,.25) 65.9%, rgba(255,255,255,.5) 66%, rgba(255,255,255,.5));
+  animation: slide .75s linear;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 50%
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.mount_info p, .mount_info h1 {
+  margin: 0;
+}
+
+.map {
+  grid-area: map;
+  width: 100%;
+  // height: 30vh;
 }
 
 .map iframe {
@@ -125,19 +225,31 @@ main {
   height: 100%;
 }
 
-.mount_info {
-  text-align: center;
-}
 
 .controls {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-top: auto;
+  // color: white;
+}
+
+.controls a {
+  color: white;
+  font-size: 1em;
+}
+
+.sml {
+  display: block;
+  font-size: .75em;
+  text-align: right;
+  color: whitesmoke;
 }
 
 footer {
   background: linear-gradient(#43701a, #5a6245);
   text-align: center;
   box-shadow: 0 -5px 10px #43701a;
+  line-height: 3em;
 }

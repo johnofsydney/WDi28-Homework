@@ -24,7 +24,7 @@
 <%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
 
 <div class="controls">
-  <%= button_to 'Edit Trial', mountain_edit_path(@mountain.id) %>
+  <%= button_to 'Edit Trial', mountain_edit_path(@mountain.id), :method => 'get'%>
 
   <%= button_to 'Delete Trial', mountain_path(@mountain.id), :method => 'delete' %>
 </div>

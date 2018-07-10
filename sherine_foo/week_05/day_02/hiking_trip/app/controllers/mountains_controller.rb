@@ -40,7 +40,7 @@ end
 
   def destroy
     mountain = Mountain.find params[:id]
-    mounatin.destroy
+    mountain.destroy
     redirect_to mountains_path
   end
 

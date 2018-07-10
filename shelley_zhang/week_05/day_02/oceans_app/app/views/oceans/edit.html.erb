@@ -1,14 +1,14 @@
 <h1>Edit Ocean</h1>
-  <form action="<%= ocean_update_path(@ocean.id) %>" method="post">
+  <form action="<%= ocean_path(@ocean.id) %>" method="post">
     <label>Name: </label>
     <input type="text" name="name" value="<%= @ocean.name %>" required>
     <label>Image: </label>
     <input type="text" name="image" value="<%= @ocean.image %>">
-    <label>Surface: </label>
+    <label>Surface (km<sup>2</sup>): </label>
     <input type="float" name="surface" value="<%= @ocean.surface %>">
-    <label>Depth: </label>
+    <label>Depth (metres): </label>
     <input type="float" name="depth" value="<%= @ocean.depth %>">
-    <label>Volume: </label>
+    <label>Volume (km<sup>3</sup>): </label>
     <input type="float" name="volume" value="<%= @ocean.volume %>">
-    <button>Edit Ocean</button>
+    <button>Update Ocean</button>
   </form>

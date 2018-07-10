@@ -2,7 +2,9 @@
 
 <% @oceans.each do |ocean| %>
 
-<p> <%= link_to ocean.name, ocean_path(ocean.id) %> has a surface of: <%= ocean.surface %> and depth of: <%= ocean.depth %>
+<p> <%= link_to ocean.name, ocean_path(ocean.id) %>
+  has a surface of: <strong><%= number_to_human ocean.surface %> km<sup>2</sup></strong> and
+  an average depth of: <strong><%= number_with_precision(ocean.depth, precision: 0) %> metres</strong>
 </p>
 
 <% end %>

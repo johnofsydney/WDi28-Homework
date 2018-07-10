@@ -4,18 +4,21 @@
     <title>OceansApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="master.scss">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="containter">
+    <div class="container">
       <nav>
         <%= link_to 'All Oceans', oceans_path %>
         <%= link_to 'New Ocean', oceans_new_path %>
       </nav>
       <%= yield %>
     </div>
+    <footer>
+      &copy; Shelley Zhang - 2018 WDI28 Oceans
+    </footer>
   </body>
 </html>

@@ -1,0 +1,6 @@
+<h1>Mountains of the World</h1>
+<ul class="index" style="--tallest: <%= @tallest_height %>; --shortest: <%= @shortest_height %>">
+<% @mountains.each do |m| %>
+  <li style="--summit: <%= @tallest_height - m.height %>"><%= link_to m.name, mountain_path(m.id) %><span><%= number_to_human m.height, units: {unit: "m"} %></span></li>
+<% end %>
+</ul>

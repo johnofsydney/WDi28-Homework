@@ -14,10 +14,16 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Base.logger = Logger.new(STDERR)
 
 class Book < ActiveRecord::Base
+  belongs_to :author, :optional => true
 end
 
 class Author < ActiveRecord::Base
+  has_many :books
 end
+
+
+
+
 
 get "/" do
   erb :home

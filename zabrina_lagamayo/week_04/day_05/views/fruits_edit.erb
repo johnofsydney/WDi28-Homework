@@ -1,6 +1,6 @@
 <form action="/fruits/<%= @fruit['id'] %>" method = "post">
   <label>Fruit Name: </label>
-  <input type="text" name="name" placeholder="fruit name" required autofocus>
+  <input type="text" name="name" value= "<%=@fruit.name %>" placeholder="fruit name" required autofocus>
   <label>Image Link: </label>
   <input type="url" name="image" placeholder="http://...">
   <label>Colour: </label>

@@ -46,7 +46,7 @@ class RocksController < ApplicationController
   def destroy
     rock = Rock.find params[:id]
     rock.destroy
-    redirect_to rock_path
+    redirect_to rocks_path
   end
 
 end

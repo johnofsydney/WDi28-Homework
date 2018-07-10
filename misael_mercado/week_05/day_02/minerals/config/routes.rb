@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  root :to => 'rocks#home'
- get '/rocks' => 'rocks#index'
+ get '/rocks' => 'rocks#index',  :as => :rocks
  get '/rocks/new' => 'rocks#new'
  post '/rocks' => 'rocks#create'
  get '/rocks/:id' => 'rocks#show', :as => :rock

@@ -2,38 +2,37 @@
 
 <form action="<%= mountains_path(@mountain.id) %>" method="post">
   <label>Name :</label>
-  <input type="text" name="name" values="<%= @mountain.name %>" required>
+  <input type="text" name="name" values="<%= @mountain.name %>" placeholder="Trial Name" required>
 </br>
   <label>Height :</label>
-  <input type="integer" name="height" values="<%= @mountain.height %>">
+  <input type="integer" name="height" values="<%= @mountain.height %>" placeholder="foot">
 </br>
-  <label>Distance</label>
-  <input type="integer" name="distance" values="<%= @mountain.distance %>">
+  <label>Distance :</label>
+  <input type="integer" name="distance" values="<%= @mountain.distance %>" placeholder="miles">
 </br>
-  <label>Country</label>
-  <input type="text" name="country" values="<%= @mountain.country %>">
+  <label>Country :</label>
+  <input type="text" name="country" values="<%= @mountain.country %>" placeholder="Country Name">
 </br>
-  <label>Image</label>
-  <input type="url" name="image" values="<%= @mountain.image %>">
+  <label>Image :</label>
+  <input type="url" name="image" values="<%= @mountain.image %>" placeholder="http://..">
 </br>
   <button>Update Trial</button>
 
 </br>
 </br>
 
-  <table>
-    <thead>
-      <tr>
-        <td>Name</td>
-        <td>Height</td>
-        <td>Distance</td>
-        <td>Country</td>
-      </tr>
-    </thead>
-  </table>
+<table align="center">
+  <thead>
+    <tr align="center">
+      <td>Name</td>
+      <td>Height</td>
+      <td>Distance</td>
+      <td>Country</td>
+    </tr>
 
-  <tbody>
-    <tr>
+
+  <tbody >
+    <tr align="center">
       <td><%= @mountain.name %></td>
       <td><%= @mountain.height %></td>
       <td><%= @mountain.distance %></td>
@@ -41,6 +40,9 @@
 
     </tr>
   </tbody>
+</thead>
+
+</table>
 
   <%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
 

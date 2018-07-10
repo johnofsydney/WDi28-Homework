@@ -9,6 +9,28 @@ Distance : <%= mountain.distance %>
 Country : <%= mountain.country %>
 
 
+<div class= "box_container">
+
+  <% @mountains.each do |mountain| %>
+
+    <div class="box">
+      <a href="/mountains/">
+        <%= mountain[:name] %>
+      </br>
+        Distance : <%= mountain.distance %>
+</br>
+        Country : <%= mountain.country %>
+</br>
+        <% unless mountain["image"].nil? %>
+
+        <img class="img_box" src="<%= mountain['image'] %>" />
+
+        <% end  %>
+      </a>
+    </div>
+
+  <% end  %>
+</div>
 </p>
 
 <% end %>

@@ -1,27 +1,33 @@
 <h1><%= @mountain.name %></h1>
 
-<table>
+
+<table align="center">
   <thead>
-    <tr>
+    <tr align="center">
       <td>Name</td>
       <td>Height</td>
       <td>Distance</td>
       <td>Country</td>
     </tr>
-  </thead>
+
+
+  <tbody >
+    <tr align="center">
+      <td><%= @mountain.name %></td>
+      <td><%= @mountain.height %></td>
+      <td><%= @mountain.distance %></td>
+      <td><%= @mountain.country %></td>
+
+    </tr>
+  </tbody>
+</thead>
+
 </table>
 
-<tbody>
-  <tr>
-    <td><%= @mountain.name %></td>
-    <td><%= @mountain.height %></td>
-    <td><%= @mountain.distance %></td>
-    <td><%= @mountain.country %></td>
-
-  </tr>
-</tbody>
-
 <%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
+
+
+</div>
 
 <div class="controls">
   <%= button_to 'Edit Trial', mountain_edit_path(@mountain.id), :method => 'get'%>

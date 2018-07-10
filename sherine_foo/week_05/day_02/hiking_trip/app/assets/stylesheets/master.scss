@@ -12,22 +12,55 @@ background-size: cover;
 
 nav {
     align-items: center;
-    // background-color: rgba(0, 0, 0, 0.5);
-    max-width: 100%
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    padding-bottom: 16px
 }
 
 .container {
   max-width: 960px;
+
   margin: 0 auto;
   padding-left: 3vw;
   padding-right: 3vw;
   background-color: rgba(0,0, 0, 0.5);
+
+  text-align: center;
 }
 
-
-.feature {
-  max-width: 40em
+.box_container  {
+  display: grid;
+  grid-template-columns:  33% 33% 33%;
+  grid-row-gap: 10px;
+  padding: 20px;
 }
+
+.box a {
+  // background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+.img_box {
+  width: 10em
+}
+// .feature {
+//   max-width: 40em
+// }
+
+table {
+  font-size: 3vw;
+}
+thead {
+  font-size: 2vw;
+  color: #40E0D0;
+}
+
+td {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 
 h1 {
   font-family: 'Abril Fatface', cursive;
@@ -44,34 +77,58 @@ h2 {
 }
 
 
-
 a {
   color: #40E0D0;
   padding: 1em;
   padding-bottom: 0.5em;
   text-decoration: none;
   font-size: 3vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center
+  text-align: center;
+  // background-color: rgba(0, 0, 0, 0.5);
+
 }
 
-a:hover {
+a.box {
+  margin: 0 auto;
+  background-color: rgba(64,224, 208, 0.2)
+}
+
+a.nav_a:hover {
   color: white;
   background-color: #40E0D0;
 }
+
+
 
 p {
   color: #40E0D0;
   font-size: 2.5vw;
 }
 button {
-
+  font-size: 1em;
   margin-top: 1em;
   padding: 0.5em;
   border-radius: 10px;
-  background-color: #40E0D0;
+  background-color: #FFF;
 }
 
 input {
-  font-size: 10em;
+  font-size: 1em;
+}
+
+.controls {
+  text-align: center;
+}
+
+label {
+    font-size: 2em;
+    color: #40E0D0;
+    min-width: 180px;
+    display: inline-block;
+    text-align: left;
+}
+input {
+  padding: 0.5em 1em 0.5em 1em;
+  margin: auto;
+
 }

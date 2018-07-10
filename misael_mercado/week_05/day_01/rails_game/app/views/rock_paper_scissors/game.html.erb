@@ -1,0 +1,16 @@
+
+<div>
+	<h1>Let's play!</h1>
+</div>
+<form action="/rock_paper_scissors">
+	<input class="game_input" type="text" name="throw" placeholder="Please throw 'rock', 'paper' or 'scissors'." autofocus>
+	<input type="submit" value="Play">
+</form>
+
+<% if @user_input %>
+<div class="result">
+	<p>I have thrown: <strong><%= @app %></strong></p>
+	<p> And you have thrown: <strong><%= @user_input %></strong></p>
+	<p><strong><%= @result %></strong></p>
+</div>
+<% end %>

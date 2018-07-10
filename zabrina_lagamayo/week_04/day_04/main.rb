@@ -23,6 +23,8 @@ end
 post '/instruments' do
     query_db "INSERT INTO instruments (name, family, video) VALUES ('#{params[:name]}','#{params[:family]}', '#{params[:video]}')"
 
+    binding.pry
+
     redirect to('/instruments')
 end
 
@@ -31,6 +33,7 @@ get '/instruments/:id' do
   @url =  query_db "SELECT video FROM instruments WHERE id = #{params[:id]} "
   @video = YoutubeEmbed::Video.new("#{@url}")
   @instrument = @instrument.first
+
   erb :instruments_show
 end
 
@@ -39,12 +42,15 @@ get '/instruments/:id/edit' do
   @url =  query_db "SELECT video FROM instruments WHERE id = #{params[:id]} "
   @video = YoutubeEmbed::Video.new("#{@url}")
   @instrument = @instrument.first
+  # binding.pry
   erb :instruments_edit
 end
 
 #Update
 post '/instruments/:id' do
-  "UPDATE instruments SET name= '#{params[:name]}', family = #{params[:family]}, video = #{params[:video]}' WHERE id=#{params[:id]}"
+  update = "UPDATE instruments SET name= '#{params[:name]}', family = '#{params[:family]}', video = '#{params[:video]}' WHERE id=#{params[:id]}"
+  # binding.pry
+  query_db update
   redirect to("/instruments/#{params[:id]}")
 end
 #delete

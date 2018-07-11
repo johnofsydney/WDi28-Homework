@@ -1,0 +1,12 @@
+<h1> vino varietals </h1>
+
+
+
+<% @wines.each do |wine| %>
+  <p>
+    <a href="/wines/<%= wine["id"] %>">
+  <%= wine['wine_type'] %>
+</a>
+</p>
+
+  <% end %>

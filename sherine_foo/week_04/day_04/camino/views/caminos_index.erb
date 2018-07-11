@@ -1,0 +1,19 @@
+<h1>All Journey</h1>
+
+<% @caminos.each do |camino| %>
+  <p>
+
+    <a id:"all_font" href="/caminos/<%= camino["id"] %>">
+      Day <%= camino["day"] %> :
+      <%= camino["city"] %>
+    </br>
+
+    <div >
+      <img class="all_image" src=" <%= camino['image'] %>" />
+    </div>
+
+    </a>
+
+  </p>
+
+<% end %>

@@ -1,0 +1,23 @@
+<div class="parent">
+
+  <div class="item1">
+    <h1><%= @director['name'] %></h1>
+    <h2>Film: <%= @director['film'] %></h2>
+
+  </div>
+
+    <div class="item3">
+      <% unless @director['image'].nil? %>
+        <img class="feature" src="<%= @director['image'] %>" />
+      <% end %>
+    </div>
+
+    <div class="item4">
+      <a href="/directors/<%= @director['id'] %>/edit">Edit</a>
+    </div>
+
+    <div class="item5">
+      <a href="/directors/<%= @director['id'] %>/delete">Delete</a>
+    </div>
+
+</div>

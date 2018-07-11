@@ -2,7 +2,7 @@
 
 <% @games.each do |game| %>
   <%= image_tag game.image, :alt => game.name, :class => 'thumb' if game.image.present? %>
-
-  <%= link_to game.name, game %>
-
+<ul>
+  <li><%= link_to game.name, game %></li>
+</ul>
 <% end %>

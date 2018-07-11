@@ -1,0 +1,24 @@
+<h1><%= @ocean.name %></h1>
+
+<img src="<%= @ocean.image_url %>">
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>average_depth</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @ocean.name %></td>
+      <td><%= @ocean.average_depth %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit ocean', ocean_edit_path(@ocean.id) %>
+  <%= button_to 'Delete ocean', ocean_path(@ocean.id), :method => 'delete' %>
+</div>

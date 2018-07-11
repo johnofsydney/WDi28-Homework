@@ -6392,3 +6392,447 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:03:27 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 255ms (Views: 246.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:03:29 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:03:35 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:03:41 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:08 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 87ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:08 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:10 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:37 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:46 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:04:55 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:04 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:06 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:05:06 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:05:07 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 09:05:08 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:05:09 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:05:33 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:36 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:05:36 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:43 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:46 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:05:46 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 09:05:47 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:05:48 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 09:05:57 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 09:06:31 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors/result?guess=paper" for 127.0.0.1 at 2018-07-10 09:06:32 +1000
+Processing by RockPaperScissorsController#result as HTML
+  Parameters: {"guess"=>"paper"}
+  Rendering rock_paper_scissors/result.html.erb within layouts/application
+  Rendered rock_paper_scissors/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 09:06:41 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors/result?guess=rock" for 127.0.0.1 at 2018-07-10 09:06:58 +1000
+Processing by RockPaperScissorsController#result as HTML
+  Parameters: {"guess"=>"rock"}
+  Rendering rock_paper_scissors/result.html.erb within layouts/application
+  Rendered rock_paper_scissors/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 09:07:04 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:07:06 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number/result?guess=1" for 127.0.0.1 at 2018-07-10 09:07:07 +1000
+Processing by NumberController#result as HTML
+  Parameters: {"guess"=>"1"}
+  Rendering number/result.html.erb within layouts/application
+  Rendered number/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:07:09 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number/result?guess=10" for 127.0.0.1 at 2018-07-10 09:07:10 +1000
+Processing by NumberController#result as HTML
+  Parameters: {"guess"=>"10"}
+  Rendering number/result.html.erb within layouts/application
+  Rendered number/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 09:07:14 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 10:03:40 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 10:03:41 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 10:13:05 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball/result?question=Am+I+a+girl%3F" for 127.0.0.1 at 2018-07-10 10:13:10 +1000
+Processing by BallController#result as HTML
+  Parameters: {"question"=>"Am I a girl?"}
+  Rendering ball/result.html.erb within layouts/application
+  Rendered ball/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 10:13:14 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 10:13:19 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number/result?guess=5" for 127.0.0.1 at 2018-07-10 10:13:23 +1000
+Processing by NumberController#result as HTML
+  Parameters: {"guess"=>"5"}
+  Rendering number/result.html.erb within layouts/application
+  Rendered number/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 10:13:25 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 10:13:28 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors/result?guess=rock" for 127.0.0.1 at 2018-07-10 10:13:32 +1000
+Processing by RockPaperScissorsController#result as HTML
+  Parameters: {"guess"=>"rock"}
+  Rendering rock_paper_scissors/result.html.erb within layouts/application
+  Rendered rock_paper_scissors/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 10:13:35 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 10:13:38 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 21:26:23 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 249ms (Views: 242.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 21:26:53 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball/result?question=" for 127.0.0.1 at 2018-07-10 21:26:56 +1000
+Processing by BallController#result as HTML
+  Parameters: {"question"=>""}
+  Rendering ball/result.html.erb within layouts/application
+  Rendered ball/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 21:26:59 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 21:27:00 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number/result?guess=7" for 127.0.0.1 at 2018-07-10 21:27:01 +1000
+Processing by NumberController#result as HTML
+  Parameters: {"guess"=>"7"}
+  Rendering number/result.html.erb within layouts/application
+  Rendered number/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 21:27:05 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 21:27:07 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors/result?guess=paper" for 127.0.0.1 at 2018-07-10 21:27:08 +1000
+Processing by RockPaperScissorsController#result as HTML
+  Parameters: {"guess"=>"paper"}
+  Rendering rock_paper_scissors/result.html.erb within layouts/application
+  Rendered rock_paper_scissors/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 21:27:12 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 21:27:13 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 21:27:15 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 21:27:16 +1000
+Processing by RockPaperScissorsController#index as HTML
+  Rendering rock_paper_scissors/index.html.erb within layouts/application
+  Rendered rock_paper_scissors/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/number" for 127.0.0.1 at 2018-07-10 21:27:17 +1000
+Processing by NumberController#index as HTML
+  Rendering number/index.html.erb within layouts/application
+  Rendered number/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ball" for 127.0.0.1 at 2018-07-10 21:27:19 +1000
+Processing by BallController#index as HTML
+  Rendering ball/index.html.erb within layouts/application
+  Rendered ball/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+

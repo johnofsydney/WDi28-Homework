@@ -1,0 +1,15 @@
+<%= form_for @shelter do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :postcode %>
+  <%= f.number_field :postcode %>
+
+  <%= f.label :type_name, "Shelter Type" %>
+  <%= f.text_field :type_name %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit %>
+<% end %>

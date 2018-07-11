@@ -1,0 +1,7 @@
+<h1><%= @animal.name %></h1>
+<p><%= @animal.description %></p>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_animal_path(@animal) %>
+  <%= link_to 'Delete', animal_path(@animal), :method => 'delete', :data => {:confirm => "Are you sure you want to remove this animal from the database?"} %>
+</div>

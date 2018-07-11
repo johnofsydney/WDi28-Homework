@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FureverHome</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <%= link_to 'All Animals', animals_path %>
+          <%= link_to 'Add Animal', new_animal_path %>
+          <%= link_to 'All Shelters', shelters_path %>
+          <%= link_to 'Add Shelter', new_shelter_path %>
+        </nav>
+      </header>
+      <main>
+        <%= yield %>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<h1><%= @shelter.name %></h1>
+<h2><%= @shelter.type_name %> | <%= @shelter.postcode %></h2>
+
+<%= image_tag @shelter.image %>
+
+<div class="controls">
+  <%= link_to 'Edit', edit_shelter_path(@shelter) %>
+  <%= link_to 'Delete', shelter_path(@shelter), :method => 'delete', :data => {:confirm => 'Are you sure you want to remove this shelter?'} %>
+</div>

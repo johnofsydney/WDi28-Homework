@@ -1,0 +1,8 @@
+<h1>All Homeless Animals</h1>
+
+<% @animals.each do |a| %>
+  <div class="card">
+    <h3><%= link_to a.name, a %></h3>
+    <h4><%= a.breed %></h4>
+  </div>
+<% end %>

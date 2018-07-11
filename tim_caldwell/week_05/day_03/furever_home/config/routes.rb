@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :animals
   resources :shelters
 
+  root to: 'animals#index'
 end

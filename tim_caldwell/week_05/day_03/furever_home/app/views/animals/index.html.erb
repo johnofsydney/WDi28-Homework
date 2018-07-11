@@ -1,8 +1,15 @@
-<h1>All Homeless Animals</h1>
-
-<% @animals.each do |a| %>
-  <div class="card">
-    <h3><%= link_to a.name, a %></h3>
-    <h4><%= a.breed %></h4>
-  </div>
-<% end %>
+<h1>Meet some of our Fur Friends</h1>
+<div class="flex">
+  <% @animals.each do |a| %>
+    <a href="/animals/<%= a.id %>"> 
+      <div class="card">
+        <%= image_tag a.image, :alt => a.name %>
+        <div class="details">
+          <span class="icon <%= a.type_name.downcase %>"></span>
+          <h3><%= a.name %></h3>
+          <p><%= a.breed %></p>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>

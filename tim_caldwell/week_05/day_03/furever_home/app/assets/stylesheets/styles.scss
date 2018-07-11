@@ -1,0 +1,227 @@
+// Place all the styles related to the Animals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.container {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header, main, footer {
+  padding: .5em;
+}
+
+
+header {
+  background-color: whitesmoke;
+  border-top: .5em solid royalblue;
+  line-height: 6em;
+}
+
+nav {
+  max-width: 960px;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+nav a {
+  line-height: 8vw;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.logo {
+  height: 12vw;
+  margin-bottom: -8vw;
+}
+
+.headline {
+  color: white;
+  background-color: royalblue;
+  font-size: 2em;
+  line-height: 5em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  max-width: 20vw;
+  margin: 2vw;
+  box-shadow: 0 0 2vw rgba(0,0,0,0.15);
+  transition: .5s all;
+  background-color: white;
+  img {
+    width: 100%;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-areas: "ico name"
+                         "ico breed";
+    padding: 1em;
+    .icon {
+      display: block;
+      width: 3em;
+      height: 3em;
+      grid-area: ico;
+    }
+    h3 {
+      color: royalblue;
+      grid-area: name;
+      margin: 0;
+      text-align: center;
+    }
+    p {
+      color: grey;
+      grid-area: breed;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.dog {
+  background-size: cover;
+  background-image: url('/assets/jack-russell-terrier.svg');
+}
+.cat {
+  background-size: cover;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4NS44NzYgNDg1Ljg3NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg1Ljg3NiA0ODUuODc2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxwYXRoIGQ9Ik0zOTEuNzkzLDQ0NC4yMDloLTcxLjkzMmwtMi44NjItMTE3Ljg5Yy0wLjIyOC05LjM3NCwxLjE4NS0xOC42Myw0LjE5OC0yNy41MWwzMC4yMzQtODkuMTEgIGMyLjE3My02LjQwNSwzLjA1Ny0xMy4wNzUsMi42MjgtMTkuODIzbC00LjQzOS02OS44MjZjMC4wNzQtMC4wNTgsMC4xNTItMC4xMTksMC4yMjUtMC4xNzdjNy4zOTQtNS44NDYsMTEuNTI5LTE0Ljk1LDExLjA2My0yNC4zNTUgIGMtMC4zMzctNi43ODMtMC45MjMtMTYuMzgtMS44MDEtMjMuNTc5Yy0wLjA3OS0wLjY0NC0wLjI0LTEuMjc0LTAuNDgxLTEuODc2Yy0wLjQ1NS0xLjEzNy0xLjAyMi0yLjI4Ny0xLjcxMS0zLjQ1OWwwLjIzNi0wLjI3OCAgYzEuOTEzLTIuMjUxLDMuMDU3LTUuMTE0LDMuMjIyLTguMDYxYzAuNjk1LTEyLjQxNiwyLjEyNS00Mi4zNDQsMC40MS01Mi4wNjZjLTAuNDAxLTIuMjcyLTEuODI2LTQuMjM0LTMuODYzLTUuMzE4ICBjLTIuMDM4LTEuMDg1LTQuNDYtMS4xNjktNi41NjktMC4yMzJjLTIuOTI3LDEuMzAxLTguMDA2LDQuMzMxLTE4LjMyMiwxNS41NzFjLTAuMDg4LDAuMDkyLTAuMTc1LDAuMTg2LTAuMjU5LDAuMjgyICBjLTUuODYyLDYuNDA0LTExLjY3NCwxMy41MzktMTYuMDk1LDE5LjE3MmgtMzAuOTM4Yy00LjQyLTUuNjMzLTEwLjIzMi0xMi43NjctMTYuMDkzLTE5LjE3Yy0wLjA4Ny0wLjEtMC4xNzYtMC4xOTctMC4yNjgtMC4yOTIgIGMtMTAuMzEyLTExLjIzNS0xNS4zOS0xNC4yNjQtMTguMzE1LTE1LjU2NGMtMi4xMDgtMC45MzctNC41MzEtMC44NTEtNi41NjksMC4yMzJjLTIuMDM4LDEuMDgzLTMuNDYyLDMuMDQ1LTMuODYzLDUuMzE3ICBjLTEuNzE3LDkuNzI5LTAuMjg1LDM5LjY1MywwLjQxLDUyLjA2N2MwLjE2NSwyLjk0OCwxLjMxLDUuODEyLDMuMjIzLDguMDYzbDAuMjM1LDAuMjc2Yy0wLjY4OCwxLjE3Mi0xLjI1NiwyLjMyMS0xLjcxMSwzLjQ1OCAgYy0wLjI0MSwwLjYwMy0wLjQwMywxLjIzNC0wLjQ4MSwxLjg3OGMtMC44NzgsNy4yLTEuNDYzLDE2Ljc5Ni0xLjgsMjMuNTc5Yy0wLjM1OCw3LjIxNywyLjAwMywxNC4yNTEsNi40NTgsMTkuNzc4bC0xOC42OTUsMzQuMjcgIGwtNTYuNzQ1LDE5LjU1NmMtMzkuMzMyLDEzLjU1NS02OC43OTIsNDcuMzAyLTc2Ljg4Niw4OC4wNzFjLTEwLjMxNyw1MS45NzUtMjIuMTg5LDEyMy4zMTEtMjAuMTU4LDE2Ny45OTYgIGMwLjU0MiwxMS45MjcsMy42OTIsMjMuNTcsOS4xMTIsMzMuNjcxYzYuNzQ5LDEyLjU3OSwxOC4yMTMsMjcuMDE3LDQ3LjIwMywyNy4wMTdoMjYyYzExLjQ4NywwLDIwLjgzMy05LjM0NiwyMC44MzMtMjAuODMzICBTNDAzLjI4LDQ0NC4yMDksMzkxLjc5Myw0NDQuMjA5eiBNMjU3LjM1OSwyNi4zODljMC4wNjcsMC4wNzcsMC4xMzcsMC4xNTIsMC4yMDcsMC4yMjZjNi45NzIsNy42MTYsMTQuMDM5LDE2LjU2NCwxNy42NDEsMjEuMjM1ICBjMS43MzEsMi4yNDUsNC41MDcsMy4yNTYsNy4xNTMsMi44MjJoMzUuNjk0YzIuNjQ5LDAuNDM0LDUuNDIyLTAuNTc4LDcuMTUzLTIuODIyYzMuNjItNC42OTQsMTAuNzQtMTMuNzEsMTcuNzQ2LTIxLjM1MSAgYzAuMDEzLTAuMDE1LDAuMDI3LTAuMDI5LDAuMDQtMC4wNDNjMS4zMTUtMS40MzUsMi41MTYtMi43MDEsMy42MTItMy44MmMtMC4wMzgsMTAtMC41NjEsMjMuMTQtMS4xODEsMzQuMzI3bC0zLjcwOCw0LjM2MiAgYy0yLjM1OCwyLjc3NC0yLjM4Myw2Ljg0Mi0wLjA1OSw5LjY0NmMxLjQyLDEuNzEyLDIuMjMsMi45OTYsMi42OTMsMy44OThjMC43NTIsNi42MjksMS4yNzEsMTUuMjA3LDEuNTc4LDIxLjM5MiAgYzAuMjI3LDQuNTcyLTEuNzg2LDktNS4zODQsMTEuODQ0Yy04LjU0Nyw2Ljc1Ny0yNC43MTksMTkuMDE2LTM2Ljk5MiwyNS4yYy0yLjA5NCwxLjA1NS00LjU5NSwxLjA1NS02LjY4OCwwICBjLTEyLjI3Ni02LjE4Ni0yOC40NDYtMTguNDQzLTM2Ljk5MS0yNS4yYy0zLjU5OS0yLjg0NS01LjYxMS03LjI3My01LjM4NS0xMS44NDRjMC4zMDctNi4xODUsMC44MjUtMTQuNzYyLDEuNTc3LTIxLjM5MiAgYzAuNDYzLTAuOTAzLDEuMjczLTIuMTg4LDIuNjkzLTMuODk4YzIuMzI1LTIuODAzLDIuMzAxLTYuODcxLTAuMDU4LTkuNjQ2bC0zLjcwOC00LjM2MmMtMC42MjEtMTEuMTg3LTEuMTQ0LTI0LjMyNy0xLjE4Mi0zNC4zMjcgIEMyNTQuODg3LDIzLjczOCwyNTYuMDY3LDI0Ljk4MiwyNTcuMzU5LDI2LjM4OXogTTM5MS43OTMsNDcwLjg3NmgtMjYyYy0xOS43NjMsMC0yNy42NTUtNy4zMTItMzMuOTg1LTE5LjEwOCAgYy00LjM2NS04LjEzNS02LjkwNS0xNy41NjEtNy4zNDUtMjcuMjZjLTEuOTYzLTQzLjE4Myw5LjczMS0xMTMuMjMzLDE5Ljg4Ny0xNjQuMzk0YzcuMDU4LTM1LjU1NSwzMi43NTQtNjQuOTg3LDY3LjA2MS03Ni44MTEgIGw1OS40OTMtMjAuNTAzYzEuNzY4LTAuNjA5LDMuMjQ1LTEuODU3LDQuMTQtMy40OTlsMTguNTQyLTMzLjk4OWMxMC4wODksNy42NjYsMjIuMjY5LDE2LjIyLDMyLjUyNywyMS4zODkgIGMzLjE2MSwxLjU5Miw2LjYyNywyLjM4OSwxMC4wOTQsMi4zODlzNi45MzQtMC43OTYsMTAuMDk0LTIuMzg5YzcuODAyLTMuOTMxLDE2LjcxNi05LjgyNCwyNC45OC0xNS43OTRsMy44MDksNTkuOTE5ICBjMC4zMDQsNC43ODQtMC4zMjMsOS41MTMtMS44NjMsMTQuMDUzbC0zMC4yMzQsODkuMTFjLTMuNTgxLDEwLjU1My01LjI1OSwyMS41NTMtNC45ODgsMzIuNjkzbDIuODUzLDExNy41MjZoLTEwLjQ5NyAgbC0xNi40NjYtMTIzLjQ5MWMtMC4wMjEtMC4xNjQtMC4wNDktMC4zMjctMC4wODItMC40ODlsLTIxLjMzMy0xMDZjLTAuODE3LTQuMDYtNC43NjgtNi42OS04LjgzMy01Ljg3MyAgYy00LjA2MSwwLjgxNy02LjY5LDQuNzcxLTUuODczLDguODMzbDIxLjI4NSwxMDUuNzU3bDIuMTQ1LDE2LjA4N2MtNy4zMTMtMTcuMjg5LTE5LjYzMS0zMi4xODMtMzUuOTU1LTQyLjkyMiAgYy0zLjQ1OC0yLjI3NS04LjExLTEuMzE3LTEwLjM4OCwyLjE0NGMtMi4yNzYsMy40Ni0xLjMxNyw4LjExMSwyLjE0NCwxMC4zODhjMjEuOTU4LDE0LjQ0NiwzNS4zNDgsMzcuNzg2LDM2LjczNiw2NC4wMzMgIGMxLjM4NywyNi4yNDgtOS40NjcsNTAuODY5LTI5Ljc4LDY3LjU1bC00Ljg1MSwzLjk4NGgtMjAuMjU3Yy0yNS40MzUsMC01MC4yMzEtNy4yMDQtNzEuNzA3LTIwLjgzMyAgYy0zLjQ5OC0yLjIyMS04LjEzMi0xLjE4My0xMC4zNTEsMi4zMTRzLTEuMTg0LDguMTMxLDIuMzE0LDEwLjM1MWMyMy44ODIsMTUuMTU2LDUxLjQ1OCwyMy4xNjcsNzkuNzQ0LDIzLjE2N2gxODguOTQyICBjMy4yMTYsMCw1LjgzMywyLjYxNyw1LjgzMyw1LjgzM1MzOTUuMDA5LDQ3MC44NzYsMzkxLjc5Myw0NzAuODc2eiBNMjc5LjIyNyw0NDQuMjA5aC0zMy40ODMgIGMxNC40NjctMTQuOTA4LDIzLjU2My0zMy43NDQsMjYuMjYzLTU0LjE1NkwyNzkuMjI3LDQ0NC4yMDl6IiBmaWxsPSIjMDAwMDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)
+}
+
+
+.edit_animal, .edit_shelter, .new_animal, .new_shelter {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: .5em;
+  max-width: 960px;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  margin: 0 auto;
+  label {
+    margin-left: 3em;
+  }
+}
+
+.show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  .portrait {
+    width: 100%;
+  }
+
+  h2 {
+    padding: .5em;
+    margin: 0;
+    color: royalblue;
+  }
+
+
+}
+  .details {
+    box-shadow: 0 0 2vw rgba(0,0,0,0.15);
+    background-color: white;
+    .info > b {
+      font-family: 'Roboto', sans-serif;
+    }
+    .info {
+      font-size: 1.25em;
+      margin: .5em 0 .5em .5em;
+      border-bottom: 1px solid royalblue;
+    }
+  }
+.controls {
+  padding: .5em;
+  text-align: right;
+}
+
+.show > * {
+  box-shadow: 0 0 2vw rgba(0,0,0,0.15);
+}
+
+.location {
+  background-color: lightsteelblue;
+  .overlay {
+      position: relative;
+    top: -2.45em;
+    padding: .5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    color: black;
+    text-align: right;
+    text-shadow: 0 0 2px white;
+    margin: 0;
+  }
+}
+
+.location img {
+  width: 100%;
+}
+
+footer {
+  background-color: royalblue;
+  min-height: 2em;
+}
+
+.cols-2 {
+  display: grid;
+  grid-template-columns:auto 30vw;
+  grid-gap: 2em;
+  padding: 2em;
+
+  img {
+    max-width: 30vw;
+  }
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
+}

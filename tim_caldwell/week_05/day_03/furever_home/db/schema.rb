@@ -18,9 +18,14 @@ ActiveRecord::Schema.define(version: 2018_07_11_070224) do
   create_table "animals", force: :cascade do |t|
     t.text "name"
     t.text "breed"
+    t.text "type_name"
+    t.text "colour"
     t.text "dob"
     t.text "description"
     t.boolean "vaccinated"
+    t.text "image"
+    t.text "state"
+    t.text "sex"
     t.integer "shelter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

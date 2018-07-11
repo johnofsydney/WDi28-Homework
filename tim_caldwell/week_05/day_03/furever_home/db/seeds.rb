@@ -11,10 +11,15 @@ Animal.destroy_all
 Animal.create(
       :name => 'Helo',
       :breed => 'DSH',
+      :type_name => 'Cat',
+      :colour => 'Black',
       :dob => '2011-08-23',
       :vaccinated => true,
       :description => 'Named after Helo from Battlestar Galactica',
-      :shelter_id => 1
+      :shelter_id => 1,
+      :image => 'https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/36585528_10155711791280686_3201249355768004608_o.jpg?_nc_cat=0&oh=fbca477128ecbe24e3feeb4ea0c1ed12&oe=5BEBC9B7',
+      :state => 'NSW',
+      :sex => 'Male'
     )
 
 Shelter.create(

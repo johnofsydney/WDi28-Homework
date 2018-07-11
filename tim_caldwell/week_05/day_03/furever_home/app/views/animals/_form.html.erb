@@ -1,6 +1,6 @@
 <%= form_for @animal do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name  %>
+  <%= f.text_field :name, :required => true %>
 
   <%= f.label :breed %>
   <%= f.text_field :breed %>
@@ -14,8 +14,23 @@
   <%= f.label :vaccinated %>
   <%= f.check_box :vaccinated %>
 
+  <%= f.label :colour %>
+  <%= f.text_field :colour %>
+
+  <%= f.label :type_name, "Type" %>
+  <%= f.text_field :type_name, :required => true %>
+
+  <%= f.label :state %>
+  <%= f.text_field :state, :required => true %>
+
+  <%= f.label :sex %>
+  <%= f.text_field :sex, :required => true %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true %>
+
   <%= f.label :shelter_id %>
-  <%= f.select :shelter_id, Shelter.pluck(:name, :id), :include_blank => true %>
+  <%= f.select :shelter_id, Shelter.pluck(:name, :id), :required => true %>
 
   <%= f.submit %>
 <% end %>

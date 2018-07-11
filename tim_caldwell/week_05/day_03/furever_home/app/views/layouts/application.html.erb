@@ -15,9 +15,13 @@
         <nav>
           <%= link_to 'All Animals', animals_path %>
           <%= link_to 'Add Animal', new_animal_path %>
+          <%= image_tag 'logo.svg', :alt => "Icon Made by www.freepik.com, used under Creative Commons BY 3.0 License", :class => "logo" %>
           <%= link_to 'All Shelters', shelters_path %>
           <%= link_to 'Add Shelter', new_shelter_path %>
         </nav>
+        <h1 class="headline">
+          Give a Fur Friend a Furever home
+        </h1>
       </header>
       <main>
         <%= yield %>

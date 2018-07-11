@@ -1,8 +1,11 @@
 <h1>All Shelters</h1>
 
 <% @shelters.each do |s| %>
-<div class="card">
-  <h2><%= link_to s.name, s %></h2>
-  <p>Postcode: <%= s.postcode %></p>
-</div>
+<a href="/shelters/<%= s.id %>">
+  <div class="card">
+    <%= image_tag s.image %>
+    <h2><%= link_to s.name, s %></h2>
+    <p>Postcode: <%= s.postcode %></p>
+  </div>
+</a>
 <% end %>

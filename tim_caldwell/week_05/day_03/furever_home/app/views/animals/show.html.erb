@@ -1,7 +1,29 @@
-<h1><%= @animal.name %></h1>
-<p><%= @animal.description %></p>
+<div class="show">
 
-<div class="controls">
-  <%= link_to 'Edit', edit_animal_path(@animal) %>
-  <%= link_to 'Delete', animal_path(@animal), :method => 'delete', :data => {:confirm => "Are you sure you want to remove this animal from the database?"} %>
+  <%= image_tag @animal.image, :alt => @animal.name, :class => 'portrait' %>
+
+  <div class="details">
+    <h2><%= @animal.name %></h2>
+    <p class="info"><b>Name: </b><%= @animal.name %></p>
+    <p class="info"><b>Type: </b><%= @animal.type_name %></p>
+    <p class="info"><b>Breed: </b><%= @animal.breed %></p>
+    <p class="info"><b>Colour: </b><%= @animal.colour %></p>
+    <p class="info"><b>Sex: </b><%= @animal.sex %></p>
+    <p class="info"><b>Age: </b><%= distance_of_time_in_words_to_now @animal.dob %></p>
+    
+
+    <div class="controls">
+      <%= link_to 'Edit', edit_animal_path(@animal) %>
+      <%= link_to 'Delete', animal_path(@animal), :method => 'delete', :data => {:confirm => "Are you sure you want to remove this animal from the database?"} %>
+    </div>
+  </div>
+
+  <div class="location">
+    <h2>Where to find me</h2>
+    <a href="/shelters/<%= @animal.shelter_id %>">
+    <%= image_tag @animal.shelter.image %>
+    <h3 class="overlay"><%= @animal.shelter.name %></h3>
+    </a>
+  </div>
+
 </div>

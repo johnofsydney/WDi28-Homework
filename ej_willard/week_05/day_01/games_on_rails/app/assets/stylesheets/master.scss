@@ -1,0 +1,62 @@
+body {
+  background-color: #FFDACF;
+  color: #52B299;
+}
+
+h1 {
+  text-align: center;
+}
+// NOTE HOME STYLES
+.homeh1 {
+text-align: center;
+font-size: 4em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.eight_ball_home a {
+  font-size: 3em;
+  color: #B27664;
+
+}
+
+// NOTE EIGHT BALL STYLES
+
+.eightballform {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.eightballform form {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.resultsh1 {
+  font-size: 4em;
+}
+
+.youasked {
+  font-size: 2em;
+  text-align: center;
+}
+.eightballresults {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2em;
+  color: #B27664;
+}
+
+.eightballemoji {
+  font-size: 6em;
+  text-align: center;
+}

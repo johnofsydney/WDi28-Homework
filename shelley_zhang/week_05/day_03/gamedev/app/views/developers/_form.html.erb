@@ -1,0 +1,12 @@
+<%= form_for @developer do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+
+  <%= f.label :headquarters %>
+  <%= f.text_field :headquarters %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit %>
+<% end %>

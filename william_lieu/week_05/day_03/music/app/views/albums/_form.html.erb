@@ -1,0 +1,16 @@
+<%=  form_for @album do |f| %>
+
+  <%= f.label :title  %>
+  <%= f.text_field :title %>
+
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+
+  <%= f.label :released %>
+  <%= f.text_field :released %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.submit %>
+<% end %>

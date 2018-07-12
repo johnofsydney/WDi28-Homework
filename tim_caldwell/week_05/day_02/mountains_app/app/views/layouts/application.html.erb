@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MountainsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav><ul>
+          <li><a href="<%= mountains_path %>">All Mountains</a></li>
+          <li><a href="<%= mountains_new_path %>">Add Mountain</a></li>
+        </ul></nav>
+      </header>
+      <main>
+          <%= yield %>
+      </main>
+      <footer>
+        &copy; 2018 Tim Caldwell
+      </footer>  
+    </div>
+  </body>
+</html>

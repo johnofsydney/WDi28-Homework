@@ -1,0 +1,7 @@
+<p><%=@computer_move%></p>
+ <% if @throw == @computer_move %>
+       <p>You Win!</p>
+    <%else%>
+      <p> no score!</p>
+      <a href="/rps">Play again!</a>
+  <% end %>

@@ -1,0 +1,11 @@
+<div><h1>Let's guess a secret number!</h1></div>
+
+<form action="/secret_number">
+	<input class="guess_input" type="text" name="guessed_number" placeholder="Please guess a number between 1 and 10." autofocus>
+	<input type="submit" value="Guess">
+</form>
+
+<% if @guessed_number != 0 %>
+	<div class="result"><p>You have guessed: <strong><%= @guessed_number %></strong></p>
+	<p><strong><%= @result %></strong></p></div>
+<% end %>

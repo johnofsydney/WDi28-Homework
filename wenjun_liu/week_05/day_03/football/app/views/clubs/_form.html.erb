@@ -1,0 +1,12 @@
+<%= form_for @club do |c| %>
+  <%= c.label :Name %>
+  <%= c.text_field :name %>
+
+  <%= c.label :Region %>
+  <%= c.text_field :region %>
+
+  <%= c.label :Image%>
+  <%= c.url_field :img %>
+
+  <%= c.submit %>
+<% end %>

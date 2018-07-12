@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+$primary_color: #eae1ec;
+
+body {
+  background-color: #788eab;
+}
+
+.box1 {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+  font-size: 1.5vw;
+  font-family: 'Bungee Shade', cursive;
+
+  a {
+    margin: 0 2em;
+    text-decoration: none;
+    color: #f0a955;
+
+    &:hover {
+
+      opacity: 0.5;
+    }
+
+  }
+
+}
+div h1 {
+  display: flex;
+  order: 2;
+  justify-content: center;
+  color: $primary_color
+
+}
+
+div p {
+  display: flex;
+  order: 3;
+  justify-content: center;
+  margin: 6em;
+  font-size: 1vw;
+  font-family: 'Bungee Inline', cursive;
+   a{
+     text-decoration: none;
+     color: #1e5748;
+     margin: 0 2em;
+     &:hover {
+     color: $primary_color
+     }
+   }
+}
+
+form {
+  text-align: center;
+  margin-top: 3em;
+
+input {
+  width: 16em;
+  height: 2.6em;
+  font-size: .8vw;
+  text-align: center;
+  border-radius: 10px;
+  // font-family: 'Cardo', serif;
+}
+
+}
+
+.result {
+
+  display: flex;
+  flex-direction: column;
+  order: 4;
+  justify-content: center;
+  margin: 0;
+  color: $primary_color;
+  font-family: 'Bungee Inline', cursive;
+
+  p {
+    font-size: 1.5vw;
+  }
+}

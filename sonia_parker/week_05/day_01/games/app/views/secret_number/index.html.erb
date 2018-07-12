@@ -1,0 +1,12 @@
+<h1>Secret Number Guessing Game</h1>
+<%(1..10).each do |i|  %>
+<a href="/secret_number/<%= i %>"><%= i %></a>
+
+<% end %>
+<p>You have guessed the number: <%= @number %>.
+<% if @correct %>
+you guessed correctly!
+<% else %>
+you guessed incorrectly, sorry..
+<% end %>
+</p>

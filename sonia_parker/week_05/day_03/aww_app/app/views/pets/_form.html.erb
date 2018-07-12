@@ -1,0 +1,15 @@
+<%= form_for @pet do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+
+  <%= f.label :owner_name %>
+  <%= f.text_field :owner_name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :image_url %>
+  <%= f.url_field :image_url %>
+
+  <%= f.submit %>
+<% end %>

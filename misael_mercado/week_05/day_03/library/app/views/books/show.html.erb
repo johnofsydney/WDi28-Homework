@@ -1,0 +1,26 @@
+<h1><%= @book.title %></h1>
+<%= image_tag @book.cover, :alt => @book.title, :class => 'feature' %>
+<table>
+  <thead>
+    <tr>
+      <th>Title:
+        <%= @book.title %>
+      </th>
+      <% if @book.writer.present? %>
+        <th>
+          Writer:
+          <%= link_to @book.writer.name, @book.writer %>
+        </th>
+      <% end %>
+
+      <th>Year:
+        <%= @book.year %></th>
+      <th>genre:
+        <%= @book.genre %></th>
+    </tr>
+  </thead>
+</table>
+<div class="controls">
+  <%= button_to "Edit Book", edit_book_path(@book), :class => 'btn', :method => 'get' %>
+  <%= button_to "Delete writer", book_path(@book), :class => 'btn', :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

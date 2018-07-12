@@ -1,0 +1,19 @@
+<%= form_for @writer do |f|%>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true %>
+
+<%= f.label :nationality %>
+<%= f.text_field :nationality %>
+
+<%= f.label :dob, "Date of Birth" %>
+<%= f.text_field :dob %>
+
+<%= f.label :epoch %>
+<%= f.text_field :epoch %>
+
+<%= f.label :image %>
+<%= f.text_field :image %>
+
+<%= f.submit %>
+
+<% end %>

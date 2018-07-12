@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><%= link_to "Home page", root_path %>
+        </li>
+        <li>
+          <%= link_to 'Writers Compendium', writers_path %>
+        </li>
+        <li>
+          <%= link_to 'Books by Cover', books_path %>
+        </li>
+        <li>
+          <%= link_to 'Add New Writer', new_writer_path %>
+        </li>
+        <li>
+          <%= link_to 'Add New Book', new_book_path %>
+        </li>
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

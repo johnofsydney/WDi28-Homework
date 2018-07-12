@@ -1,0 +1,21 @@
+<h1><%= @writer.name %></h1>
+<%= image_tag @writer.image, :alt => @writer.name, :class => 'feature' %>
+<table>
+  <thead>
+    <tr>
+  <th>Nationality: <%= @writer.nationality %></th>
+  <% if @writer.dob.present? %>
+  <th>Date of Birth: <%= @writer.dob.strftime '%A, %B %d, %Y' %></th>
+  <% end %>
+  <th>Epoch: <%= @writer.epoch %></th>
+ </tr>
+</thead>
+</table>
+<% @writer.books.each do |book| %>
+ <%= link_to image_tag(book.cover, :class => 'thumbnail'), book %>
+ <% end %>
+
+ <div class="controls">
+<%= button_to "Edit Writer", edit_writer_path(@writer), :method => 'get' %>
+<%= button_to "Delete Writer", writer_path(@writer), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+ </div>

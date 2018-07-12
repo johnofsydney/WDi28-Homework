@@ -3950,3 +3950,94 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-10 10:05:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 649ms (Views: 639.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball" for 127.0.0.1 at 2018-07-10 10:06:02 +1000
+Processing by MagicBallController#ask as HTML
+  Rendering magic_ball/ask.html.erb within layouts/application
+  Rendered magic_ball/ask.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball/answers?question=life+is+real%3F" for 127.0.0.1 at 2018-07-10 10:06:08 +1000
+Processing by MagicBallController#answers as HTML
+  Parameters: {"question"=>"life is real?"}
+  Rendering magic_ball/answers.html.erb within layouts/application
+  Rendered magic_ball/answers.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 317ms (Views: 316.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-07-10 10:06:18 +1000
+Processing by SecretNumberController#guess as HTML
+  Rendering secret_number/guess.html.erb within layouts/application
+  Rendered secret_number/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number?guessed_number=5" for 127.0.0.1 at 2018-07-10 10:06:22 +1000
+Processing by SecretNumberController#guess as HTML
+  Parameters: {"guessed_number"=>"5"}
+  Rendering secret_number/guess.html.erb within layouts/application
+  Rendered secret_number/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors" for 127.0.0.1 at 2018-07-10 10:06:26 +1000
+Processing by RockPaperScissorsController#game as HTML
+  Rendering rock_paper_scissors/game.html.erb within layouts/application
+  Rendered rock_paper_scissors/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rock_paper_scissors?throw=rock" for 127.0.0.1 at 2018-07-10 10:06:30 +1000
+Processing by RockPaperScissorsController#game as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rock_paper_scissors/game.html.erb within layouts/application
+  Rendered rock_paper_scissors/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball" for 127.0.0.1 at 2018-07-10 10:08:15 +1000
+Processing by MagicBallController#ask as HTML
+  Rendering magic_ball/ask.html.erb within layouts/application
+  Rendered magic_ball/ask.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball/answers?question=life+is+real%3F" for 127.0.0.1 at 2018-07-10 10:08:21 +1000
+Processing by MagicBallController#answers as HTML
+  Parameters: {"question"=>"life is real?"}
+  Rendering magic_ball/answers.html.erb within layouts/application
+  Rendered magic_ball/answers.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball/answers?question=life+is+real%3F" for 127.0.0.1 at 2018-07-10 10:08:26 +1000
+Processing by MagicBallController#answers as HTML
+  Parameters: {"question"=>"life is real?"}
+  Rendering magic_ball/answers.html.erb within layouts/application
+  Rendered magic_ball/answers.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball/answers?question=life+is+real%3F" for 127.0.0.1 at 2018-07-10 10:08:29 +1000
+Processing by MagicBallController#answers as HTML
+  Parameters: {"question"=>"life is real?"}
+  Rendering magic_ball/answers.html.erb within layouts/application
+  Rendered magic_ball/answers.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic_ball/answers?question=life+is+real%3F" for 127.0.0.1 at 2018-07-10 10:08:31 +1000
+Processing by MagicBallController#answers as HTML
+  Parameters: {"question"=>"life is real?"}
+  Rendering magic_ball/answers.html.erb within layouts/application
+  Rendered magic_ball/answers.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+

@@ -25,6 +25,6 @@
 </table>
 
 <div class="controls">
-  <button class="btn"><%= link_to 'Edit rock', rock_edit_path(@rock.id) %></button>
+  <%= button_to 'Edit rock', rock_edit_path(@rock.id), :class => "btn", :method => "get"%>
   <%= button_to 'Delete rock', rock_path(@rock.id), :class => 'btn', :method => 'delete' %>
 </div>

@@ -1,0 +1,16 @@
+<h1> Writers Compendium</h1>
+<% @writers.each do |writer| %>
+<%= image_tag writer.image, :alt => writer.name, :class => 'thumbnail' %>
+<table>
+<thead>
+  <tr>
+    <th><%= link_to writer.name, writer %></th>
+    <th><%= writer.nationality %></th>
+    <% if writer.dob.present? %>
+    <th><%= writer.dob.strftime '%A, %B %d, %Y' %>,</th>
+    <% end %>
+    <th><%= writer.epoch %></th>
+  </tr>
+</thead>
+</table>
+<% end %>

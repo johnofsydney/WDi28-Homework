@@ -4427,3 +4427,248 @@ Processing by OceansController#index as HTML
 Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:35 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (1.3ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 252ms (Views: 201.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:41 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.3ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:42 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:42 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:42 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/10" for 127.0.0.1 at 2018-07-11 09:06:43 +1000
+Processing by OceansController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:7
+  Rendering oceans/show.html.erb within layouts/application
+  Rendered oceans/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/oceans/10" for 127.0.0.1 at 2018-07-11 09:06:44 +1000
+Processing by OceansController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bjb2ZZyF9KHgOY0tXemvtISHfoI5AJcbea3rUrbV3A1OmIbsMmVTw1W/WhAhLzve20fVkfJ70kUhOUoyOnxCjA==", "id"=>"10"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oceans_controller.rb:34
+  [1m[36mOcean Destroy (0.4ms)[0m  [1m[31mDELETE FROM "oceans" WHERE "oceans"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/oceans_controller.rb:34
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oceans_controller.rb:34
+Redirected to http://localhost:3000/oceans
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/oceans" for 127.0.0.1 at 2018-07-11 09:06:44 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/12" for 127.0.0.1 at 2018-07-11 09:06:46 +1000
+Processing by OceansController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOcean Load (0.3ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:7
+  Rendering oceans/show.html.erb within layouts/application
+  Rendered oceans/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/oceans/12" for 127.0.0.1 at 2018-07-11 09:06:46 +1000
+Processing by OceansController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E7FACg7lcBStSdFrCi2TMWk1Q2uEXmG+IuRVLbFgbQdoPRDD87WYEN4yf/2YZdZd+0ZxGOkG+6WnLhRvYi70Gg==", "id"=>"12"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oceans_controller.rb:34
+  [1m[36mOcean Destroy (0.5ms)[0m  [1m[31mDELETE FROM "oceans" WHERE "oceans"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/oceans_controller.rb:34
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oceans_controller.rb:34
+Redirected to http://localhost:3000/oceans
+Completed 302 Found in 10ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/oceans" for 127.0.0.1 at 2018-07-11 09:06:46 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:06:48 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:07:41 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2018-07-11 09:07:41 +1000
+Processing by OceansController#new as HTML
+  Rendering oceans/new.html.erb within layouts/application
+  Rendered oceans/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/oceans" for 127.0.0.1 at 2018-07-11 09:07:47 +1000
+Processing by OceansController#create as HTML
+  Parameters: {"name"=>"Ocean", "image"=>"https://media.nationalgeographic.org/assets/photos/254/514/1325c566-4440-49c8-8041-814a3d6b6e1b.jpg"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oceans_controller.rb:16
+  [1m[36mOcean Create (0.6ms)[0m  [1m[32mINSERT INTO "oceans" ("name", "image") VALUES (?, ?)[0m  [["name", "Ocean"], ["image", "https://media.nationalgeographic.org/assets/photos/254/514/1325c566-4440-49c8-8041-814a3d6b6e1b.jpg"]]
+  ↳ app/controllers/oceans_controller.rb:16
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oceans_controller.rb:16
+Redirected to http://localhost:3000/oceans/14
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/oceans/14" for 127.0.0.1 at 2018-07-11 09:07:47 +1000
+Processing by OceansController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:7
+  Rendering oceans/show.html.erb within layouts/application
+  Rendered oceans/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2018-07-11 09:08:40 +1000
+Processing by OceansController#new as HTML
+  Rendering oceans/new.html.erb within layouts/application
+  Rendered oceans/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:08:41 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/14" for 127.0.0.1 at 2018-07-11 09:08:42 +1000
+Processing by OceansController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:7
+  Rendering oceans/show.html.erb within layouts/application
+  Rendered oceans/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:08:46 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2018-07-11 09:08:53 +1000
+Processing by OceansController#new as HTML
+  Rendering oceans/new.html.erb within layouts/application
+  Rendered oceans/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2018-07-11 09:10:10 +1000
+Processing by OceansController#new as HTML
+  Rendering oceans/new.html.erb within layouts/application
+  Rendered oceans/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:10:10 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oceans/14" for 127.0.0.1 at 2018-07-11 09:10:11 +1000
+Processing by OceansController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mOcean Load (0.1ms)[0m  [1m[34mSELECT  "oceans".* FROM "oceans" WHERE "oceans"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/oceans_controller.rb:7
+  Rendering oceans/show.html.erb within layouts/application
+  Rendered oceans/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oceans/new" for 127.0.0.1 at 2018-07-11 09:10:13 +1000
+Processing by OceansController#new as HTML
+  Rendering oceans/new.html.erb within layouts/application
+  Rendered oceans/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-11 09:10:21 +1000
+Processing by OceansController#index as HTML
+  Rendering oceans/index.html.erb within layouts/application
+  [1m[36mOcean Load (0.2ms)[0m  [1m[34mSELECT "oceans".* FROM "oceans"[0m
+  ↳ app/views/oceans/index.html.erb:3
+  Rendered oceans/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+

@@ -1,0 +1,9 @@
+<h1> Add your cheese </h1>
+<% @cheeses.each do |cheese| %>
+  <p>
+    <a href="/cheeses/<%= cheese["id"] %>">
+  <%= cheese['name'] %>
+</a>
+</p>
+
+  <% end %>

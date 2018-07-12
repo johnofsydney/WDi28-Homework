@@ -1,0 +1,36 @@
+<div class="topofshow_artists">
+  <div class="artist_info">
+    <h1><%= @artist.name %></h1>
+
+    <% unless @artist.image.nil? %>
+      <img class="feature" src="<%= @artist.image %>" />
+    <% end %>
+
+    <div class="controls">
+      <a class="edit_delete" href="/artists/<%= @artist.id %>/edit">Edit Artist</a>
+      |
+      <a class="edit_delete" href="/artists/<%= @artist.id %>/delete">Delete Artist</a>
+    </div>
+
+  </div> <!--end of artist_info div-->
+
+  <div class="album_info">
+    <% unless @artist.albums.empty? %>
+      <h1>Albums by <%= @artist.name %>:</h1>
+      <ul>
+        <% @artist.albums.each do |album| %>
+          <li>
+            <a href="/albums/<%= album.id %>">
+              <%unless album["image"].nil?%>
+              <img class="album_info" src="<%=album["image"]%>"/>
+              <%end%>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div> <!--end of album info div-->
+
+
+
+</div> <!--end of main div-->

@@ -62,10 +62,8 @@ const maxOfThree = function(num1, num2, num3) {
   }
 }
 const vowel = function(str) {
-  var count = 0
-  for (i = 0; i < str.length; i++) {
+    for (i = 0; i < str.length; i++) {
     if (str.charAt(i) === 'a' || str.charAt(i) === 'e' || str.charAt(i) === 'i' || str.charAt(i) === 'o' || str.charAt(i) === 'u') {
-      count += 1
       return true
     } else {
       return false
@@ -117,7 +115,7 @@ var hangman = 0
 
 const guessLetter = function(letter) {
 const check = lettersOfWord.indexOf(letter)
-console.log(check)
+//console.log(check)
 if (guessedLetters.length > 0 && guessedLetters.indexOf(letter) >= 0) {
     console.log('sorry you have used this letter before')
     return false
@@ -128,9 +126,8 @@ if (check >= 0 ){
   rewardAmount = (rewardAmount + randomNumber)
   correctLetters.push(letter)
   console.log(`correct you won ${randomNumber} dollars you now have ${rewardAmount} dollars`)
-  console.log(rewardAmount)
   guessedLetters.push(letter)
-  console.log(` your guessed letters are ${guessedLetters}`)
+  console.log(` your guessed letters are ${guessedLetters} correct letters are ${correctLetters}`)
 }
 else {
   var randomNumber = Math.floor(Math.random() * 100);
@@ -138,7 +135,7 @@ else {
   rewardAmount = (rewardAmount - randomNumber)
   guessedLetters.push(letter)
   console.log(`wrong letter you lost ${randomNumber} you have ${rewardAmount}`)
-  console.log(guessedLetters)
+  console.log(` your guessed letters are ${guessedLetters} correct letters are ${correctLetters}`)
   hangman = hangman + 1
   console.log(`hangman is at ${hangman}`)
 }

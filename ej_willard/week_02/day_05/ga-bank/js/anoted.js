@@ -28,3 +28,40 @@ $('#checking-deposit').on('click', function() { //cant say $('button').on cos th
   deposit(num, "checking"); //it gets entered as a string because whatever is entered in input box gets entered as a string..
 
 });
+
+
+
+
+
+
+
+
+//cut from line 27 in other file
+
+// let num = $('input:text').val();
+// if (+num !== NaN) {
+//   let newBalance = $(+num + '#checking-balance');
+// }; //end of if statement
+// updateScreen(newBalance);
+// });
+// $('#checking-balance').val() + num.val()
+// let $num = $('#checking-balance').val() + $('#checking-amount:input[type="text"]').val();
+// $num.attr('#checking-balance').updateScreen(balance);
+
+// $("#checking-balance").html($($newBalance));
+// $("#checking-balance")
+// $(this).push($num);
+});
+
+
+
+
+
+
+
+// $('#savings-deposit').on('click', function() {
+//   let num = $('#savings-amount').val();
+//   deposit(num, "savings");
+// });
+
+// }); //this is the closing function for the whole page, the $(document).ready function....

@@ -1,28 +1,70 @@
-require 'pry'
 
 class Squares 
 
-  def initialize num 
-    @num = num 
-    @arr = (1..num).to_a 
-  end 
-
-  def square_sum
-    @arr.sum ** 2
-  end 
-
-  def sum_squares 
-    squarr = @arr.map do |num| 
-      num ** 2
+    def initialize num 
+      @num = num 
+      @arr = (1..@num).to_a 
     end
 
-    squarr.sum
-  end 
+    def square_of_sum 
+      @arr.sum ** 2
+    end
 
-end 
+    def sum_of_squares 
+      squarr = @arr.map do |num| 
+        num ** 2 
+      end 
+      squarr.sum
+    end 
+
+    def difference 
+      square_of_sum - sum_of_squares
+    end 
+end
 
 
-binding.pry 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# require 'pry'
+
+# class Squares 
+
+#   def initialize num 
+#     @num = num 
+#     @arr = (1..num).to_a 
+#   end 
+
+#   def square_of_sum
+#     @arr.sum ** 2
+#   end 
+
+#   def sum_squares 
+#     squarr = @arr.map do |num| 
+#       num ** 2
+#     end
+
+#     squarr.sum
+#   end 
+
+# end 
+
+
+# binding.pry 
 
 
 

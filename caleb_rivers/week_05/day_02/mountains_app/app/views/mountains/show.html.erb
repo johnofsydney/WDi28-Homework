@@ -1,0 +1,25 @@
+<h1><%= @mountain.name %></h1>
+
+<%= image_tag @mountain.image, :class => 'feature' unless @mountain.image.nil? %>
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Location</td>
+      <td>Height</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @mountain.name %></td>
+      <td><%= @mountain.location %></td>
+      <td><%= @mountain.height%></td>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= link_to 'Edit mountain', mountain_edit_path(@mountain.id) %>
+  <%= button_to 'Delete mountain', mountain_path(@mountain.id), :method => 'delete' %>
+</div>

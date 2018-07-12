@@ -7,7 +7,7 @@ Director.create(:name => 'Peter Jackson', :nationality => 'New Zealand', :dob =>
 
 Movie.destroy_all
 Movie.create(:title => 'Live or Let Die', :genre => 'Action', :rating => '7.2', :image => 'https://www.scifi-movies.com/images/contenu/data/0003904/affiche-vivre-et-laisser-mourir-live-and-let-die-1973-10.jpg')
-Movie.create(:title => 'The Infinity War', :genre => 'Fantacy', :rating => '8.7' 'https://images-na.ssl-images-amazon.com/images/I/A1t8xCe9jwL._SL1500_.jpg')
+Movie.create(:title => 'The Infinity War', :genre => 'Fantacy', :rating => '8.7', :image => 'https://images-na.ssl-images-amazon.com/images/I/A1t8xCe9jwL._SL1500_.jpg')
 Movie.create(:title => 'The Avengers', :genre => 'Fantacy', :rating => '8.1', :image => 'https://i.pinimg.com/originals/0f/03/e6/0f03e6733b0cf567cc92e8e20290462f.jpg')
 Movie.create(:title => 'Wonder Woman', :genre => 'Fantacy', :rating => '7.5', :image => 'https://pre00.deviantart.net/b213/th/pre/i/2017/100/b/2/wonder_woman_teaseer_poster_ii_by_gerardosart-db5d9d4.jpg')
 Movie.create(:title => 'Star War - A New Hope', :genre =>'Science Fiction', :rating => '8.6', :image => 'https://www.officialmerchandise.com/assets/products/349879/large/star-wars-a-new-hope-poster-13828.jpg')

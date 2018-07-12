@@ -5,8 +5,7 @@
 <ul>
   <li>Nationality :<%= @director.nationality %></li>
   <% if @director.dob.present? %>
-    <li>Date Of Birth : <%= @director.dob%></li>
-    <!-- .strftime '%A, %B %e, %y'  -->
+    <li>Date Of Birth : <%= @director.dob.strftime '%A, %B %e, %y'%></li>
   <% end %>
 </ul>
 

@@ -4,7 +4,7 @@
 
 <ul>
   <li><%= @movie.title %></li>
-  <% if @movie.director.persent? %>
+  <% if @movie.director.present? %>
   <li>Director :<%= link_to @movie.director.name, @movie.director  %></li>
   <% end %>
 
@@ -14,5 +14,5 @@
 
 <div class="controls">
   <%= link_to "Edit Movie", edit_movie_path(@movie) %>
-  <%= link_to "Delete", movie_path(@movie) :method => 'delete', :data=> {:confirm => 'Are you sure?'} %>
+  <%= link_to "Delete Movie", movie_path(@movie), :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
 </div>

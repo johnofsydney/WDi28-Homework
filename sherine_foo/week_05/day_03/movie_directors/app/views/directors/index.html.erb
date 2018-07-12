@@ -7,7 +7,7 @@
     <li><%= director.nationality  %></li>
 
     <% if director.dob.present? %>
-    <li><%= director.dob %></li>
+    <li><%= director.dob.strftime '%A, %B %e, %Y' %></li>
         <!-- .strftime '%A, %B %e, %Y' -->
     <% end %>
 

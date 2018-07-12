@@ -7,13 +7,13 @@
   <%= f.text_field :genre %>
 
   <%= f.label :rating %>
-  <%= f.interger_field :rating %>
+  <%= f.text_field :rating %>
 
   <%= f.label :image %>
   <%= f.url_field :image %>
 
   <%= f.label :director_id %>
-  <%= f.select :director_id, Director.pluck(:name, :id), include_blank => true %>
+  <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
 
 
   <%= f.submit %>

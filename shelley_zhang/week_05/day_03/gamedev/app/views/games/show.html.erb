@@ -1,0 +1,14 @@
+<h1><%= @game.name %></h1>
+
+<%= image_tag @game.image, :alt => @game.name, :class => 'feature' if @game.image.present? %>
+
+<ul>
+  <% if @game.genre.present? %>
+  <li>Genre: <%= @game.genre %></li>
+  <% end %>
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit Game", edit_game_path(@game) %>
+  <%= link_to "Delete Game", game_path(@game), :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

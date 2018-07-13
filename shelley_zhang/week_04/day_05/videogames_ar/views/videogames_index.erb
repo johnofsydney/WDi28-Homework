@@ -1,5 +1,6 @@
 <h1>Video Games</h1>
 
+<div class="block">
 <% @videogames.each do |videogame| %>
   <p>
     <a href="/videogames/<%= videogame["id"] %>">
@@ -7,3 +8,4 @@
     </a>
   </p>
 <% end %>
+</div>

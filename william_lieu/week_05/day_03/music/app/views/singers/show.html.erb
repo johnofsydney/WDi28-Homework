@@ -1,0 +1,19 @@
+<h1><%=  @singer.artist %></h1>
+
+  <%= image_tag @singer.image, :alt => @singer.name, :class => 'feature' %>
+
+  <ul>
+    <li>Background: <%=  @singer.background %></li>
+    <% if @ singer.present? %>
+    <li>Genres: <%= @singer.genres %></li>
+    <% end %>
+    <li>Generation :<%= @singer.generation %></li>
+  </ul>
+
+
+<%  @singer.albums.each do |album| %>
+  <%= link_to image_tag(album.image, :class => 'thumb') %>
+  <div class="controls">
+    <%= link_to "Edit singer", edit_singer_path(@singer) %>
+    <%= link_to "Delete singer", singer_path(@singer), :method => 'delete', :data => {:confirm => 'Are you sure ?'}%>
+  </div>

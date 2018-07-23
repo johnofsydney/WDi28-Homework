@@ -34,3 +34,5 @@ class RockpaperscissorsController < ApplicationController
     #get the user input value
     end
   end
+
+  #%w(rock, paper, scissors).sample will create array and randomly choose from the array

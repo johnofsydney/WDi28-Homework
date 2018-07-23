@@ -3682,3 +3682,91 @@ Processing by BallsController#form as HTML
 Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:10:50 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 556ms (Views: 507.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/balls" for 127.0.0.1 at 2018-07-10 09:10:53 +1000
+Processing by BallsController#form as HTML
+  Rendering balls/form.html.erb within layouts/application
+  Rendered balls/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/balls/info?question=gyvvvv" for 127.0.0.1 at 2018-07-10 09:11:38 +1000
+Processing by BallsController#info as HTML
+  Parameters: {"question"=>"gyvvvv"}
+  Rendering balls/info.html.erb within layouts/application
+  Rendered balls/info.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 111ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:11:43 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/balls" for 127.0.0.1 at 2018-07-10 09:14:24 +1000
+Processing by BallsController#form as HTML
+  Rendering balls/form.html.erb within layouts/application
+  Rendered balls/form.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 144ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/balls/info?question=ffr" for 127.0.0.1 at 2018-07-10 09:14:28 +1000
+Processing by BallsController#info as HTML
+  Parameters: {"question"=>"ffr"}
+  Rendering balls/info.html.erb within layouts/application
+  Rendered balls/info.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:14:35 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rocks" for 127.0.0.1 at 2018-07-10 09:14:39 +1000
+Processing by RocksController#form as HTML
+  Rendering rocks/form.html.erb within layouts/application
+  Rendered rocks/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rocks/info/?throw=paper" for 127.0.0.1 at 2018-07-10 09:14:50 +1000
+Processing by RocksController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rocks/info.html.erb within layouts/application
+  Rendered rocks/info.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:14:56 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rocks" for 127.0.0.1 at 2018-07-10 09:14:57 +1000
+Processing by RocksController#form as HTML
+  Rendering rocks/form.html.erb within layouts/application
+  Rendered rocks/form.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rocks/info/?throw=paper" for 127.0.0.1 at 2018-07-10 09:15:00 +1000
+Processing by RocksController#info as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rocks/info.html.erb within layouts/application
+  Rendered rocks/info.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+

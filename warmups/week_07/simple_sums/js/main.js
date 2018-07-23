@@ -1,6 +1,12 @@
 console.log("connected");
 
 
+// ## Simple Sums
+//
+// Back to the world of Javascript! See if you can remember how it works...
+//
+// Write a program that can calculate the sum of the first `n` elements of the following sequences:
+//
 // ```js
 // s1 = 1 - 1 + 1 - 1 + 1 - 1 + //etc
 // s2 = 1 + 2 + 3 + 4 + 5 + 6 + //etc
@@ -12,24 +18,6 @@ console.log("connected");
 // s2(4) = 10
 // ```
 
-
-const s3 = (num) => {
-
-  // if (num > 0) {
-  //   return num + ( s3( num -1) )
-  // } else {
-  //   return 0
-  // }
-
-  while ( num > 0 ) {
-    return num + ( s3(num - 1) )
-  }
-  return 0
-}
-
-
-
-
 const s1 = (num) => {
 
   // if num.even?
@@ -40,11 +28,12 @@ const s1 = (num) => {
   return num % 2
 }
 
-
 console.log( s1(4) );
 console.log( s1(5) );
 console.log( s1(60) );
 
+
+// first version - using a loop
 const s2 = (num) => {
   let result = 0
 
@@ -61,6 +50,21 @@ console.log( s2(60) );
 
 
 
+// second version using ** Recursion **
+const s3 = (num) => {
+
+  // if (num > 0) {
+  //   return num + ( s3( num -1) )
+  // } else {
+  //   return 0
+  // }
+
+  while ( num > 0 ) {
+    return num + ( s3(num - 1) )
+  }
+  return 0
+}
+
 
 console.log( s3(4) );
 console.log( s3(5) );
@@ -68,10 +72,8 @@ console.log( s3(60) );
 
 
 
-
+// third version using ** maths **
 const s4 = (num) => {
-
-
   return ( num * (num + 1)) / 2
 }
 

@@ -1,0 +1,19 @@
+<h1>New books</h1>
+
+<form action="books" method="post"
+  <label>Title:</label>
+  <input type="text" title="title" placehoder="Book title" required autofocus>
+  <label>Image:</label>
+  <input type="url" name="image" placeholder="http://...">
+
+  <label>Best author</label>
+  <select name="author_id">
+
+    <option></option>
+    <% Author.all.each do |author| %>
+    <option value="<%= author.id %>"><%= author.name %</option>
+    <% end %>
+  </select>
+
+  <button>Create</button>
+</form>

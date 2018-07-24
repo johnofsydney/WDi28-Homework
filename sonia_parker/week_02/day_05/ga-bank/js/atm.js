@@ -5,7 +5,7 @@ $(document).ready(function() {
     savings: 0,
     checking: 0
   }
-
+  //+ sign turns string into a number
   const refreshAccounts = function() {
     // Update checking account balance
     $("#checking-balance").html(balance.checking);
@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Update savings account balance
     $("#savings-balance").html(balance.savings);
   }
-
+  debugger;
   const deposit = function(amount, account) {
     balance[account] += amount;
   }

@@ -40,3 +40,10 @@ console.log(joinedResult);
 return joinedResult;
 }
 mixUp("raymond");
+
+//FixStart
+const fixStart = function(str){
+  const firstSymbol = str[0];
+  console.log(firstSymbol);
+}
+fixStart("kitty");

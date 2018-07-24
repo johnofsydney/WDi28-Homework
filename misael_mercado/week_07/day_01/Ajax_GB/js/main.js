@@ -4,7 +4,7 @@ const getBook = () => {
   const xhr = new XMLHttpRequest();
 
   const title = document.getElementById("title").value;
-  const url = "https://www.googleapis.com/books/v1/volumes?q=title:" + title;
+  const url = `https://www.googleapis.com/books/v1/volumes?q=title:${title}`;
   console.log(url);
 
   xhr.onreadystatechange = () => {
@@ -13,13 +13,14 @@ const getBook = () => {
     }
     const info = JSON.parse(xhr.responseText);
     // debugger;
+    document.getElementById('info').innerHTML = '';
     const h1 = document.createElement('h1');
     h1.innerHTML = info.items[0].volumeInfo.title;
-    document.body.appendChild(h1);
+    document.getElementById('info').appendChild(h1);
     const p = document.createElement('p');
     p.className = 'p-container';
     p.innerHTML = info.items[0].volumeInfo.description;
-    document.body.appendChild(p);
+    document.getElementById('info').appendChild(p);
 
     const cover = document.getElementById("cover");
     cover.className = 'cover';

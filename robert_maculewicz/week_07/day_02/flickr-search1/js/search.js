@@ -51,7 +51,7 @@ const searchFlickr = function (term) {
   $.getJSON(flickrURL, {
     // Data for the query string (these will be added to the URL)
     method: 'flickr.photos.search',
-    api_key: '2f5ac274ecfac5a455f38745704ad084', // not a secret key
+    api_key: '2f5ac274ecfac5a455f38745704ad084',
     text: term,
     format: 'json',
      page: state.page++                          //add new
@@ -68,7 +68,7 @@ $(document).ready(function () {
     searchFlickr(query);
   });
   const throttledSearchFlickr = _.throttle( searchFlickr, 6000, {trailing: false}); //add new line
-  // Very twitchy
+
   $(window).on('scroll', function () {
     // scrollBottom is the number of pixels in the document below the bottom of the window.
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
     // console.log( $(document).height(), $(window).height(), $(window).scrollTop(), scrollBottom );
 
-    if (scrollBottom < 600) {
+    if (scrollBottom < 400) {
       const query = $('#query').val();
       throttledSearchFlickr(query);         //new line
       // searchFlickr(query);              // old version

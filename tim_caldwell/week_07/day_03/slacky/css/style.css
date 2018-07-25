@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background-color: darkgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3em;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+header .logo {
+  width: 5em;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+header .logo > img {
+  width: 100%;
+  
+}
+
+nav {
+  margin-left: auto;
+}
+#slacky_form {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+#channel_history{
+  height: 100%;
+  overflow: scroll;
+}
+#message {
+  height: 3em;
+  width: 100%;
+}
+
+.chat_message {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 60px auto;
+  text-align: left;
+  padding: .75em .5em;
+}
+
+.displayName {
+  font-weight: 800;
+}

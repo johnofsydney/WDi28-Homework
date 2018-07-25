@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Slacky</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      
+      <div class="logo">
+        <img src="https://i.pinimg.com/736x/e9/45/32/e945329fcdc6873b70c792c86675d59f.jpg" />
+      </div>
+      <h1 class="slogan">Welcome to Slacky!</h1>
+      <nav>
+        <a href="/">home</a>
+      </nav>
+    </header>
+    <main>
+      <form action="" class="slacky_form" id="slacky_form">
+        <fieldset>
+          <label for="group">Select Group:</label>
+          <select name="group" id="group">
+            <option value="" selected></option>
+            <!-- populated with js -->
+          </select>
+        </fieldset>
+        <div class="channel" id="channel_history">
+          <!-- js to populate message history here-->
+        </div>
+        <fieldset>
+          <label for="message">Type your Message:</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button type="submit">Post</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+</html>

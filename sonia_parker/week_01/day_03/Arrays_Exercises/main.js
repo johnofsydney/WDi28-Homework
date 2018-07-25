@@ -48,6 +48,7 @@ console.log(innerSecondArray);//second inner array
 for (var i = innerSecondArray.length-1; i >=0; i--) {
   console.log('!!!', innerSecondArray[i]);
 }
+console.log("***********topChoice**********");
 //topchoice
 const top5Books = ["Martian's Chronicles", "100 years of Solitude", "1984", "Doctor Zhivago", "Haarry Potter and the Order of phoenix"];
 for (let i = 0; i < top5Books.length; i++) {
@@ -67,6 +68,8 @@ for (let i = 0; i < top5Books.length; i++) {
 
 }
 //Array and Functions Bonus Material
+console.log("***********maxOfTwoNumbers**********");
+
 const maxOfTwoNumbers = function(num1, num2){
   if(num1>num2){
     let largest = num1;
@@ -77,6 +80,8 @@ const maxOfTwoNumbers = function(num1, num2){
 }
 console.log(maxOfTwoNumbers(100, 50));
 console.log(maxOfTwoNumbers(20, 70));
+console.log("***********maxOfTwoThree**********");
+
 //maxofThree
 const maxOfThree = function(num1, num2, num3){
   //check num1 agaist num2 and num3,if evaluates to false then num2 or nu3 are largest
@@ -101,6 +106,7 @@ console.log( maxOfThree(1,2,3));
 console.log( maxOfThree(7,673,100));
 console.log( maxOfThree(357,9,53));
 //true if its a vowel
+console.log("***********isVowel**********");
 
 const isVowel = function(char){
   //return true if its a vowel,false otherwise
@@ -113,12 +119,13 @@ console.log(isVowel("a"));
 console.log(isVowel("b"));
 console.log(isVowel("i"));
 console.log(isVowel("c"));
-
+console.log("****************sumArray starts here***********");
 //sumArray
 const sumArray = function(arr){
 let sum=0;
 for (let i = 0; i < arr.length; i++) {
   sum+=arr[i];
+//  console.log(sum);
 }
   return sum;
 }
@@ -127,6 +134,8 @@ console.log (sumArray([9,67,28,10]));
 console.log (sumArray([0,43,15,95]));
 
 //multiplyArray
+console.log("***********multiplyArray**********");
+
 const multiplyArray = function(arr){
   let multiple = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -137,6 +146,7 @@ const multiplyArray = function(arr){
 console.log (multiplyArray([1,2,3,4]));
 console.log (multiplyArray([9,67,28,10]));
 console.log (multiplyArray([2,43,15,95]));
+console.log("***********reverseString**********");
 
 //reverseString
 const reverseString = function(str){
@@ -154,22 +164,36 @@ return arrayReverse.join("");
 console.log(reverseString("beans"));
 console.log(reverseString("milk"));
 console.log(reverseString("radio"));
+console.log("***********theWordGuesser**********");
 
 //The Word Guesser
-const lettersOrigin = ["f", "o", "x"];
-const guessedLetters = [];
-const guessedLetter = function(letter){
-  //check if letter is in "lettersOrigin" array
-  for (let i = 0; i < lettersOrigin.length; i++) {
-//if it there, push it to guessedLetters array
-    if(letter===lettersOrigin[i]){
-      guessedLetters.push(letter);
-    }
-  }
-  console.log(`You have guessed these letters so far: ${guessedLetters}`);
-
-}
-guessedLetter("r"); // ___
-guessedLetter("f"); // f__
+// const lettersOrigin = ["f", "o", "x"];
+// const guessedLetters = [];
+// const guessedLetter = function(letter){
+//   //check if letter is in "lettersOrigin" array
+//   for (let i = 0; i < lettersOrigin.length; i++) {
+// //if it there, push it to guessedLetters array
+//     if(letter===lettersOrigin[i]){
+//       guessedLetters.push(letter);
+//     }
+//   }
+//   console.log(`You have guessed these letters so far: ${guessedLetters}`);
+//
+// }
+// guessedLetter("r"); // ___
+// guessedLetter("f"); // f__
 //console.log(guessedLetter("r"));
 //console.log(guessedLetter("f"));
+let word = "FOX".split("");
+let guessedWord = [];
+for (var i = 0; i < word.length; i++) {
+  guessedWord[i] = "-";
+}
+const guessLetter = function(letter){
+  let index = word.indexof(letter);
+  if(index>=0){
+    guessedWord[index]=letter;
+    console.log("good guess");
+  }else
+  console.log("bad guess");
+}

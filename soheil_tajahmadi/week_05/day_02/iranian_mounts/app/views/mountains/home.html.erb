@@ -1,9 +1,0 @@
-
-
-<% @mountains.each do |mountain|  %>
-  <ul>
-    <%= link_to mountain.name, 'mountains/' + mountain.id.to_s %>
-  </ul>
-<% end %>
-
-<a href="/mountains/new"><strong>Add a new Mountain</strong></a>

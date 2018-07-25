@@ -1,6 +1,0 @@
-CREATE TABLE unis(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT,
-  image TEXT
-);
-INSERT INTO unis(name) VALUES('SYDUNI');

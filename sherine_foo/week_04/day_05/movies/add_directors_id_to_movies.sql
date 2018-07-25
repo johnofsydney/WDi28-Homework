@@ -1,1 +1,0 @@
-ALTER TABLE movies ADD COLUMN director_id INTEGER;

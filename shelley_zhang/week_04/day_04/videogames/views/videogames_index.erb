@@ -1,8 +1,0 @@
-<h1>All Completed Games</h1>
-
-<% @videogames.each do |videogame| %>
-
-<p class="purpleblock">
- <a href="/videogames/<%=videogame["id"]%>"> <%=videogame['name']%> </a>
-</p>
- <%end%>

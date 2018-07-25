@@ -1,9 +1,0 @@
-<h1>The Games Library</h1>
-<% @games.each do |game|%>
-  <div class="gametile">
-  <img class="row-span3" src="<%= game['art']%>" >
-  <h3><%= game['title']%></h3>
-  <p><%= game['blurb']%></p>
-  <span><a class="abutton" href="/games/<%= game['id']%>">View</a></span>
-  </div>
-<% end %>

@@ -13,7 +13,7 @@ class SecretnController < ApplicationController
 
     if secret_number == secretnanswer
 
-      @messege = "You got!!! 
+      @messege = "You got!!!"
     else
       @message = "You got wrong"
     end

@@ -3,11 +3,7 @@ const bank = {
   savings: 0
 };
 
-
-
 $(document).ready(function() {
-
-
 //update bank function updates the html with the latest account balances
   const updateBank = function() {
 
@@ -28,7 +24,6 @@ $(document).ready(function() {
           $(accountId).removeClass("zero");
       };
     }
-
   }
 //withdraws money from available balance
   const withdrawal = function () {
@@ -39,17 +34,12 @@ $(document).ready(function() {
     let accountType = $(this).parent().attr("id");
     let supportAccount = "";
 
-
     if (accountType === 'checking') {
       supportAccount = 'savings';
 
     } else {
       supportAccount = 'checking';
-
     };
-
-
-
     if (amount <= bank[accountType]) {
       bank[accountType] -= amount;
       updateBank();

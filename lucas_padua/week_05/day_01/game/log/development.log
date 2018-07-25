@@ -1505,3 +1505,146 @@ Processing by SecretnController#secretnanswer as HTML
 Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-09 19:45:40 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 349ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic" for 127.0.0.1 at 2018-07-09 19:45:43 +1000
+Processing by MagicController#game as HTML
+  Rendering magic/game.html.erb within layouts/application
+  Rendered magic/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn" for 127.0.0.1 at 2018-07-09 19:45:46 +1000
+  
+SyntaxError (/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+      @message = "You got wrong"
+                     ^
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-07-09 19:45:49 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn" for 127.0.0.1 at 2018-07-09 19:45:50 +1000
+  
+SyntaxError (/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+      @message = "You got wrong"
+                     ^
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-07-09 19:45:55 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn" for 127.0.0.1 at 2018-07-09 19:45:56 +1000
+  
+SyntaxError (/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+      @message = "You got wrong"
+                     ^
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+/Users/lucaspadua/Projects/WDi28-Homework/lucas_padua/week_05/day_01/game/app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/secretn_controller.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+app/controllers/secretn_controller.rb:18: unterminated string meets end of file
+app/controllers/secretn_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/secretn" for 127.0.0.1 at 2018-07-09 19:46:25 +1000
+Processing by SecretnController#game as HTML
+  Rendering secretn/game.html.erb within layouts/application
+  Rendered secretn/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn/answer?name=22" for 127.0.0.1 at 2018-07-09 19:46:29 +1000
+Processing by SecretnController#secretnanswer as HTML
+  Parameters: {"name"=>"22"}
+  Rendering secretn/result.html.erb within layouts/application
+  Rendered secretn/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn/answer?name=10" for 127.0.0.1 at 2018-07-09 19:46:35 +1000
+Processing by SecretnController#secretnanswer as HTML
+  Parameters: {"name"=>"10"}
+  Rendering secretn/result.html.erb within layouts/application
+  Rendered secretn/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 08:29:24 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 258ms (Views: 250.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn" for 127.0.0.1 at 2018-07-10 09:00:14 +1000
+Processing by SecretnController#game as HTML
+  Rendering secretn/game.html.erb within layouts/application
+  Rendered secretn/game.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 254ms (Views: 233.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secretn/answer?name=1" for 127.0.0.1 at 2018-07-10 09:00:17 +1000
+Processing by SecretnController#secretnanswer as HTML
+  Parameters: {"name"=>"1"}
+  Rendering secretn/result.html.erb within layouts/application
+  Rendered secretn/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:00:20 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic" for 127.0.0.1 at 2018-07-10 09:00:22 +1000
+Processing by MagicController#game as HTML
+  Rendering magic/game.html.erb within layouts/application
+  Rendered magic/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic/answer?name=hello" for 127.0.0.1 at 2018-07-10 09:00:26 +1000
+Processing by MagicController#magicanswer as HTML
+  Parameters: {"name"=>"hello"}
+  Rendering magic/result.html.erb within layouts/application
+  Rendered magic/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/magic/answer?name=hello" for 127.0.0.1 at 2018-07-10 09:40:13 +1000
+Processing by MagicController#magicanswer as HTML
+  Parameters: {"name"=>"hello"}
+  Rendering magic/result.html.erb within layouts/application
+  Rendered magic/result.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 288ms (Views: 280.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-10 09:40:16 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+

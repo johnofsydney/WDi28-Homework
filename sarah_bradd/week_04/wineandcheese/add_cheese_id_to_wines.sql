@@ -1,1 +1,0 @@
-ALTER TABLE wines ADD COLUMN cheese_id INTEGER;

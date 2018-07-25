@@ -1,2 +1,0 @@
-class Ocean < ApplicationRecord
-end

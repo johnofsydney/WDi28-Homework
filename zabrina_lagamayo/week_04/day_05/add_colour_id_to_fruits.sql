@@ -1,1 +1,0 @@
-ALTER TABLE fruits ADD COLUMN colour_id INTEGER;

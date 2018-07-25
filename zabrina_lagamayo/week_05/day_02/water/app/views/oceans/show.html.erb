@@ -1,7 +1,0 @@
-<h1><%= @ocean.name %></h1>
-
-<%= image_tag @ocean.image, :class => 'feature' unless @ocean.image.nil? %>
-<div class="controls">
-  <%= button_to 'Delete',ocean_path(@ocean.id), :method => 'delete' %>
-  <%= button_to 'Edit' , ocean_edit_path(@ocean.id), :method => 'get' %>
-</div>

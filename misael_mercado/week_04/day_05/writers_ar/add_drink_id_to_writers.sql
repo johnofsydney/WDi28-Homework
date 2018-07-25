@@ -1,1 +1,0 @@
-ALTER TABLE writers ADD COLUMN drink_id INTEGER;

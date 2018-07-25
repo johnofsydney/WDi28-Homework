@@ -1,0 +1,12 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  font-family: monospace;
+}
+
+
+h1 {
+  color: white;
+  font-size: 5em;
+}

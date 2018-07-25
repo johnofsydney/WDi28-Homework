@@ -1,0 +1,12 @@
+<h1>Edit Instrument</h1>
+
+<form action="/instruments/<%= @instrument['id'] %>" method="post">
+  <label>Instrument Name:</label>
+  <input type="text" name="name" value = "<%= @instrument['name'] %>" placeholder = "Piano" required autofocus>
+  <label>Family:</label>
+  <input type="text" name="family" value = "<%= @instrument['family'] %>" placeholder="String" required>
+  <label>Image:</label>
+  <input type="url" name="image" value = "<%= @instrument['video'] %>" placeholder="http://...">
+
+  <button>Update</button>
+</form>

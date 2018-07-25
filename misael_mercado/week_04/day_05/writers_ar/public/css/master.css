@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Oswald');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* .wrapper {
+  display: grid;
+  grid-template-rows: 25% 100px auto;
+} */
+
+body {
+  position: relative;
+  font-family: 'Cardo', serif;
+  font-size: 1.3vw;
+  color: #f7fbf1;
+  text-align: center;
+}
+
+
+.overlay {
+  font-size: 1vw;
+}
+
+body .wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #221c1c;
+  position: absolute;
+  overflow: hidden;
+}
+
+@media (min-width: 768px){
+  body .wrapper {
+    height: 150vh;
+  }
+
+}
+
+body .wrapper span {
+  z-index: 9999;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 35px;
+  height: 4px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+body .wrapper span:before, body .wrapper span:after {
+  display: block;
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 4px;
+  width: 35px;
+  background: #ffffff;
+}
+
+body .wrapper span:before {
+  top: -8px;
+}
+
+body .wrapper span:after {
+  bottom: -8px;
+}
+
+body .wrapper .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  margin-top: -200px;
+  width: 50%;
+  margin-left: -25%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 6vw;
+  color: #30C4C9;
+  text-align: center;
+}
+
+body .wrapper .overlay {
+  position: absolute;
+  bottom: -99%;
+  height: 100%;
+  background: #30C4C9;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+body .wrapper .overlay.anim {
+  left: 0;
+  bottom: 0;
+  animation: menu-anim 1.5s 1 ease-out normal;
+  width: 25%;
+  transition: all 0.5s ease;
+}
+
+body .wrapper .overlay.anim.reverse-anim {
+  left: 0;
+  bottom: 0;
+  animation: menu-anim 1.5s 1 ease-out reverse;
+  width: 25%;
+  transition: all 0.5s ease;
+}
+
+body .wrapper .overlay ul {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  padding-left: 0;
+  margin-left: -10px;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+body .wrapper .overlay ul li {
+  margin: 10px 0;
+}
+
+body .wrapper .overlay ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+body .wrapper .overlay ul li a:after {
+  display: block;
+  border-radius: 2px;
+  content: '';
+  left: 0;
+  bottom: -10px;
+  height: 5px;
+  background: #ffffff;
+  transform: translateX(-101%);
+}
+
+body .wrapper .overlay ul li a:hover {
+  text-decoration: none;
+}
+
+body .wrapper .overlay ul li a:hover:after {
+  animation: border-anim 0.5s 1 ease normal;
+  transform: translateX(0);
+}
+
+@-webkit-keyframes border-anim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes menu-anim {
+  0% {
+    left: 0;
+    bottom: -99%;
+    width: 100%;
+  }
+  33% {
+    left: -99.5%;
+    bottom: -99%;
+    width: 100%;
+  }
+  66% {
+    left: -99.5%;
+    bottom: 0;
+    width: 100%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    width: 25%;
+  }
+}
+
+.content {
+  text-align: center;
+  color: #f7fbf1;
+  margin: 3% 10%;
+  /* position: relative; */
+  font-family: 'Cardo', serif;
+}
+
+.feature {
+  max-width: 20%;
+  display: block;
+  margin: 2em auto;
+  border-radius: .6em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background: #dde8f0;
+  background-image: -webkit-linear-gradient(top, #dde8f0, #30C4C9);
+  background-image: -moz-linear-gradient(top, #dde8f0, #30C4C9);
+  background-image: -ms-linear-gradient(top, #dde8f0, #30C4C9);
+  background-image: -o-linear-gradient(top, #dde8f0, #30C4C9);
+  background-image: linear-gradient(to bottom, #dde8f0, #30C4C9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Cardo', serif;
+  color: #030303;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  margin: 2em 0;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background: #ebe2da;
+  background-image: -webkit-linear-gradient(top, #ebe2da, #e08269);
+  background-image: -moz-linear-gradient(top, #ebe2da, #e08269);
+  background-image: -ms-linear-gradient(top, #ebe2da, #e08269);
+  background-image: -o-linear-gradient(top, #ebe2da, #e08269);
+  background-image: linear-gradient(to bottom, #ebe2da, #e08269);
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+  margin-top: 3em;
+}
+
+input {
+  width: 16em;
+  height: 2.6em;
+  font-size: .8vw;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Cardo', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f7fbf1;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.subtitle {
+  margin-top: 2em;
+}

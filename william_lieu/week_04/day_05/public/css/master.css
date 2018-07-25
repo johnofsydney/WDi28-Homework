@@ -1,0 +1,30 @@
+body {
+  background: url('img/IMG_240247.jpg');
+  color: red;
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 25px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+
+}
+
+.feature {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}

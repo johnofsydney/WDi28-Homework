@@ -1,0 +1,13 @@
+CREATE TABLE albums(
+  if INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  year INTEGER,
+  image TEXT,
+  artist_id INTEGER
+);
+
+CREATE TABLE artists(
+  id INTEGER PRIMARY KEY AUTOINCREMENT
+  name TEXT,
+  image TEXT
+);

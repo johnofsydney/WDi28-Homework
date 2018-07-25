@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+.show {
+  background: linear-gradient(#3D5A73, #7EA1BF, #B6DBF2, #4B7340);
+  opacity: 0.9;
+  margin-left: auto; //this pushes div to center
+  margin-right: auto; //this pushes div to center
+  margin-top: 5%; //this pushes div down to center
+  margin-bottom: 5%;
+  max-width: 80vw;
+  text-align: center;
+}
+
+.show ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(../assets/mountains.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.indexcontainer {
+  background-color: rgba(192, 192, 192, 0.85);
+  max-width: 50vw;
+  margin-left: auto; //this pushes div to center
+  margin-right: auto; //this pushes div to center
+  margin-top: 15%; //this pushes div down to center
+  margin-bottom: 15%; //makes sure div doesnt go passed center
+  text-align: center;
+  padding: 1em 0;
+}
+
+.indexcontainer h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.indexcontainer a {
+  text-decoration: none;
+  color: #4B7340;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4B7340;
+  font-weight: bold;
+  padding: 0.5em;
+  letter-spacing: 0.8px;
+
+}
+
+.mainnav {
+    padding: 0.5em;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(211, 211, 211);
+  border-bottom-width: 2px;
+}
+
+.feature {
+  max-width: 40vw;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+.controls a {
+  text-decoration: none;
+  color: #B6DBF2;
+}

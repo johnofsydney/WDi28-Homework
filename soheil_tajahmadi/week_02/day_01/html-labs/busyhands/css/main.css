@@ -1,0 +1,136 @@
+#container {
+  max-width: 960px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#blurb {
+  float: right;
+  width: 25%;
+  margin-top: 2.5%;
+}
+
+#photobanner {
+  width: 100%;
+  box-shadow: 0px 25px 36px -10px black;
+  margin-bottom: 30px;
+}
+
+#socialMedia ul {
+  width: 38%;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+
+.homebox {
+  width: 30%;
+  font-size: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.navigation li {
+  display: inline-block;
+  width : 60px;
+  height: 30px;
+  text-align: center;
+  background-color: black;
+  padding-top: 12px;
+  margin-bottom: 12px;
+  margin: 2px black
+}
+
+.navigation {
+  margin: 5px;
+}
+
+.navigation a {
+    color: #b9b6af;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 1px 1px 4px;
+}
+
+
+
+.requestquote {
+  width: 100%;
+  border-top: 1px grey solid;
+  border-left: 1px grey solid;
+  border-right: 1px, white, solid;
+  border-bottom: 1px, white, solid;
+  font-size: 12px;
+  float: left;
+}
+
+.requestquote p {
+  max-width: 70%;
+  margin: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+}
+
+.homebox img {
+  border : 5px #e0e0e0 solid;
+  padding: 1px;
+  background-color: white;
+  width: 90%;
+}
+
+.posts {
+  margin-top: 30px;
+}
+
+main {
+  background-color: #f1f1f1;
+  width: 80%;
+  font-family: sans-serif;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body {
+  background-color: black;
+
+}
+
+nav {
+  background-color: black;
+  padding-left: 40px;
+}
+
+footer {
+  color: white;
+}

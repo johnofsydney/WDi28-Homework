@@ -1,0 +1,36 @@
+<h1>Hiking Trails That Will Blow Your Mind</h1>
+
+<% @mountains.each do |mountain| %>
+<p>
+Name : <%= button_to mountain.name, mountain_path(mountain.id), :method => 'get' %>
+
+Distance : <%= mountain.distance %>
+
+Country : <%= mountain.country %>
+
+
+<div class= "box_container">
+
+  <% @mountains.each do |mountain| %>
+
+    <div class="box">
+      <a href="/mountains/">
+        <%= mountain[:name] %>
+      </br>
+        Distance : <%= mountain.distance %>
+</br>
+        Country : <%= mountain.country %>
+</br>
+        <% unless mountain["image"].nil? %>
+
+        <img class="img_box" src="<%= mountain['image'] %>" />
+
+        <% end  %>
+      </a>
+    </div>
+
+  <% end  %>
+</div>
+</p>
+
+<% end %>

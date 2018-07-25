@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+
+body {
+  background-color: white;
+  font-family: 'Gaegu', cursive;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.container {
+  max-width: 100%;
+  text-align: center;
+  background-image: url("ocean.jpg");
+  height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature {
+  max-width: 100%
+}
+
+img {
+  border-radius: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  padding-top: 15px;
+  background-color: rgba(68, 68, 68, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  position: fixed;    /*Here's what sticks it*/
+  bottom: 0;          /*to the bottom of the window*/
+  left: 0;
+}
+
+label {
+  display: block;
+}
+
+form {
+  font-size: 1.25em;
+}
+button {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  color: white;
+  background: #444;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: 'Gaegu', cursive;
+  font-size: 1em;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonTo {
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background: #444;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: 'Gaegu', cursive;
+  font-size: 1em;
+}
+
+.buttonTo:hover {
+  background-color: #FF9900; /* Green */
+  color: black;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #444;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #FF9900;
+}
+
+a {
+  text-decoration: underline;
+  padding: 5px;
+  color: #FF9900;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+a:hover {
+  background-color: #FF9900;
+  color: white;
+}
+
+
+table, thead, td {
+  padding: 11px;
+  font-size: 1.25em;
+}
+
+thead {
+  border: 2px solid black;
+  color: #FF9900;
+}
+
+td {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+span {
+  color: #FF9900
+}

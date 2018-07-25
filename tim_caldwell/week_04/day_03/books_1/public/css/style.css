@@ -1,0 +1,32 @@
+body {
+  background: radial-gradient(#DDA, #FFF);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.book {
+  background-color: white;
+  display: inline-block;
+  padding: 3em;
+  box-shadow: .1em .1em .1em rgba(0,0,0,0.25);
+  margin: 1em;
+  border-radius: .25em;
+  max-width: 50vw;
+}
+
+.book img {
+  box-shadow: .1em .1em .1em rgba(0,0,0,0.25);
+}
+
+.book li {
+  list-style: none;
+}
+

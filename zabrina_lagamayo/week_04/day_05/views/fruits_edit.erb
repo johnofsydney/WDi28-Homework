@@ -1,0 +1,17 @@
+<form action="/fruits/<%= @fruit['id'] %>" method = "post">
+  <label>Fruit Name: </label>
+  <input type="text" name="name" value= "<%=@fruit.name %>" placeholder="fruit name" required autofocus>
+  <label>Image Link: </label>
+  <input type="url" name="image" placeholder="http://...">
+  <label>Colour: </label>
+  <select name="colour_id">
+    <!-- Let the user choose an associated plant from all the plants in db -->
+    <option></option>
+    <% Colour.all.each do |colour| %>
+      <option value="<%= colour.id %>" <%= "selected" if colour.id == @fruit.colour_id %>><%= colour.name %></option>
+    <% end %>
+  </select>
+
+  <button>Update</button>
+
+</form>

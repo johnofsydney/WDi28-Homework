@@ -1,0 +1,14 @@
+<form action= "/mountains/update/<%= @mountain.id %>" method="post">
+  <label >Mountain Name : </label>
+  <input type="text" name="name" value="<%= @mountain.name %>" required autofocus>
+  <label >Altitude : </label>
+  <input type="number" name="elevation" value="<%= @mountain.elevation %>" >
+  <label >Prominence : </label>
+  <input type="number" name="prominence"value="<%= @mountain.prominence %>"  >
+  <label >Image url : </label>
+  <input type="text" name="image" value="<%= @mountain.image %>" >
+  <label >Interesting facts : </label>
+  <input type="text" name="funfact" value="<%= @mountain.funfact %>" >
+
+  <button> Update database </button>
+</form>

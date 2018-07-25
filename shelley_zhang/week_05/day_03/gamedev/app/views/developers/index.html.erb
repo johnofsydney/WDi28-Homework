@@ -1,0 +1,11 @@
+<h1>All Developers</h1>
+
+<% @developers.each do |developer| %>
+  <%= image_tag developer.image, :alt => developer.name, :class => 'thumb' if developer.image.present? %>
+  <ul>
+    <li><%= link_to developer.name, developer %></li>
+      <% if developer.headquarters.present? %>
+    <li><%= developer.headquarters %></li>
+    <% end %>
+  </ul>
+<% end %>

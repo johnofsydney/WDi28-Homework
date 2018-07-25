@@ -1,0 +1,14 @@
+<h1><%= @book['title'] %></h1>
+
+<% unless @book.author.nil? %>
+  <h2>Best book: </h2>
+    <a href="/authors/<%= @book.author.id %>">
+      <%= @butterfly.author.title %>
+    </a>
+
+  <% end %>
+
+  <div class="controls">
+    <a href="/books/<%= @book['id'] %>/edit">Edit</a>
+    <a href="/books/<%= @book['id'] %>/delete">Delete</a>
+  </div>

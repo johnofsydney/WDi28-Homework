@@ -1,0 +1,15 @@
+<h1>New Ocean</h1>
+
+<form action="<%= oceans_path %>" method="post">
+  <label>Name: </label>
+  <input type="text" name="name" placeholder="Arctic Ocean" required>
+  <label>Image: </label>
+  <input type="text" name="image" placeholder="http://...">
+  <label>Surface (km<sup>2</sup>): </label>
+  <input type="float" name="surface" placeholder="101460000">
+  <label>Depth (metres): </label>
+  <input type="float" name="depth" placeholder="3000">
+  <label>Volume (km<sup>3</sup>): </label>
+  <input type="float" name="volume" placeholder="310000222">
+  <button>Create Ocean</button>
+</form>

@@ -15,3 +15,9 @@
   <%= f.submit %>
 
 <% end %>
+
+<%= @style.style_type %>
+
+
+<% @style.each do |style| %>
+  <%= image_tag style.image, :alt => style.style_type, :class => 'thumb' if style.image.present? %>

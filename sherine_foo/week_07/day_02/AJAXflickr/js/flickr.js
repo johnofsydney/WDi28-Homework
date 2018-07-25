@@ -40,9 +40,13 @@ const searchFlickr = function (term, pageTarget) {
     text: term,
     page: pageTarget,
     format: 'json',
-    }).done(showImages);
+  }).done(showImages)
+    // }).done(function (showImages) {
+    //   $('#image').html("");
+    //   $('#image').html(showImages);
+    // });
 
-  };
+};
 
 // TODO clear page
 // if image is not empty, location.reload();
@@ -53,7 +57,7 @@ const searchFlickr = function (term, pageTarget) {
       // searchFlickr(query, page += 1);
       searchFlickr(query, page += 1);
       // button.location.reload();
-      // location.reload();
+
 
     });
 
@@ -66,3 +70,8 @@ const searchFlickr = function (term, pageTarget) {
       }
     });
   });
+
+  // last page if oage>
+
+  //reset research html("")
+  // do the reset before serachFlickr.

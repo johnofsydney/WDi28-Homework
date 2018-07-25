@@ -3910,3 +3910,21 @@ Processing by DirectorsController#index as HTML
 Completed 200 OK in 49ms (Views: 36.6ms | ActiveRecord: 8.4ms)
 
 
+Started GET "/" for ::1 at 2018-07-12 17:43:18 +1000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/SherineMay/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/SherineMay/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/SherineMay/.rvm/gems/ruby-2.5.1/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 23ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2018-07-12 17:43:24 +1000
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 273ms (Views: 246.5ms | ActiveRecord: 18.0ms)
+
+

@@ -9,7 +9,7 @@ const fetchData =function () {
     books.send();
 
     books.onreadystatechange = function () {
-      if (books.readyState !=4 ) {
+      if (books.readyState !==4 ) {
         return;
       }
       let info = JSON.parse(books.responseText);

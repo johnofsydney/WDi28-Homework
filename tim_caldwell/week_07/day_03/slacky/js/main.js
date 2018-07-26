@@ -18,7 +18,8 @@ const app = {
       displayName: user.profile.real_name_normalized
     };
   },
-  latestMsgTs: 0
+  latestMsgTs: 0,
+  interval: null
 }
 
 const updateGroups = function( result ) {
@@ -178,6 +179,8 @@ $(document).ready(() => {
   $('#group').on('change', function (e) {
     // get the new groups messages
     console.log('changed group selector');
+    clearInterval(app.interval)
+    app.interval = setInterval(getGroupHistory, 60 * 1000, this.value)
     getGroupHistory( this.value );
   })
 

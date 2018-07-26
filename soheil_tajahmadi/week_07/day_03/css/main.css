@@ -1,0 +1,32 @@
+.character {
+  max-width: 30vw;
+  max-height: 50vh;
+  margin: 0 1vw 2vw 1vw;
+  display: inline-block;
+}
+
+.image {
+  max-width: 100%;
+}
+
+
+.searchBox {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  min-height: 100vh;
+  background-color: rgb(13, 131, 228);
+}
+
+.searchBox form {
+  text-align: center;
+  line-height: 5vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+
+}

@@ -1,6 +1,7 @@
 console.log('connected');
 
 const grabBook = function() {
+  console.log('clicked');
   let query = document.getElementById('query').value;
   const xhr = new XMLHttpRequest;
   xhr.onreadystatechange = function () {

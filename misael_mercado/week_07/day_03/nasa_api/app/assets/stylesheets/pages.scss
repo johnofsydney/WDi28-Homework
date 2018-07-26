@@ -1,0 +1,64 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-color: #5dabcd;
+
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #edde9c;
+
+  h1 {
+    color: #bc2e1e;
+    text-align: center;
+    font: bold 4vw Sans-Serif;
+    padding: 0;
+    text-shadow: 0 1px 0 #378ab4, 1px 0 0 $primary-color, 1px 2px 1px #378ab4, 2px 1px 1px $primary-color, 2px 3px 2px #378ab4, 3px 2px 2px $primary-color, 3px 4px 2px #378ab4, 4px 3px 3px $primary-color, 4px 5px 3px #378ab4, 5px 4px 2px $primary-color, 5px 6px 2px #378ab4, 6px 5px 2px $primary-color, 6px 7px 1px #378ab4, 7px 6px 1px $primary-color, 7px 8px 0 #378ab4, 8px 7px 0 $primary-color;
+  }
+
+  p {
+    text-align: center;
+    font: 2vw arial, sans-serif;
+  }
+}
+
+#images {
+text-align: center;
+img {
+  border: 3px solid $primary-color;
+    border-radius: 4px;
+    margin: .6em;
+    width: 20vw;
+}
+}
+#query {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    margin-bottom: 2em;
+}
+
+  button {
+
+    width: 20%;
+    padding: 10px;
+    background: $primary-color;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    &:hover {
+        background: $primary-color;
+    }
+}

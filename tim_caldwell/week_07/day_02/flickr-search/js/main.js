@@ -73,9 +73,28 @@ $( document ).ready( () => {
   })
 
   // attach infinite scroll event
-  const debouncer = debounce(infiniteScroll, 250, false)
+  const debouncer = debounce(infiniteScroll, 250)
   $(document).on('scroll', debouncer)
+  
+  
+  const totop_debounce = debounce(() => {
+    if (document.scrollingElement.scrollTop >= document.scrollingElement.clientHeight) {
+      $('.totop').css('visibility', 'visible')
+      console.log('showing totop');
 
+    }
+    else {
+      $('.totop').css('visibility', 'hidden')
+      console.log('hiding totop');
+    }
+  }, 250)
+
+  $(document).on('scroll', totop_debounce )
+
+  $('.totop').on('click', () => {
+    // scroll back to the top
+    document.scrollingElement.scrollTop = 0;
+  });
 })
 
 
@@ -98,17 +117,19 @@ const infiniteScroll = function ( event ) {
 }
 
 
-function debounce(func, wait, immediate) {
+const debounce = function(func, wait) {
   let timeout;
+  // return a function we can call multiple times to add to the queue
   return function () {
     let context = this, args = arguments;
-    let later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    let callNow = immediate && !timeout;
+
+    // clear any existing queued jobs
     clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+
+    // set function to be run in `wait` ms
+    timeout = setTimeout(() => {
+      timeout = null;
+      func.apply(context, args);
+    }, wait);
   };
 };

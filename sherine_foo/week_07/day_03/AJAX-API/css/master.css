@@ -10,3 +10,9 @@ h1 {
   color: white;
   font-size: 5em;
 }
+
+img {
+  width: 10em;
+  border: 5px solid white;
+  border-radius: 10px;
+}

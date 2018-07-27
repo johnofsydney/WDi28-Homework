@@ -32,7 +32,7 @@ const showImages = function(results) {
 
   console.log(results); // For debugging.
 
-  // debugger;
+
 // show images by drilling into JSON object feedback
 
   _(results.collection.items).each(function(item) {
@@ -45,19 +45,23 @@ const showImages = function(results) {
 
 };
 
-
+let nasaURL = `https://images-api.nasa.gov/search`;
 
 const nasaSearch = function(term) {
 
   console.log('Searching Nasa for', term);
 
-  const nasaURL = `https://images-api.nasa.gov/search`;
+  // const nasaURL = `https://images-api.nasa.gov/search`;
 // Json object we create using Api parameters
   $.getJSON(nasaURL, {
 
     q: term,
 
-  }).done(showImages).done
+  }).done(showImages).done(function (info) {
+debugger;
+   nasaURL = _( info.collection.links ).last().href // underscore to help set the last url when called, as it is constantly decreasing on the api from 1 to 0
+
+  })
 
 };
 

@@ -31,6 +31,7 @@ nav {
 .box_container  {
   display: grid;
   grid-template-columns:  33% 33% 33%;
+  grid-template-rows: 20em;
   grid-row-gap: 10px;
   padding: 20px;
 }
@@ -42,11 +43,21 @@ nav {
 }
 
 .img_box {
-  width: 10em
+  width: 15em
 }
-// .feature {
-//   max-width: 40em
-// }
+img.img_box {
+  margin-bottom: 0;
+}
+img.feature {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-top: 2em;
+}
+
+a.to_feature {
+  height: 30em;
+}
 
 table {
   font-size: 3vw;
@@ -84,6 +95,7 @@ a {
   text-decoration: none;
   font-size: 3vw;
   text-align: center;
+
   // background-color: rgba(0, 0, 0, 0.5);
 
 }

@@ -21,7 +21,7 @@ calc_choice= gets.chomp.downcase
 
 #calculate trip cost function
 def trip_cost(distance, miles_per_gal, price_per_gal)
-  result = (((distance.to_f / 100) * miles_per_gal) * price_per_gal)
+  result = (((distance.to_f / 100) * miles_per_gal) * price_per_gal) #can also do distance / 100.0 because as long as one of the numbers is a floating point it will return a decimal number
   return result
 end
 

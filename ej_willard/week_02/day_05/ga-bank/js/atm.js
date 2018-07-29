@@ -53,7 +53,7 @@ updateScreen(balance);
 // });
 // console.log(balance);
 $("#checking-deposit").on("click", function() {
-  let plusBalance = $("#checking-balance").val() + $("#checking-amount").val();
+  let plusBalance = $("#checking-amount").val() + $("#checking-balance").val();
   let newBalance = deposit(+plusBalance, "checking");
   $(balance['checking']).html(function() {
     return balance['checking'] = newBalance;

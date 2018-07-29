@@ -14,8 +14,8 @@
   <tbody >
     <tr align="center">
       <td><%= @mountain.name %></td>
-      <td><%= @mountain.height %></td>
-      <td><%= @mountain.distance %></td>
+      <td><%= @mountain.height %> foot </td>
+      <td><%= @mountain.distance %> height</td>
       <td><%= @mountain.country %></td>
 
     </tr>
@@ -24,10 +24,12 @@
 
 </table>
 
-<%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
+
 
 
 </div>
+
+<%= image_tag @mountain.image, :class=>'feature' unless @mountain.image.nil? %>
 
 <div class="controls">
   <%= button_to 'Edit Trial', mountain_edit_path(@mountain.id), :method => 'get'%>

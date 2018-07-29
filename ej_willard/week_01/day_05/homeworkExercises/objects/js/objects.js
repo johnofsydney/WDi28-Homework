@@ -243,12 +243,13 @@ console.log(bank);
 
 
 ///////////making deposits///////////////
-
+//fix this all so it has messages like the below `you now have X in your account... type thing`
 const deposit = function(bank, money) {
      bank.currentBalance += money;
-    return bank.currentBalance;
+    return `You now have $${bank.currentBalance} in your account.`;
 };
 console.log('........making deposit......');
+console.log('.........Current balance.......');
 console.log(bank[2].currentBalance);
 console.log('adding $50 to account')
 console.log(deposit(bank[2],50));
@@ -260,7 +261,7 @@ const withdraw = function(bank, money) {
     return bank.currentBalance;
 };
 console.log('.......withdrawing money..........');
-console.log(withdraw(bank[2],50));
+// console.log(withdraw(bank[2],50));
 
 ///put in function to sum up account balances
 let summingBank = function(bank) {
@@ -271,7 +272,7 @@ let summingBank = function(bank) {
   return bankSum;
 };
 console.log('.......sum up account balanaces in bank.......')
-console.log(summingBank(bank));
+// console.log(summingBank(bank));
 
 //put in method to add new account -- It also needs an addAccount method that will enroll a new account at the bank and add it to the array of accounts.
 let addAccount = function(newName, newBalance){
@@ -282,7 +283,7 @@ let addAccount = function(newName, newBalance){
 return bank;
 };
 console.log('........adding new accounts to bank........');
-console.log(addAccount("Atsuko Wantanabe", 1000));
-console.log(addAccount("Brenda Barr", 10));
+// console.log(addAccount("Atsuko Wantanabe", 1000));
+// console.log(addAccount("Brenda Barr", 10));
 console.log('.............summing up new bank total with new accounts...........')
 console.log(summingBank(bank));

@@ -40,6 +40,4 @@ until user_choice == 'l'
   user_choice = gets.chomp.downcase
 end
 
-
-
 puts "Thank you checking your BMI with us"

@@ -39,14 +39,6 @@
   padding: 25px 0;
 }
 
-.empty {
-  background-color: rgba(255, 0, 0, 0.7);
-  border: 1px solid #676767;
-  font-family: 'Ruluko', sans-serif;
-  font-size: 50px;
-  padding: 25px 0;
-}
-
 .clear {
   clear: both;
 }

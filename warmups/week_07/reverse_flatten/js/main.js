@@ -17,11 +17,11 @@ console.log("connected");
 
 const reverse = (input) => {
   let output = [];
+  let arr = input.slice()
 
-  while (input.length > 0) {
-    output.push( input.pop() )
+  while (arr.length > 0) {
+    output.push( arr.pop() )
   }
-
   return output;
 }
 
@@ -45,3 +45,5 @@ const flatten = (input, result = []) => {
 
 let input2 = [1,2,3,4,5, [1,2,3, [4,5,6]]]
 console.log( flatten(input2) )
+let input3 = [1,2,3,4,5]
+console.log( flatten(input3) )

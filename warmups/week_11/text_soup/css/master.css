@@ -1,0 +1,12 @@
+body {
+  background: rgb(10, 10, 50);
+}
+
+.shy {
+  display: none;
+}
+
+p {
+  position: absolute;
+  margin: 0;
+}

@@ -13,3 +13,4 @@ Directors
 INSERT INTO directors VALUES ("George Lucas", "https://vignette.wikia.nocookie.net/labyrinth/images/a/a1/139924-george-lucas.jpg/revision/latest?cb=20111008202038");
 INSERT INTO directors VALUES ("Joss Whedon", "https://pmcvariety.files.wordpress.com/2018/04/joss-whedon-wonder-woman.jpg?w=1000&h=563&crop=1")
 INSERT INTO directors VALUES ("Patty Jeukins", "https://pmcvariety.files.wordpress.com/2017/10/patty-jenkins-power-of-women-variety.jpg?w=1000&h=563&crop=1")
+INSERT INTO directors VALUES ("Richard Donner", "https://m.media-amazon.com/images/M/MV5BMTQ0NzA2NjQzNl5BMl5BanBnXkFtZTYwNzg4NDQ0._V1_UY317_CR6,0,214,317_AL_.jpg")
